@@ -2,6 +2,7 @@ package main;
 
 import common.PokemonStats;
 import entities.*;
+import game.Arena;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -17,13 +18,26 @@ public class Main {
         PokemonFactory pokemonFactory = PokemonFactory.generateFactory();
         System.out.println(pokemonFactory);
 
-        Trainer trainer = trainerFactory.createTrainer("Trainer1", 30,Arrays.asList(
+        Trainer trainer1 = trainerFactory.createTrainer("Trainer1", 30,Arrays.asList(
                 pokemonFactory.createPokemon("Pikachu", Arrays.asList("Cap", "Vitamins")),
                 pokemonFactory.createPokemon("Bulbasaur", Arrays.asList("Tree", "Vitaminsx")),
                 pokemonFactory.createPokemon("Vulpix", Arrays.asList("Wand", "Trey"))
         ));
 
-        System.out.println(trainer);
+        System.out.println(trainer1);
 
+        Trainer trainer2 = trainerFactory.createTrainer("Trainer2", 34,Arrays.asList(
+                pokemonFactory.createPokemon("Pikachu", Arrays.asList("Cap", "Vitaminsx")),
+                pokemonFactory.createPokemon("Bulbasaur", Arrays.asList("Tree", "Vitamins", "Cap")),
+                pokemonFactory.createPokemon("Vulpix", Arrays.asList("Wand", "Trey"))
+        ));
+
+
+        // Arena
+        Arena arena = Arena.generateArena(trainer1, trainer2);
+        System.out.println(arena);
+
+        Arena arena2 = Arena.generateArena(trainer2, trainer1);
+        System.out.println(arena);
     }
 }
