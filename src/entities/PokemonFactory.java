@@ -3,9 +3,8 @@ package entities;
 import common.ItemStats;
 import common.PokemonStats;
 import utils.DeepCopy;
+import utils.GetFieldsOfClass;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Modifier;
 import java.util.*;
 
 public final class PokemonFactory {
@@ -19,7 +18,7 @@ public final class PokemonFactory {
     }
 
     public Pokemon createPokemon(String pokemonName, List<String> itemsName) {
-        Map<String, Object> pokemonStatsMap = getFieldObjectMap(PokemonStats.class, pokemonName);
+        Map<String, Object> pokemonStatsMap = GetFieldsOfClass.getFieldObjectMap(PokemonStats.class, pokemonName);
         if (pokemonStatsMap.isEmpty())
             return null; // Pokemon doesn't exist in the db
 
@@ -33,6 +32,16 @@ public final class PokemonFactory {
         Ability extractedFirstAbility   = (Ability) extractFieldValues(pokemonStatsMap, "FIRST_ABILITY");
         Ability extractedSecondAbility  = (Ability) extractFieldValues(pokemonStatsMap, "SECOND_ABILITY");
 
+        // Neutrel1 and Neutrel2 can't be used
+        if (PokemonStats.NEUTREL1_NAME.equals(extractedName)) {
+            System.out.println("You can't use Neutrel1");
+            return null;
+        }
+        if (PokemonStats.NEUTREL2_NAME.equals(extractedName)) {
+            System.out.println("You can't use Neutrel2");
+            return null;
+        }
+
         Pokemon.PokemonBuilder pokemonBuilder = new Pokemon.PokemonBuilder(extractedName)
                 .HP(extractedHP)
                 .attack(extractedNormalAttack)
@@ -44,7 +53,7 @@ public final class PokemonFactory {
 
         // Extract item's attributes
         for (String itemName: itemsName) {
-            Map<String, Object> itemStatsMap = getFieldObjectMap(ItemStats.class, itemName);
+            Map<String, Object> itemStatsMap = GetFieldsOfClass.getFieldObjectMap(ItemStats.class, itemName);
             if (itemStatsMap.isEmpty())
                 continue; // Item doesn't exist in the db
 
@@ -65,30 +74,6 @@ public final class PokemonFactory {
         }
 
         return pokemonBuilder.build();
-    }
-
-
-    private Map<String, Object> getFieldObjectMap(Class<?> cls, String name) {
-
-        List<Field> fields = Arrays.stream(cls.getDeclaredFields())
-                .filter(f -> Modifier.isPublic(f.getModifiers()) &&
-                        f.getName().toUpperCase().contains(name.toUpperCase()))
-                .toList();
-
-        if (fields.isEmpty()) {
-            System.out.println("Field '" + name + "' doesn't exist");
-            return Collections.emptyMap();
-        }
-
-        Map<String, Object> fieldObjectMap = new HashMap<>();
-        for (Field field: fields) {
-            try {
-                fieldObjectMap.put(field.getName(), field.get(cls));
-            } catch (IllegalAccessException e) {
-                e.printStackTrace();
-            }
-        }
-        return fieldObjectMap;
     }
 
     private Object extractFieldValues(Map<String, Object> fieldObjectMap, String keyString) {

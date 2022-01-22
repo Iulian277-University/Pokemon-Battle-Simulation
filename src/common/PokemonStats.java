@@ -14,7 +14,25 @@ public final class PokemonStats {
      * FIRST_ABILITY, SECOND_ABILITY
      * */
 
-    // TODO: Add Neutrel1 and Neutrel2
+    // Neutrel1
+    public static final String  NEUTREL1_NAME = "Neutrel1";
+    public static final Integer NEUTREL1_HP = 10;
+    public static final Integer NEUTREL1_NORMAL_ATTACK = 3;
+    public static final Integer NEUTREL1_SPECIAL_ATTACK = null;
+    public static final Integer NEUTREL1_NORMAL_DEFENSE = 1;
+    public static final Integer NEUTREL1_SPECIAL_DEFENSE = 1;
+    public static final Ability NEUTREL1_FIRST_ABILITY = null;
+    public static final Ability NEUTREL1_SECOND_ABILITY = null;
+
+    // Neutrel2
+    public static final String  NEUTREL2_NAME = "Neutrel2";
+    public static final Integer NEUTREL2_HP = 20;
+    public static final Integer NEUTREL2_NORMAL_ATTACK = 4;
+    public static final Integer NEUTREL2_SPECIAL_ATTACK = null;
+    public static final Integer NEUTREL2_NORMAL_DEFENSE = 1;
+    public static final Integer NEUTREL2_SPECIAL_DEFENSE = 1;
+    public static final Ability NEUTREL2_FIRST_ABILITY = null;
+    public static final Ability NEUTREL2_SECOND_ABILITY = null;
 
     // Pikachu
     public static final String  PIKACHU_NAME = "Pikachu";
