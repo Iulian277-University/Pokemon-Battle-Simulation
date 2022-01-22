@@ -11,16 +11,19 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
 
+        TrainerFactory trainerFactory = TrainerFactory.generateFactory();
+        System.out.println(trainerFactory);
+
         PokemonFactory pokemonFactory = PokemonFactory.generateFactory();
         System.out.println(pokemonFactory);
-//
-//        Pokemon pok1 = pokemonFactory.createPokemon("Bulbasaur");
-//        System.out.println(pok1.getFirstAbility());
-//
-//        Pokemon pok2 = pokemonFactory.createPokemon("Bulbasaur");
-//        System.out.println(pok2.getFirstAbility());
 
-        Pokemon pok3 = pokemonFactory.createPokemon("Pikachu", Arrays.asList("Cape", "Vitamins"));
-        System.out.println(pok3);
+        Trainer trainer = trainerFactory.createTrainer("Trainer1", 30,Arrays.asList(
+                pokemonFactory.createPokemon("Pikachu", Arrays.asList("Cap", "Vitamins")),
+                pokemonFactory.createPokemon("Bulbasaur", Arrays.asList("Tree", "Vitaminsx")),
+                pokemonFactory.createPokemon("Vulpix", Arrays.asList("Wand", "Trey"))
+        ));
+
+        System.out.println(trainer);
+
     }
 }
