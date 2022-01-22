@@ -1,0 +1,21 @@
+{
+    "trainerAge": 48,
+    "pokemons": {
+        "SQUIRTLE": [
+            "VEST",
+            "CAPE",
+            "WAND"
+        ],
+        "PIKACHU": [
+            "VITAMINS",
+            "VEST",
+            "TREE"
+        ],
+        "EEVEE": [
+            "SWORD",
+            "VITAMINS",
+            "SHIELD"
+        ]
+    },
+    "trainerName": "Trainer_1_2"
+}

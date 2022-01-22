@@ -1,7 +1,11 @@
 package io;
 
 import common.Constants;
+import org.json.JSONObject;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.*;
 
 public final class GenerateTestcases {
@@ -34,11 +38,43 @@ public final class GenerateTestcases {
     private static Integer trainerAge;
     private static Map<String, List<String>> pokemons = new HashMap<>();
 
-    public static void generate(int testIndex, int trainerIndex) {
-        setFields(testIndex, trainerIndex);
-        printFields();
-        pokemons.clear();
+    public static void generate(int numberOfTests) {
+        for (int i = 1; i <= numberOfTests; ++i) {
+            setFields(i, i + 1);
+            fieldsToJson(i);
+            pokemons.clear();
+        }
     }
+
+    // TODO: Json testcases need to have 2 trainers, not one
+    private static void fieldsToJson(Integer testIndex) {
+        String jsonString = new JSONObject()
+                .put("trainerName", trainerName)
+                .put("trainerAge", trainerAge)
+                .put("pokemons", pokemons).toString(Constants.JSON_INDENTATION_FACTOR);
+
+        writeToFile(jsonString, testIndex);
+    }
+
+    private static void writeToFile(String jsonString, Integer testIndex) {
+        String filePath = Constants.TESTCASES_DIR_PATH + "Testcase_" + testIndex + ".json";
+        BufferedWriter writer = null;
+        try {
+            writer = new BufferedWriter(new FileWriter(filePath));
+            writer.write(jsonString);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (writer != null) {
+                try {
+                    writer.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
 
     private static void setFields(int testIndex, int trainerIndex) {
         // Compute trainer's name
@@ -69,7 +105,6 @@ public final class GenerateTestcases {
             while (counter < Constants.POKEMON_MAX_ITEMS) {
                 String itemName = Items.values()[new Random().nextInt(Items.values().length)].toString();
                 if (!randomItems.contains(itemName)) {
-                    //
                     randomItems.add(itemName);
                     counter++;
                 }
