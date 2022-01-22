@@ -72,9 +72,7 @@ public class Ability {
         }
 
         public Ability build() {
-            Ability ability = new Ability(this);
-            // validate ability
-            return ability;
+            return new Ability(this);
         }
 
     }

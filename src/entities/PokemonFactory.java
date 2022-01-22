@@ -5,7 +5,6 @@ import common.PokemonStats;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public final class PokemonFactory {
     // Pattern: Singleton
@@ -17,23 +16,19 @@ public final class PokemonFactory {
         return factory;
     }
 
-
-    // TODO: Populate for all the types
     public Pokemon createPokemon(String name) {
-        return switch (name) {
-            case PokemonStats.PIKACHU_NAME -> newPokemon(name);
-            default -> null;
-        };
-    }
-
-    private Pokemon newPokemon(String name) {
         List<Field> fields = Arrays.stream(PokemonStats.class.getDeclaredFields())
                 .filter(f -> Modifier.isPublic(f.getModifiers()) &&
-                             f.getName().toUpperCase().contains(name.toUpperCase()))
-                .collect(Collectors.toList());
+                        f.getName().toUpperCase().contains(name.toUpperCase()))
+                .toList();
+
+        if (fields.isEmpty()) {
+            System.out.println("Pokemon '" + name + "' didn't found.");
+            return null;
+        }
 
         Map<String, Object> fieldObjectMap = new HashMap<>();
-        for (Field field : fields) {
+        for (Field field: fields) {
             try {
                 fieldObjectMap.put(field.getName(), field.get(PokemonStats.class));
             } catch (IllegalAccessException e) {
@@ -59,13 +54,12 @@ public final class PokemonFactory {
                 .firstAbility(extractedFirstAbility)
                 .secondAbility(extractedSecondAbility)
                 .build();
-
     }
 
     private Object extractFieldValues(Map<String, Object> fieldObjectMap, String keyString) {
         return fieldObjectMap.entrySet().stream()
                 .filter(entry -> entry.getKey().contains(keyString.toUpperCase()))
                 .map(Map.Entry::getValue)
-                .collect(Collectors.toList()).get(0);
+                .toList().get(0);
     }
 }

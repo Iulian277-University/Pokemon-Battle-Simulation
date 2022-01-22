@@ -1,5 +1,7 @@
 package entities;
 
+import common.Constants;
+
 import java.util.ArrayList;
 
 public class Trainer {
@@ -56,15 +58,17 @@ public class Trainer {
         }
 
         public TrainerBuilder addPokemon(Pokemon pokemon) {
-            if(this.pokemons.size() < 3) // TODO: Make constants
+            if(this.pokemons.size() < Constants.TRAINER_MAX_POKEMONS)
                 this.pokemons.add(pokemon);
+            else
+                System.out.println("Couldn't add the Pokemon '" +
+                        pokemon.getName() + "' because the trainer's capacity is full " +
+                        "[Max "+ Constants.TRAINER_MAX_POKEMONS + " pokemons]");
             return this;
         }
 
         public Trainer build() {
-            Trainer trainer = new Trainer(this);
-            // validate trainer
-            return trainer;
+            return new Trainer(this);
         }
 
     }

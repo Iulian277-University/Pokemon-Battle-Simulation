@@ -73,6 +73,11 @@ public class Pokemon {
         return secondAbility;
     }
 
+    // Validate a pokemon
+    public boolean validate() {
+        return this.getAttack() == null || this.getSpecialAttack() == null;
+    }
+
     // Pattern: Builder
     public static class PokemonBuilder {
         /** Attributes */
@@ -131,8 +136,15 @@ public class Pokemon {
 
         public Pokemon build() {
             Pokemon pokemon = new Pokemon(this);
-            // validate pokemon
-            return pokemon;
+            if (pokemon.validate())
+                return pokemon;
+            else {
+                System.out.println("Couldn't create the pokemon '" + pokemon.getName() +
+                        "' because the pokemon isn't a valid one " +
+                        "[Pokemons are not allowed to have 2 types of attack " +
+                        "(NORMAL_ATTACK and SPECIAL_ATTACK)]");
+                return null;
+            }
         }
     }
 }
