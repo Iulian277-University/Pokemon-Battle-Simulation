@@ -69,6 +69,7 @@ public final class GenerateTestcases {
             while (counter < Constants.POKEMON_MAX_ITEMS) {
                 String itemName = Items.values()[new Random().nextInt(Items.values().length)].toString();
                 if (!randomItems.contains(itemName)) {
+                    //
                     randomItems.add(itemName);
                     counter++;
                 }
