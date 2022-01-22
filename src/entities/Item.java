@@ -1,5 +1,8 @@
 package entities;
 
+//import java.io.Serializable;
+// implements Serializable - NO NEED, because items are fixed
+
 public class Item {
     /** Attributes */
     private String name;
@@ -24,7 +27,8 @@ public class Item {
     @Override
     public String toString() {
         return "Item{" +
-                "HP=" + HP +
+                "name='" + name + '\'' +
+                ", HP=" + HP +
                 ", attack=" + attack +
                 ", specialAttack=" + specialAttack +
                 ", defense=" + defense +
@@ -33,6 +37,10 @@ public class Item {
     }
 
     // NO setters to provide immutability
+    public String getName() {
+        return name;
+    }
+
     public Integer getHP() {
         return HP;
     }
@@ -96,11 +104,8 @@ public class Item {
         }
 
         public Item build() {
-            Item item = new Item(this);
-            // validate item
-            return item;
+            return new Item(this);
         }
-
     }
 
 }

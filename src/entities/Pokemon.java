@@ -1,5 +1,9 @@
 package entities;
 
+import common.Constants;
+
+import java.util.ArrayList;
+
 public class Pokemon {
     /** Attributes */
     private String name;
@@ -14,16 +18,23 @@ public class Pokemon {
     private Ability firstAbility;
     private Ability secondAbility;
 
+    private ArrayList<Item> items = new ArrayList<>(); // 3 items
+
     /** Constructors */
     private Pokemon(PokemonBuilder builder) {
         this.name = builder.name;
         this.HP = builder.HP;
+
         this.attack = builder.attack;
         this.specialAttack = builder.specialAttack;
+
         this.defense = builder.defense;
         this.specialDefense = builder.specialDefense;
+
         this.firstAbility = builder.firstAbility;
         this.secondAbility = builder.secondAbility;
+
+        this.items = builder.items;
     }
 
     @Override
@@ -37,6 +48,7 @@ public class Pokemon {
                 ", specialDefense=" + specialDefense +
                 ", firstAbility=" + firstAbility +
                 ", secondAbility=" + secondAbility +
+                ", items=" + items +
                 '}';
     }
 
@@ -73,6 +85,10 @@ public class Pokemon {
         return secondAbility;
     }
 
+    public ArrayList<Item> getItems() {
+        return items;
+    }
+
     // Validate a pokemon
     public boolean validate() {
         return this.getAttack() == null || this.getSpecialAttack() == null;
@@ -92,6 +108,8 @@ public class Pokemon {
 
         private Ability firstAbility;
         private Ability secondAbility;
+
+        private ArrayList<Item> items = new ArrayList<>(); // 3 items
 
         /** Constructors */
         public PokemonBuilder(String name) {
@@ -131,6 +149,20 @@ public class Pokemon {
 
         public PokemonBuilder secondAbility(Ability ability) {
             this.secondAbility = ability;
+            return this;
+        }
+
+        public PokemonBuilder addItem(Item item) {
+            if (item == null)
+                return this;
+
+            if(this.items.size() < Constants.POKEMON_MAX_ITEMS)
+                this.items.add(item);
+            else
+                System.out.println("Couldn't add the Item '" +
+                        item.getName() + "' because the pokemon's capacity is full " +
+                        "[Max "+ Constants.POKEMON_MAX_ITEMS + " items]");
+
             return this;
         }
 

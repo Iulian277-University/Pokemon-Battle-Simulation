@@ -58,6 +58,9 @@ public class Trainer {
         }
 
         public TrainerBuilder addPokemon(Pokemon pokemon) {
+            if(pokemon == null)
+                return this;
+
             if(this.pokemons.size() < Constants.TRAINER_MAX_POKEMONS)
                 this.pokemons.add(pokemon);
             else

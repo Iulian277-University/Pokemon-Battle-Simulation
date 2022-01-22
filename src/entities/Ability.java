@@ -1,7 +1,9 @@
 package entities;
 
+import java.io.Serializable;
+
 /** Special ability */
-public class Ability {
+public class Ability implements Serializable {
     /** Attributes */
     private Integer damage;
     private Boolean stun;
