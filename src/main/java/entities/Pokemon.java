@@ -1,10 +1,15 @@
 package entities;
 
 import common.Constants;
+import game.Battle;
 
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
-public class Pokemon {
+public class Pokemon implements Serializable, Runnable {
     /** Attributes */
     private String name;
     private Integer HP;
@@ -90,9 +95,14 @@ public class Pokemon {
         return items;
     }
 
+    // Public methods
+    public boolean isAlive() {
+        return this.HP > 0;
+    }
+
     // Validate a pokemon
     public boolean validate() {
-        return (this.getAttack() == null & this.getSpecialAttack() != null) ||
+        return (this.getAttack() == null && this.getSpecialAttack() != null) ||
                 (this.getAttack() != null && this.getSpecialAttack() == null);
     }
 
@@ -109,6 +119,24 @@ public class Pokemon {
             this.defense += item.getDefense();
             this.specialDefense += item.getSpecialDefense();
         }
+    }
+
+    private Battle battle;
+    public void setBattle(Battle battle) {
+        this.battle = battle;
+    }
+
+    private boolean isAttacker = false;
+    public void isAttacker(boolean attacker) {
+        isAttacker = attacker;
+    }
+
+    @Override
+    public void run() {
+        if (isAttacker)
+            battle.firstMove();
+        else
+            battle.secondMove();
     }
 
     // Pattern: Builder

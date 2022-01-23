@@ -31,7 +31,7 @@ public class Main {
 
         Arena arena = Arena.generateArena(firstTrainer, secondTrainer);
         System.out.println(arena);
-        Battle.battle(arena);
+        Arena.battle(arena);
 
 
 

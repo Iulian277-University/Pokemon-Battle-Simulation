@@ -1,6 +1,10 @@
 package game;
 
+import entities.Pokemon;
 import entities.Trainer;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * There is a unique arena in the game
@@ -53,5 +57,37 @@ public final class Arena {
     }
 
     // TODO: Arena (game) functionality
+
+    public static void battle(Arena arena) {
+        Trainer firstTrainer  = arena.getFirstTrainer();
+        Trainer secondTrainer = arena.getSecondTrainer();
+
+        int numberOfPokemonsFirst = firstTrainer.getPokemons().size();
+        int numberOfPokemonsSecond = secondTrainer.getPokemons().size();
+
+        for (int i = 0; i < Math.min(numberOfPokemonsFirst, numberOfPokemonsSecond); ++i) {
+            Pokemon firstPokemon = firstTrainer.getPokemons().get(i);
+            Pokemon secondPokemon = secondTrainer.getPokemons().get(i);
+
+            // Deep copy the pokemons before the individual battle
+            // At the end, we need to update the stats of the winner (+1)
+
+            if (i > 0)
+                break;
+
+            Battle battle = new Battle(firstPokemon, secondPokemon);
+            firstPokemon.setBattle(battle);
+            secondPokemon.setBattle(battle);
+
+            ExecutorService executorService = Executors.newFixedThreadPool(2);
+
+            while (firstPokemon.isAlive() && secondPokemon.isAlive()) {
+                executorService.execute(firstPokemon);
+                executorService.execute(secondPokemon);
+            }
+
+            executorService.shutdown();
+        }
+    }
 
 }
