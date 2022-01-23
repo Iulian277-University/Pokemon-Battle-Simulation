@@ -1,44 +1,54 @@
 {"trainers": [
     {
-        "trainerAge": 28,
+        "trainerAge": 43,
         "pokemons": {
-            "PSYDUCK": [
-                "CAPE",
-                "SHIELD",
-                "SWORD"
+            "VULPIX": [
+                "TREE",
+                "SWORD",
+                "VITAMINS"
             ],
             "MEOWTH": [
                 "VEST",
-                "SHIELD",
-                "VITAMINS"
-            ],
-            "PIKACHU": [
-                "SWORD",
-                "VEST",
-                "CAPE"
-            ]
-        },
-        "trainerName": "Trainer_5_1"
-    },
-    {
-        "trainerAge": 35,
-        "pokemons": {
-            "PSYDUCK": [
-                "SHIELD",
-                "VEST",
+                "VITAMINS",
                 "TREE"
             ],
-            "CHARMANDER": [
-                "SWORD",
+            "BULBASAUR": [
                 "TREE",
-                "VITAMINS"
-            ],
-            "MEOWTH": [
-                "TREE",
-                "WAND",
-                "VITAMINS"
+                "CAPE",
+                "SWORD"
             ]
         },
-        "trainerName": "Trainer_5_2"
+        "trainerName": "Trainer_5_1",
+        "pokemonsOrder": [
+            "VULPIX",
+            "MEOWTH",
+            "BULBASAUR"
+        ]
+    },
+    {
+        "trainerAge": 55,
+        "pokemons": {
+            "VULPIX": [
+                "VITAMINS",
+                "SWORD",
+                "TREE"
+            ],
+            "JIGGLYPUFF": [
+                "CAPE",
+                "VEST",
+                "SHIELD"
+            ],
+            "SNORLAX": [
+                "CAPE",
+                "WAND",
+                "SHIELD"
+            ]
+        },
+        "trainerName": "Trainer_5_2",
+        "pokemonsOrder": [
+            "VULPIX",
+            "JIGGLYPUFF",
+            "SNORLAX"
+        ]
     }
 ]}

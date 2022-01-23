@@ -21,12 +21,12 @@ public final class ImportTestcases {
     // Trainer 1
     private static String trainerName1;
     private static Integer trainerAge1;
-    private static Map<String, List<String>> pokemons1 = new LinkedHashMap<>();
+    private static Map<String, List<String>> pokemons1 = new HashMap<>();
 
     // Trainer 2
     private static String trainerName2;
     private static Integer trainerAge2;
-    private static Map<String, List<String>> pokemons2 = new LinkedHashMap<>();
+    private static Map<String, List<String>> pokemons2 = new HashMap<>();
 
 
     public static List<Trainer> getTrainers(TrainerFactory trainerFactory, PokemonFactory pokemonFactory) {
@@ -41,8 +41,8 @@ public final class ImportTestcases {
         Trainer secondTrainer  = createTrainer(trainerFactory, pokemonFactory, trainerName2, trainerAge2, pokemons2);
 
         List<Trainer> trainers = new ArrayList<>();
-        trainers.add(firstTrainer);
         trainers.add(secondTrainer);
+        trainers.add(firstTrainer);
 
         return trainers;
     }

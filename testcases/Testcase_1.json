@@ -1,44 +1,56 @@
-{"trainers": [
-    {
-        "trainerAge": 46,
-        "pokemons": {
-            "PSYDUCK": [
-                "VITAMINS",
-                "VEST",
-                "TREE"
-            ],
-            "MEOWTH": [
-                "VEST",
-                "SHIELD",
-                "SWORD"
-            ],
-            "PIKACHU": [
-                "SWORD",
-                "TREE",
-                "CAPE"
+{
+    "trainers": [
+        {
+            "trainerAge": 58,
+            "pokemons": {
+                "SQUIRTLE": [
+                    "TREE",
+                    "SWORD",
+                    "VEST"
+                ],
+                "JIGGLYPUFF": [
+                    "CAPE",
+                    "SHIELD",
+                    "VEST"
+                ],
+                "SNORLAX": [
+                    "CAPE",
+                    "TREE",
+                    "VEST"
+                ]
+            },
+            "trainerName": "Trainer_1_1",
+            "pokemonsOrder": [
+                "JIGGLYPUFF",
+                "SNORLAX",
+                "SQUIRTLE"
             ]
         },
-        "trainerName": "Trainer_1_1"
-    },
-    {
-        "trainerAge": 59,
-        "pokemons": {
-            "SQUIRTLE": [
-                "VITAMINS",
-                "VEST",
-                "CAPE"
-            ],
-            "MEOWTH": [
-                "CAPE",
-                "TREE",
-                "SHIELD"
-            ],
-            "BULBASAUR": [
-                "VEST",
-                "WAND",
-                "SWORD"
+        {
+            "trainerAge": 38,
+            "pokemons": {
+                "VULPIX": [
+                    "VEST",
+                    "WAND",
+                    "VITAMINS"
+                ],
+                "CHARMANDER": [
+                    "CAPE",
+                    "VEST",
+                    "TREE"
+                ],
+                "BULBASAUR": [
+                    "WAND",
+                    "CAPE",
+                    "VITAMINS"
+                ]
+            },
+            "trainerName": "Trainer_1_2",
+            "pokemonsOrder": [
+                "VULPIX",
+                "CHARMANDER",
+                "BULBASAUR"
             ]
-        },
-        "trainerName": "Trainer_1_2"
-    }
-]}
+        }
+    ]
+}

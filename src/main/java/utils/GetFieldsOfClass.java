@@ -18,7 +18,7 @@ public final class GetFieldsOfClass {
             return Collections.emptyMap();
         }
 
-        Map<String, Object> fieldObjectMap = new LinkedHashMap<>();
+        Map<String, Object> fieldObjectMap = new HashMap<>();
         for (Field field: fields) {
             try {
                 fieldObjectMap.put(field.getName(), field.get(cls));

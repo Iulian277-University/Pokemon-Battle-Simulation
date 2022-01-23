@@ -39,11 +39,13 @@ public final class GenerateTestcases {
     // Trainer 1
     private static String trainerName1;
     private static Integer trainerAge1;
+    private static List<String> pokemonsOrder1 = new ArrayList<>();
     private static Map<String, List<String>> pokemons1;
 
     // Trainer 2
     private static String trainerName2;
     private static Integer trainerAge2;
+    private static List<String> pokemonsOrder2 = new ArrayList<>();
     private static Map<String, List<String>> pokemons2;
 
     public static void generate(int numberOfTests) {
@@ -53,6 +55,8 @@ public final class GenerateTestcases {
             fieldsToJson(i);
             pokemons1.clear();
             pokemons2.clear();
+            pokemonsOrder1.clear();
+            pokemonsOrder2.clear();
         }
     }
 
@@ -61,11 +65,13 @@ public final class GenerateTestcases {
         JSONObject trainer1 = new JSONObject();
         trainer1.put("trainerName", trainerName1)
                 .put("trainerAge", trainerAge1)
+                .put("pokemonsOrder", pokemonsOrder1)
                 .put("pokemons", pokemons1);
 
         JSONObject trainer2 = new JSONObject();
         trainer2.put("trainerName", trainerName2)
                 .put("trainerAge", trainerAge2)
+                .put("pokemonsOrder", pokemonsOrder2)
                 .put("pokemons", pokemons2);
 
         JSONArray trainers = new JSONArray();
@@ -99,7 +105,7 @@ public final class GenerateTestcases {
         int age = new Random().nextInt(upperBound - lowerBound) + lowerBound;
 
         // Generate 3 pokemons
-        Map<String, List<String>> pokemonsToReturn = new LinkedHashMap<>();
+        Map<String, List<String>> pokemonsToReturn = new HashMap<>();
         int pokemonsCounter = 0;
         while (pokemonsCounter < Constants.TRAINER_MAX_POKEMONS) {
 
@@ -131,6 +137,13 @@ public final class GenerateTestcases {
             }
             pokemonsToReturn.put(randomPokemonName, randomItems);
         }
+        for (Map.Entry<String, List<String>> entry: pokemonsToReturn.entrySet()) {
+            if (trainerIndex == 1)
+                pokemonsOrder1.add(entry.getKey());
+            else
+                pokemonsOrder2.add(entry.getKey());
+        }
+
         return pokemonsToReturn;
     }
 }

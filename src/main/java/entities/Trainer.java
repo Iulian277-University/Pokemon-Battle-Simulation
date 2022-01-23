@@ -9,12 +9,16 @@ public class Trainer {
     private String name;
     private Integer age;
     private ArrayList<Pokemon> pokemons = new ArrayList<>(); // 3 pokemons
+    private ArrayList<String> pokemonsOrder = new ArrayList<>();
 
     /** Constructors */
     private Trainer(TrainerBuilder builder) {
         this.name = builder.name;
         this.age = builder.age;
         this.pokemons.addAll(builder.pokemons);
+        for (Pokemon pokemon: pokemons) {
+           pokemonsOrder.add(pokemon.getName());
+        }
     }
 
     @Override
@@ -23,6 +27,7 @@ public class Trainer {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", pokemons=" + pokemons +
+                ", pokemonsOrder=" + pokemonsOrder +
                 '}';
     }
 
@@ -37,6 +42,10 @@ public class Trainer {
 
     public ArrayList<Pokemon> getPokemons() {
         return pokemons;
+    }
+
+    public ArrayList<String> getPokemonsOrder() {
+        return pokemonsOrder;
     }
 
     // Pattern: Builder
