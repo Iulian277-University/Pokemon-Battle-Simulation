@@ -99,7 +99,7 @@ public final class GenerateTestcases {
         int age = new Random().nextInt(upperBound - lowerBound) + lowerBound;
 
         // Generate 3 pokemons
-        Map<String, List<String>> pokemonsToReturn = new HashMap<>();
+        Map<String, List<String>> pokemonsToReturn = new LinkedHashMap<>();
         int pokemonsCounter = 0;
         while (pokemonsCounter < Constants.TRAINER_MAX_POKEMONS) {
 

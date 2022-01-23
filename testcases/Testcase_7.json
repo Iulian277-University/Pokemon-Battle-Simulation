@@ -1,42 +1,42 @@
 {"trainers": [
     {
-        "trainerAge": 59,
+        "trainerAge": 39,
         "pokemons": {
-            "CHARMANDER": [
-                "CAPE",
-                "TREE",
-                "SWORD"
-            ],
-            "PIKACHU": [
+            "JIGGLYPUFF": [
                 "SWORD",
-                "CAPE",
+                "SHIELD",
                 "WAND"
             ],
-            "EEVEE": [
-                "SHIELD",
-                "SWORD",
+            "CHARMANDER": [
+                "VEST",
+                "WAND",
                 "TREE"
+            ],
+            "PIKACHU": [
+                "SHIELD",
+                "CAPE",
+                "SWORD"
             ]
         },
         "trainerName": "Trainer_7_1"
     },
     {
-        "trainerAge": 28,
+        "trainerAge": 55,
         "pokemons": {
-            "PSYDUCK": [
-                "VITAMINS",
-                "SWORD",
-                "SHIELD"
-            ],
-            "SQUIRTLE": [
-                "CAPE",
+            "MEOWTH": [
                 "TREE",
+                "SHIELD",
                 "SWORD"
             ],
-            "JIGGLYPUFF": [
+            "PIKACHU": [
+                "VEST",
+                "WAND",
+                "TREE"
+            ],
+            "SNORLAX": [
+                "CAPE",
                 "VITAMINS",
-                "TREE",
-                "WAND"
+                "TREE"
             ]
         },
         "trainerName": "Trainer_7_2"

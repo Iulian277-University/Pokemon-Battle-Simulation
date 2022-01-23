@@ -24,8 +24,7 @@ public final class TrainerFactory {
             return null;
         }
 
-        Trainer.TrainerBuilder trainerBuilder = new Trainer.TrainerBuilder(trainerName)
-                .age(trainerAge);
+        Trainer.TrainerBuilder trainerBuilder = new Trainer.TrainerBuilder(trainerName).age(trainerAge);
         for (Pokemon pokemon: pokemons) {
             trainerBuilder.addPokemon(pokemon);
         }
