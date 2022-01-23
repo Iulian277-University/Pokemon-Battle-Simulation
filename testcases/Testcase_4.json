@@ -1,0 +1,44 @@
+{"trainers": [
+    {
+        "trainerAge": 53,
+        "pokemons": {
+            "VULPIX": [
+                "WAND",
+                "VITAMINS",
+                "SHIELD"
+            ],
+            "PSYDUCK": [
+                "VEST",
+                "SHIELD",
+                "CAPE"
+            ],
+            "MEOWTH": [
+                "SHIELD",
+                "VITAMINS",
+                "CAPE"
+            ]
+        },
+        "trainerName": "Trainer_4_1"
+    },
+    {
+        "trainerAge": 57,
+        "pokemons": {
+            "VULPIX": [
+                "CAPE",
+                "SWORD",
+                "WAND"
+            ],
+            "MEOWTH": [
+                "SWORD",
+                "VITAMINS",
+                "VEST"
+            ],
+            "EEVEE": [
+                "WAND",
+                "VEST",
+                "TREE"
+            ]
+        },
+        "trainerName": "Trainer_4_2"
+    }
+]}

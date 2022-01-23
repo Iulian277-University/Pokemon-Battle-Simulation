@@ -38,7 +38,7 @@ public class Main {
 //        Arena arena2 = Arena.generateArena(trainer2, trainer1);
 //        System.out.println(arena);
 
-        GenerateTestcases.generate(1);
+        // GenerateTestcases.generate(10);
 
     }
 }

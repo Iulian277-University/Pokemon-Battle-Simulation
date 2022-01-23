@@ -1,0 +1,44 @@
+{"trainers": [
+    {
+        "trainerAge": 34,
+        "pokemons": {
+            "PSYDUCK": [
+                "SHIELD",
+                "VITAMINS",
+                "VEST"
+            ],
+            "SQUIRTLE": [
+                "SHIELD",
+                "CAPE",
+                "TREE"
+            ],
+            "SNORLAX": [
+                "CAPE",
+                "WAND",
+                "TREE"
+            ]
+        },
+        "trainerName": "Trainer_1_1"
+    },
+    {
+        "trainerAge": 21,
+        "pokemons": {
+            "SQUIRTLE": [
+                "SHIELD",
+                "CAPE",
+                "VEST"
+            ],
+            "JIGGLYPUFF": [
+                "CAPE",
+                "WAND",
+                "SWORD"
+            ],
+            "PIKACHU": [
+                "VEST",
+                "SWORD",
+                "TREE"
+            ]
+        },
+        "trainerName": "Trainer_1_2"
+    }
+]}

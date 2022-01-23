@@ -1,0 +1,44 @@
+{"trainers": [
+    {
+        "trainerAge": 59,
+        "pokemons": {
+            "SQUIRTLE": [
+                "SHIELD",
+                "WAND",
+                "CAPE"
+            ],
+            "CHARMANDER": [
+                "VEST",
+                "TREE",
+                "WAND"
+            ],
+            "BULBASAUR": [
+                "SHIELD",
+                "WAND",
+                "VEST"
+            ]
+        },
+        "trainerName": "Trainer_10_1"
+    },
+    {
+        "trainerAge": 53,
+        "pokemons": {
+            "VULPIX": [
+                "WAND",
+                "VEST",
+                "VITAMINS"
+            ],
+            "CHARMANDER": [
+                "WAND",
+                "SHIELD",
+                "CAPE"
+            ],
+            "EEVEE": [
+                "SHIELD",
+                "WAND",
+                "CAPE"
+            ]
+        },
+        "trainerName": "Trainer_10_2"
+    }
+]}

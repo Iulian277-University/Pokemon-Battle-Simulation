@@ -1,6 +1,7 @@
 package io;
 
 import common.Constants;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.BufferedWriter;
@@ -9,7 +10,8 @@ import java.io.IOException;
 import java.util.*;
 
 public final class GenerateTestcases {
-    private GenerateTestcases() {}
+    private GenerateTestcases() {
+    }
 
     enum Pokemons {
         PIKACHU,
@@ -34,49 +36,60 @@ public final class GenerateTestcases {
         CAPE,
     }
 
-    private static String trainerName;
-    private static Integer trainerAge;
-    private static Map<String, List<String>> pokemons = new HashMap<>();
+    // Trainer 1
+    private static String trainerName1;
+    private static Integer trainerAge1;
+    private static Map<String, List<String>> pokemons1;
+
+    // Trainer 2
+    private static String trainerName2;
+    private static Integer trainerAge2;
+    private static Map<String, List<String>> pokemons2;
 
     public static void generate(int numberOfTests) {
         for (int i = 1; i <= numberOfTests; ++i) {
-            setFields(i, i + 1);
+            pokemons1 = setFields(i, 1);
+            pokemons2 = setFields(i, 2);
             fieldsToJson(i);
-            pokemons.clear();
+            pokemons1.clear();
+            pokemons2.clear();
         }
     }
 
-    // TODO: Json testcases need to have 2 trainers, not one
+    // Json testcases need to have 2 trainers, not one
     private static void fieldsToJson(Integer testIndex) {
-        String jsonString = new JSONObject()
-                .put("trainerName", trainerName)
-                .put("trainerAge", trainerAge)
-                .put("pokemons", pokemons).toString(Constants.JSON_INDENTATION_FACTOR);
+        JSONObject trainer1 = new JSONObject();
+        trainer1.put("trainerName", trainerName1)
+                .put("trainerAge", trainerAge1)
+                .put("pokemons", pokemons1);
 
-        writeToFile(jsonString, testIndex);
+        JSONObject trainer2 = new JSONObject();
+        trainer2.put("trainerName", trainerName2)
+                .put("trainerAge", trainerAge2)
+                .put("pokemons", pokemons2);
+
+        JSONArray trainers = new JSONArray();
+        trainers.put(trainer1);
+        trainers.put(trainer2);
+
+        String rootJson = new JSONObject()
+                .put("trainers", trainers)
+                .toString(Constants.JSON_INDENTATION_FACTOR);
+
+        writeToFile(rootJson, testIndex);
     }
 
-    private static void writeToFile(String jsonString, Integer testIndex) {
+
+    private static void writeToFile(String rootJson, Integer testIndex) {
         String filePath = Constants.TESTCASES_DIR_PATH + "Testcase_" + testIndex + ".json";
-        BufferedWriter writer = null;
-        try {
-            writer = new BufferedWriter(new FileWriter(filePath));
-            writer.write(jsonString);
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            writer.write(rootJson);
         } catch (IOException e) {
             e.printStackTrace();
-        } finally {
-            if (writer != null) {
-                try {
-                    writer.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
         }
     }
 
-
-    private static void setFields(int testIndex, int trainerIndex) {
+    private static Map<String, List<String>> setFields(int testIndex, int trainerIndex) {
         // Compute trainer's name
         String trainer = "Trainer_" + testIndex + "_" + trainerIndex;
 
@@ -85,17 +98,15 @@ public final class GenerateTestcases {
         int upperBound = 60;
         int age = new Random().nextInt(upperBound - lowerBound) + lowerBound;
 
-        // Set trainer's fields
-        trainerName = trainer;
-        trainerAge = age;
-
         // Generate 3 pokemons
+        Map<String, List<String>> pokemonsToReturn = new HashMap<>();
         int pokemonsCounter = 0;
         while (pokemonsCounter < Constants.TRAINER_MAX_POKEMONS) {
+
             // Generate a random pokemon
             String randomPokemonName;
             randomPokemonName = Pokemons.values()[new Random().nextInt(Pokemons.values().length)].toString();
-            while (pokemons.containsKey(randomPokemonName))
+            while (pokemonsToReturn.containsKey(randomPokemonName))
                 randomPokemonName = Pokemons.values()[new Random().nextInt(Pokemons.values().length)].toString();
             pokemonsCounter++;
 
@@ -110,15 +121,16 @@ public final class GenerateTestcases {
                 }
             }
 
-            // Set pokemon's fields
-            pokemons.put(randomPokemonName, randomItems);
+            // Set fields
+            if (trainerIndex == 1) {
+                trainerName1 = trainer;
+                trainerAge1 = age;
+            } else {
+                trainerName2 = trainer;
+                trainerAge2 = age;
+            }
+            pokemonsToReturn.put(randomPokemonName, randomItems);
         }
+        return pokemonsToReturn;
     }
-
-    public static void printFields() {
-        System.out.println(trainerName);
-        System.out.println(trainerAge);
-        System.out.println(pokemons);
-    }
-
 }

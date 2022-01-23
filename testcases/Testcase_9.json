@@ -1,0 +1,44 @@
+{"trainers": [
+    {
+        "trainerAge": 28,
+        "pokemons": {
+            "VULPIX": [
+                "VEST",
+                "VITAMINS",
+                "SHIELD"
+            ],
+            "JIGGLYPUFF": [
+                "CAPE",
+                "WAND",
+                "SWORD"
+            ],
+            "MEOWTH": [
+                "VITAMINS",
+                "TREE",
+                "VEST"
+            ]
+        },
+        "trainerName": "Trainer_9_1"
+    },
+    {
+        "trainerAge": 33,
+        "pokemons": {
+            "CHARMANDER": [
+                "SHIELD",
+                "VITAMINS",
+                "WAND"
+            ],
+            "EEVEE": [
+                "WAND",
+                "VEST",
+                "SWORD"
+            ],
+            "BULBASAUR": [
+                "SHIELD",
+                "SWORD",
+                "TREE"
+            ]
+        },
+        "trainerName": "Trainer_9_2"
+    }
+]}

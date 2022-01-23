@@ -1,0 +1,44 @@
+{"trainers": [
+    {
+        "trainerAge": 24,
+        "pokemons": {
+            "MEOWTH": [
+                "WAND",
+                "TREE",
+                "VEST"
+            ],
+            "SNORLAX": [
+                "SHIELD",
+                "TREE",
+                "WAND"
+            ],
+            "BULBASAUR": [
+                "VITAMINS",
+                "WAND",
+                "SWORD"
+            ]
+        },
+        "trainerName": "Trainer_3_1"
+    },
+    {
+        "trainerAge": 28,
+        "pokemons": {
+            "PSYDUCK": [
+                "SWORD",
+                "TREE",
+                "CAPE"
+            ],
+            "SQUIRTLE": [
+                "CAPE",
+                "SWORD",
+                "VEST"
+            ],
+            "EEVEE": [
+                "SHIELD",
+                "VEST",
+                "CAPE"
+            ]
+        },
+        "trainerName": "Trainer_3_2"
+    }
+]}
