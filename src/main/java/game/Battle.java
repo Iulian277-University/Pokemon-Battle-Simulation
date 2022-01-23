@@ -25,6 +25,7 @@ public final class Battle {
     private static void individualBattle(Pokemon pokemon1, Pokemon pokemon2) {
         // Battle
         // Update stats at the end
+
     }
 
 }
