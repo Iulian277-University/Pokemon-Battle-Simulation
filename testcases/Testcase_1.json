@@ -1,56 +1,54 @@
-{
-    "trainers": [
-        {
-            "trainerAge": 58,
-            "pokemons": {
-                "SQUIRTLE": [
-                    "TREE",
-                    "SWORD",
-                    "VEST"
-                ],
-                "JIGGLYPUFF": [
-                    "CAPE",
-                    "SHIELD",
-                    "VEST"
-                ],
-                "SNORLAX": [
-                    "CAPE",
-                    "TREE",
-                    "VEST"
-                ]
-            },
-            "trainerName": "Trainer_1_1",
-            "pokemonsOrder": [
-                "JIGGLYPUFF",
-                "SNORLAX",
-                "SQUIRTLE"
+{"trainers": [
+    {
+        "trainerAge": 43,
+        "pokemons": {
+            "VULPIX": [
+                "VITAMINS",
+                "VEST",
+                "CAPE"
+            ],
+            "CHARMANDER": [
+                "WAND",
+                "SHIELD",
+                "VEST"
+            ],
+            "SNORLAX": [
+                "CAPE",
+                "VITAMINS",
+                "SHIELD"
             ]
         },
-        {
-            "trainerAge": 38,
-            "pokemons": {
-                "VULPIX": [
-                    "VEST",
-                    "WAND",
-                    "VITAMINS"
-                ],
-                "CHARMANDER": [
-                    "CAPE",
-                    "VEST",
-                    "TREE"
-                ],
-                "BULBASAUR": [
-                    "WAND",
-                    "CAPE",
-                    "VITAMINS"
-                ]
-            },
-            "trainerName": "Trainer_1_2",
-            "pokemonsOrder": [
-                "VULPIX",
-                "CHARMANDER",
-                "BULBASAUR"
+        "trainerName": "Trainer_1_1",
+        "pokemonsOrder": [
+            "VULPIX",
+            "SNORLAX",
+            "CHARMANDER"
+        ]
+    },
+    {
+        "trainerAge": 32,
+        "pokemons": {
+            "PSYDUCK": [
+                "SWORD",
+                "WAND",
+                "SHIELD"
+            ],
+            "SQUIRTLE": [
+                "WAND",
+                "SWORD",
+                "VITAMINS"
+            ],
+            "BULBASAUR": [
+                "VITAMINS",
+                "WAND",
+                "CAPE"
             ]
-        }
-    ]
-}
+        },
+        "trainerName": "Trainer_1_2",
+        "pokemonsOrder": [
+            "PSYDUCK",
+            "SQUIRTLE",
+            "BULBASAUR"
+        ]
+    }
+]}

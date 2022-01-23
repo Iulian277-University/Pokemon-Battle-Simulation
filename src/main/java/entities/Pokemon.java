@@ -18,7 +18,7 @@ public class Pokemon {
     private Ability firstAbility;
     private Ability secondAbility;
 
-    private ArrayList<Item> items = new ArrayList<>(); // 3 items
+    private ArrayList<Item> items; // 3 items
 
     /** Constructors */
     private Pokemon(PokemonBuilder builder) {
@@ -35,6 +35,7 @@ public class Pokemon {
         this.secondAbility = builder.secondAbility;
 
         this.items = builder.items;
+        updateStatsWithItems();
     }
 
     @Override
@@ -91,7 +92,23 @@ public class Pokemon {
 
     // Validate a pokemon
     public boolean validate() {
-        return this.getAttack() == null || this.getSpecialAttack() == null;
+        return (this.getAttack() == null & this.getSpecialAttack() != null) ||
+                (this.getAttack() != null && this.getSpecialAttack() == null);
+    }
+
+    // Add items to pokemon (Update pokemon's stats)
+    private void updateStatsWithItems() {
+        for (Item item: this.items) {
+            this.HP += item.getHP();
+
+            if (this.getAttack() != null)
+                this.attack += item.getAttack();
+            else if (this.getSpecialAttack() != null)
+                this.specialAttack += item.getSpecialAttack();
+
+            this.defense += item.getDefense();
+            this.specialDefense += item.getSpecialDefense();
+        }
     }
 
     // Pattern: Builder

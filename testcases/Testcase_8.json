@@ -1,54 +1,54 @@
 {"trainers": [
     {
-        "trainerAge": 50,
+        "trainerAge": 46,
         "pokemons": {
-            "CHARMANDER": [
+            "VULPIX": [
+                "VITAMINS",
                 "WAND",
-                "CAPE",
-                "SWORD"
-            ],
-            "EEVEE": [
-                "SWORD",
-                "VEST",
                 "SHIELD"
             ],
-            "SNORLAX": [
-                "CAPE",
+            "MEOWTH": [
+                "SWORD",
                 "VEST",
-                "TREE"
+                "CAPE"
+            ],
+            "BULBASAUR": [
+                "WAND",
+                "TREE",
+                "VEST"
             ]
         },
         "trainerName": "Trainer_8_1",
         "pokemonsOrder": [
-            "EEVEE",
-            "SNORLAX",
-            "CHARMANDER"
+            "VULPIX",
+            "MEOWTH",
+            "BULBASAUR"
         ]
     },
     {
-        "trainerAge": 42,
+        "trainerAge": 20,
         "pokemons": {
-            "PSYDUCK": [
+            "SQUIRTLE": [
+                "SHIELD",
+                "VEST",
+                "CAPE"
+            ],
+            "JIGGLYPUFF": [
+                "SHIELD",
                 "CAPE",
-                "WAND",
-                "VITAMINS"
+                "SWORD"
             ],
-            "MEOWTH": [
-                "SHIELD",
-                "SWORD",
-                "TREE"
-            ],
-            "PIKACHU": [
+            "SNORLAX": [
                 "VITAMINS",
-                "SHIELD",
-                "WAND"
+                "CAPE",
+                "VEST"
             ]
         },
         "trainerName": "Trainer_8_2",
         "pokemonsOrder": [
-            "MEOWTH",
-            "PIKACHU",
-            "PSYDUCK"
+            "JIGGLYPUFF",
+            "SNORLAX",
+            "SQUIRTLE"
         ]
     }
 ]}

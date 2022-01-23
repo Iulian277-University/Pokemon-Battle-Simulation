@@ -1,7 +1,8 @@
 package main;
 
 import entities.*;
-import io.GenerateTestcases;
+import game.Arena;
+import game.Battle;
 import io.ImportTestcases;
 
 import java.util.List;
@@ -16,7 +17,7 @@ public class Main {
         // TODO: Get number of testcases (number of .json files in the ./testcases dir)
 
 
-        // GenerateTestcases.generate(10);
+//         GenerateTestcases.generate(10);
 
 
         List<Trainer> trainers = ImportTestcases.getTrainers(trainerFactory, pokemonFactory);
@@ -25,11 +26,31 @@ public class Main {
             return;
         }
 
-        Trainer firstTrainer = trainers.get(0);
+        Trainer firstTrainer  = trainers.get(0);
         Trainer secondTrainer = trainers.get(1);
 
-        System.out.println(firstTrainer);
-        System.out.println(secondTrainer);
+        Arena arena = Arena.generateArena(firstTrainer, secondTrainer);
+        System.out.println(arena);
+        Battle.battle(arena);
+
+
+
+
+//        System.out.println(firstTrainer);
+//        System.out.println(secondTrainer);
+
+//        Order is preserved
+//        System.out.println(firstTrainer.getPokemonsOrder());
+//        for(Pokemon pokemon: firstTrainer.getPokemons()) {
+//            System.out.print(pokemon.getName() + "; ");
+//        }
+//        System.out.println();
+//        System.out.println(secondTrainer.getPokemonsOrder());
+//        for(Pokemon pokemon: secondTrainer.getPokemons()) {
+//            System.out.print(pokemon.getName() + "; ");
+//        }
+
+        //
 
     }
 }
