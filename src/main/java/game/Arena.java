@@ -56,8 +56,7 @@ public final class Arena {
                 '}';
     }
 
-    // TODO: Arena (game) functionality
-
+    // Arena (game) functionality
     public static void battle(Arena arena) {
         Trainer firstTrainer  = arena.getFirstTrainer();
         Trainer secondTrainer = arena.getSecondTrainer();

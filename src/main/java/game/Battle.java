@@ -2,9 +2,7 @@ package game;
 
 import entities.Pokemon;
 
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.Semaphore;
 
 public final class Battle {
     private Pokemon pokemon1;
@@ -16,58 +14,39 @@ public final class Battle {
         this.pokemon1.isAttacker(true);
     }
 
-    private Lock lock = new ReentrantLock();
-    private Condition notFirstMoveDone = lock.newCondition();
-    private Condition notSecondMoveDone = lock.newCondition();
-
-    private boolean makingFirstMove = false;
-    private boolean makingSecondMove = false;
-
-    // TODO: Problem - The attacks end up on the same thread
-    //  or there are multiple attacks in a row
+    private Semaphore semFirstMove  = new Semaphore(1);
+    private Semaphore semSecondMove = new Semaphore(0);
 
     // Pokemon1 attacks Pokemon2
     public void firstMove() {
         try {
-            lock.lock();
-            while (makingSecondMove)
-                notFirstMoveDone.await();
+            semFirstMove.acquire();
 
-            makingFirstMove = true;
             // Call methods to attack (pok1 -> pok2)
-            Thread.sleep(100);
             System.out.println("[" + Thread.currentThread().getId() + "]: " + pokemon1.getName() + " attacks " + pokemon2.getName());
-            makingFirstMove = false;
+            Thread.sleep(1000);
 
-            notSecondMoveDone.signalAll();
+            semSecondMove.release();
         } catch (InterruptedException e) {
             e.printStackTrace();
             Thread.currentThread().interrupt();
-        } finally {
-            lock.unlock();
         }
+
     }
 
     // Pokemon2 attacks Pokemon1
-   public void secondMove() {
+    public void secondMove() {
         try {
-            lock.lock();
-            while (makingFirstMove)
-                notSecondMoveDone.await();
+            semSecondMove.acquire();
 
-            makingSecondMove = true;
             // Call methods to attack (pok2 -> pok1)
-            Thread.sleep(100);
             System.out.println("[" + Thread.currentThread().getId() + "]: " + pokemon2.getName() + " attacks " + pokemon1.getName());
-            makingSecondMove = false;
+            Thread.sleep(1000);
 
-            notFirstMoveDone.signalAll();
+            semFirstMove.release();
         } catch (InterruptedException e) {
             e.printStackTrace();
             Thread.currentThread().interrupt();
-        } finally {
-            lock.unlock();
         }
     }
-
 }
