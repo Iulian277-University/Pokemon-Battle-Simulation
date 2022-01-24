@@ -3,7 +3,9 @@ package entities;
 //import java.io.Serializable;
 // implements Serializable - NO NEED, because items are fixed
 
-public class Item {
+import java.io.Serializable;
+
+public class Item implements Serializable {
     /** Attributes */
     private String name;
     private Integer HP;

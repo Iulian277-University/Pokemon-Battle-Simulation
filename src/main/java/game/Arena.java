@@ -2,9 +2,11 @@ package game;
 
 import entities.Pokemon;
 import entities.Trainer;
+import utils.DeepCopy;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * There is a unique arena in the game
@@ -58,35 +60,35 @@ public final class Arena {
 
     // Arena (game) functionality
     public static void battle(Arena arena) {
-        Trainer firstTrainer  = arena.getFirstTrainer();
+        Trainer firstTrainer = arena.getFirstTrainer();
         Trainer secondTrainer = arena.getSecondTrainer();
 
-        int numberOfPokemonsFirst = firstTrainer.getPokemons().size();
-        int numberOfPokemonsSecond = secondTrainer.getPokemons().size();
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        System.out.println("-----");
+        // Make copies of the original pokemons in order to be able to add +1 to the winner
+        // At the end, we need to update the stats of the winner (+1)
+        Pokemon firstPokemon  = DeepCopy.deepCopy(firstTrainer.getPokemons().get(0));
+        Pokemon secondPokemon = DeepCopy.deepCopy(secondTrainer.getPokemons().get(0));
 
-        for (int i = 0; i < Math.min(numberOfPokemonsFirst, numberOfPokemonsSecond); ++i) {
-            Pokemon firstPokemon = firstTrainer.getPokemons().get(i);
-            Pokemon secondPokemon = secondTrainer.getPokemons().get(i);
-
-            // Deep copy the pokemons before the individual battle
-            // At the end, we need to update the stats of the winner (+1)
-
-            if (i > 0)
-                break;
-
-            Battle battle = new Battle(firstPokemon, secondPokemon);
-            firstPokemon.setBattle(battle);
-            secondPokemon.setBattle(battle);
-
-            ExecutorService executorService = Executors.newFixedThreadPool(2);
-
-            while (firstPokemon.isAlive() && secondPokemon.isAlive()) {
-                executorService.execute(firstPokemon);
-                executorService.execute(secondPokemon);
-            }
-
-            executorService.shutdown();
+        if (firstPokemon == null || secondPokemon == null) {
+            System.out.println("Couldn't copy a pokemon");
+            return;
         }
-    }
 
+        Battle battle = Battle.generateBattle(firstPokemon, secondPokemon);
+        firstPokemon.setBattle(battle);
+        secondPokemon.setBattle(battle);
+//        System.out.println(battle);
+
+        while (firstPokemon.isAlive() && secondPokemon.isAlive()) {
+            executorService.execute(firstPokemon);
+            executorService.execute(secondPokemon);
+        }
+
+        System.out.println(firstPokemon.getName() + ":" + firstPokemon.getHP());
+        System.out.println(secondPokemon.getName() + ":" + secondPokemon.getHP());
+        System.out.println("-----");
+
+        executorService.shutdown();
+    }
 }

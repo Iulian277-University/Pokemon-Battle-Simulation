@@ -5,9 +5,8 @@ import game.Battle;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.concurrent.locks.Condition;
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+
+import common.Constants.Moves;
 
 public class Pokemon implements Serializable, Runnable {
     /** Attributes */
@@ -100,6 +99,10 @@ public class Pokemon implements Serializable, Runnable {
         return this.HP > 0;
     }
 
+    public boolean isDead() {
+        return this.HP <= 0;
+    }
+
     // Validate a pokemon
     public boolean validate() {
         return (this.getAttack() == null && this.getSpecialAttack() != null) ||
@@ -119,24 +122,6 @@ public class Pokemon implements Serializable, Runnable {
             this.defense += item.getDefense();
             this.specialDefense += item.getSpecialDefense();
         }
-    }
-
-    private Battle battle;
-    public void setBattle(Battle battle) {
-        this.battle = battle;
-    }
-
-    private boolean isAttacker = false;
-    public void isAttacker(boolean attacker) {
-        isAttacker = attacker;
-    }
-
-    @Override
-    public void run() {
-        if (isAttacker)
-            battle.firstMove();
-        else
-            battle.secondMove();
     }
 
     // Pattern: Builder
@@ -223,5 +208,40 @@ public class Pokemon implements Serializable, Runnable {
                 return null;
             }
         }
+    }
+
+
+    private transient Battle battle; // transient?
+    public void setBattle(Battle battle) {
+        this.battle = battle;
+    }
+
+    private boolean isAttacker = false;
+    public void isAttacker(boolean attacker) {
+        isAttacker = attacker;
+    }
+
+    @Override
+    public void run() {
+        if (isAttacker)
+            battle.firstMove();
+        else
+            battle.secondMove();
+    }
+
+
+    private Moves currentMove;
+
+    // Setters:
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHP(Integer HP) {
+        this.HP = HP;
+    }
+
+    public void setCurrentMove(Moves currentMove) {
+        this.currentMove = currentMove;
     }
 }

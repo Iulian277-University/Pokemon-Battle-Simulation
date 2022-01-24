@@ -30,8 +30,10 @@ public class Main {
         Trainer secondTrainer = trainers.get(1);
 
         Arena arena = Arena.generateArena(firstTrainer, secondTrainer);
-        System.out.println(arena);
+//        System.out.println(arena);
         Arena.battle(arena);
+
+
 
 
 
