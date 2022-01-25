@@ -8,4 +8,12 @@ public final class Constants {
 
     public static final String  TESTCASES_DIR_PATH = "./testcases/";
     public static final Integer JSON_INDENTATION_FACTOR = 4;
+
+    public enum Moves {
+        NORMAL_ATTACK,
+        SPECIAL_ATTACK,
+        ABILITY_1,
+        ABILITY_2,
+        NOTHING,
+    }
 }

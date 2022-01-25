@@ -9,6 +9,7 @@ public class Ability implements Serializable {
     private Boolean stun;
     private Boolean dodge;
     private Integer cooldown;
+    private Integer originalCooldown;
 
     /** Constructors */
     private Ability(AbilityBuilder builder) {
@@ -16,6 +17,7 @@ public class Ability implements Serializable {
         this.stun = builder.stun;
         this.dodge = builder.dodge;
         this.cooldown = builder.cooldown;
+        this.originalCooldown = this.cooldown;
     }
 
     @Override
@@ -43,6 +45,10 @@ public class Ability implements Serializable {
 
     public Integer getCooldown() {
         return cooldown;
+    }
+
+    public Integer getOriginalCooldown() {
+        return originalCooldown;
     }
 
     // Pattern: Builder
@@ -77,5 +83,18 @@ public class Ability implements Serializable {
             return new Ability(this);
         }
 
+    }
+
+    // Game functionality
+    private boolean isAvailable = true;
+    public boolean isAvailable() {
+        return isAvailable;
+    }
+    public void setAvailable(boolean available) {
+        isAvailable = available;
+    }
+
+    public void setCooldown(Integer cooldown) {
+        this.cooldown = cooldown;
     }
 }

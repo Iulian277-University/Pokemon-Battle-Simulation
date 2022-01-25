@@ -1,10 +1,14 @@
 package entities;
 
 import common.Constants;
+import game.Battle;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Pokemon {
+import common.Constants.Moves;
+
+public class Pokemon implements Serializable, Runnable {
     /** Attributes */
     private String name;
     private Integer HP;
@@ -90,9 +94,18 @@ public class Pokemon {
         return items;
     }
 
+    // Public methods
+    public boolean isAlive() {
+        return this.HP > 0;
+    }
+
+    public boolean isDead() {
+        return this.HP <= 0;
+    }
+
     // Validate a pokemon
     public boolean validate() {
-        return (this.getAttack() == null & this.getSpecialAttack() != null) ||
+        return (this.getAttack() == null && this.getSpecialAttack() != null) ||
                 (this.getAttack() != null && this.getSpecialAttack() == null);
     }
 
@@ -195,5 +208,59 @@ public class Pokemon {
                 return null;
             }
         }
+    }
+
+    // Game functionality
+    private transient Battle battle; // transient?
+    public void setBattle(Battle battle) {
+        this.battle = battle;
+    }
+
+    private boolean isAttacker = false; // pokemon1
+    public void isAttacker(boolean attacker) {
+        isAttacker = attacker;
+    }
+
+    @Override
+    public void run() {
+        if (isAttacker)
+            battle.firstMove();
+        else
+            battle.secondMove();
+    }
+
+
+    private Moves currentMove;
+    public Moves getCurrentMove() {
+        return currentMove;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setHP(Integer HP) {
+        this.HP = HP;
+    }
+
+    public void setCurrentMove(Moves currentMove) {
+        this.currentMove = currentMove;
+    }
+
+
+    private boolean isStunned = false;
+    public boolean isStunned() {
+        return isStunned;
+    }
+    public void setStunned(boolean isStunned) {
+        this.isStunned = isStunned;
+    }
+
+    private boolean isDodged = false;
+    public boolean isDodged() {
+        return isDodged;
+    }
+    public void setDodged(boolean isDodged) {
+        this.isDodged = isDodged;
     }
 }
