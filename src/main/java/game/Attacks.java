@@ -12,8 +12,8 @@ public final class Attacks {
         System.out.println(attacker.getName() + " normal attack " +
                 "(A:" + attacker.getAttack() +
                 " | D:" + defender.getDefense() + ")" +
-                " [ab1-cooldown:" + attacker.getFirstAbility().getCooldown() +
-                " | ab2-cooldown:" + attacker.getSecondAbility().getCooldown() + "]");
+                " [ab1-cooldown:" + (attacker.getFirstAbility() != null ? attacker.getFirstAbility().getCooldown() : "") +
+                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "") + "]");
     }
 
     // attacker -> defender
@@ -22,8 +22,8 @@ public final class Attacks {
         System.out.println(attacker.getName() + " special attack " +
                 "(A:" + attacker.getSpecialAttack() +
                 " | D:" + defender.getSpecialDefense() + ")" +
-                " [ab1-cooldown:" + attacker.getFirstAbility().getCooldown() +
-                " | ab2-cooldown:" + attacker.getSecondAbility().getCooldown() + "]");
+                " [ab1-cooldown:" + (attacker.getFirstAbility() != null ? attacker.getFirstAbility().getCooldown() : "") +
+                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "") + "]");
     }
 
     public static void firstAbility(Pokemon attacker, Pokemon defender, boolean defenderAttacks) {
@@ -49,8 +49,8 @@ public final class Attacks {
         System.out.println(attacker.getName() + " ability 1 " +
                 "(A:" + attacker.getFirstAbility().getDamage() +
                 " | D:" +  "0)" +
-                " [ab1-cooldown:" + attacker.getFirstAbility().getCooldown() +
-                " | ab2-cooldown:" + attacker.getSecondAbility().getCooldown() + "]");
+                " [ab1-cooldown:" + (attacker.getFirstAbility() != null ? attacker.getFirstAbility().getCooldown() : "") +
+                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "") + "]");
     }
 
     public static void secondAbility(Pokemon attacker, Pokemon defender, boolean defenderAttacks) {
@@ -68,8 +68,8 @@ public final class Attacks {
         System.out.println(attacker.getName() + " ability 2 " +
                 "(A:" + attacker.getSecondAbility().getDamage() +
                 " | D:" +  "0)" +
-                " [ab1-cooldown:" + attacker.getFirstAbility().getCooldown() +
-                " | ab2-cooldown:" + attacker.getSecondAbility().getCooldown() + "]");
+                " [ab1-cooldown:" + (attacker.getFirstAbility() != null ? attacker.getFirstAbility().getCooldown() : "") +
+                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "") + "]");
     }
 
     public static void nothing(Pokemon attacker, Pokemon defender) {
@@ -77,7 +77,7 @@ public final class Attacks {
         System.out.println(attacker.getName() + " nothing " +
                 "(A:" + attacker.getAttack() +
                 " | D:" + defender.getDefense() + ")" +
-                " [ab1-cooldown:" + attacker.getFirstAbility().getCooldown() +
-                " | ab2-cooldown:" + attacker.getSecondAbility().getCooldown() + "]");
+                " [ab1-cooldown:" + (attacker.getFirstAbility() != null ? attacker.getFirstAbility().getCooldown() : "") +
+                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "") + "]");
     }
 }

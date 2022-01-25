@@ -94,6 +94,20 @@ public class Pokemon implements Serializable, Runnable {
         return items;
     }
 
+    public void incrementStats() {
+        this.HP++;
+        if (this.attack != null)
+            this.attack++;
+        else if (this.specialAttack != null)
+            this.specialAttack++;
+        this.defense++;
+        this.specialDefense++;
+
+        // Reset stun/dodge
+        this.isStunned = false;
+        this.isDodged  = false;
+    }
+
     // Public methods
     public boolean isAlive() {
         return this.HP > 0;
@@ -229,7 +243,6 @@ public class Pokemon implements Serializable, Runnable {
             battle.secondMove();
     }
 
-
     private Moves currentMove;
     public Moves getCurrentMove() {
         return currentMove;
@@ -262,5 +275,15 @@ public class Pokemon implements Serializable, Runnable {
     }
     public void setDodged(boolean isDodged) {
         this.isDodged = isDodged;
+    }
+
+    public int getScore() {
+        int score = this.HP + this.defense + this.specialDefense;
+        if (this.attack != null)
+            score += this.attack;
+        if (this.specialAttack != null)
+            score += this.specialAttack;
+
+        return score;
     }
 }

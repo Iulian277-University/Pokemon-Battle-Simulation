@@ -26,6 +26,10 @@ public class Main {
             return;
         }
 
+        // Neutrel 1
+
+        // Neutrel 2
+
         Trainer firstTrainer  = trainers.get(0);
         Trainer secondTrainer = trainers.get(1);
 

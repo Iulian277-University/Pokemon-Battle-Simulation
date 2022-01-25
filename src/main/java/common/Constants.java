@@ -1,5 +1,9 @@
 package common;
 
+import entities.Pokemon;
+
+// TODO: Delete asserts from the entire project
+
 public final class Constants {
     private Constants() {}
 
@@ -16,4 +20,25 @@ public final class Constants {
         ABILITY_2,
         NOTHING,
     }
+
+    public enum Events {
+        VERSUS_NEUTREL_1,
+        VERSUS_NEUTREL_2,
+        VERSUS_OPPONENT,
+    }
+
+    public static final Pokemon Neutrel1 = new Pokemon.PokemonBuilder(PokemonStats.NEUTREL1_NAME)
+            .HP(PokemonStats.NEUTREL1_HP)
+            .attack(PokemonStats.NEUTREL1_NORMAL_ATTACK)
+            .defense(PokemonStats.NEUTREL1_NORMAL_DEFENSE)
+            .specialDefense(PokemonStats.NEUTREL1_SPECIAL_DEFENSE)
+            .build();
+
+    public static final Pokemon Neutrel2 = new Pokemon.PokemonBuilder(PokemonStats.NEUTREL2_NAME)
+            .HP(PokemonStats.NEUTREL2_HP)
+            .attack(PokemonStats.NEUTREL2_NORMAL_ATTACK)
+            .defense(PokemonStats.NEUTREL2_NORMAL_DEFENSE)
+            .specialDefense(PokemonStats.NEUTREL2_SPECIAL_DEFENSE)
+            .build();
+
 }
