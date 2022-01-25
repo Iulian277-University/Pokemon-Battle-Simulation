@@ -12,8 +12,6 @@ public final class Constants {
     public enum Moves {
         NORMAL_ATTACK,
         SPECIAL_ATTACK,
-        NORMAL_DEFENSE,
-        SPECIAL_DEFENSE,
         ABILITY_1,
         ABILITY_2,
     }

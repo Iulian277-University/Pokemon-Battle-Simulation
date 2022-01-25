@@ -216,7 +216,7 @@ public class Pokemon implements Serializable, Runnable {
         this.battle = battle;
     }
 
-    private boolean isAttacker = false;
+    private boolean isAttacker = false; // pokemon1
     public void isAttacker(boolean attacker) {
         isAttacker = attacker;
     }
@@ -231,6 +231,9 @@ public class Pokemon implements Serializable, Runnable {
 
 
     private Moves currentMove;
+    public Moves getCurrentMove() {
+        return currentMove;
+    }
 
     // Setters:
     public void setName(String name) {

@@ -78,7 +78,6 @@ public final class Arena {
         Battle battle = Battle.generateBattle(firstPokemon, secondPokemon);
         firstPokemon.setBattle(battle);
         secondPokemon.setBattle(battle);
-//        System.out.println(battle);
 
         while (firstPokemon.isAlive() && secondPokemon.isAlive()) {
             executorService.execute(firstPokemon);
@@ -90,5 +89,8 @@ public final class Arena {
         System.out.println("-----");
 
         executorService.shutdown();
+
+        System.out.println(firstPokemon.getHP());
+        System.out.println(secondPokemon.getHP());
     }
 }
