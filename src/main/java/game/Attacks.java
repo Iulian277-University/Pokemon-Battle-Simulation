@@ -26,6 +26,7 @@ public final class Attacks {
                 " | ab2-cooldown:" + attacker.getSecondAbility().getCooldown() + "]");
     }
 
+
     public static void firstAbility(Pokemon attacker, Pokemon defender, boolean defenderAttacks) {
         attacker.setCurrentMove(Constants.Moves.ABILITY_1);
         attacker.getFirstAbility().setCooldown(attacker.getFirstAbility().getOriginalCooldown() - 1);
