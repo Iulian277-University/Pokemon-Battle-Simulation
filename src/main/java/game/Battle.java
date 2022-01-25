@@ -59,7 +59,7 @@ public final class Battle {
             System.out.print("[" + Thread.currentThread().getId() + "]: ");
             // Call methods to attack (pok1 -> pok2)
             Constants.Moves generatedMove = generateRandomMove(pokemon1);
-            attack(pokemon1, pokemon2, generatedMove);
+            attack(pokemon1, pokemon2, generatedMove, false);
 
             Thread.sleep(10);
 
@@ -83,12 +83,24 @@ public final class Battle {
             System.out.print("[" + Thread.currentThread().getId() + "]: ");
             // Call methods to attack (pok2 -> pok1)
             Constants.Moves generatedMove = generateRandomMove(pokemon2);
-            attack(pokemon2, pokemon1, generatedMove);
+
+            attack(pokemon2, pokemon1, generatedMove, true);
 
             // Update HPs (check if dodge)
             // For now, ignore dodge
             updateHPs(pokemon1, pokemon2);
             printHPs(pokemon1, pokemon2);
+
+            // Stun the attacker at the next moment
+            if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
+                if(Boolean.TRUE.equals(pokemon2.getFirstAbility().getStun())) {
+                    pokemon1.setStunned(true);
+                }
+            } else if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_2) {
+                if(Boolean.TRUE.equals(pokemon2.getSecondAbility().getStun())) {
+                    pokemon1.setStunned(true);
+                }
+            }
 
             Thread.sleep(10);
 
@@ -99,12 +111,14 @@ public final class Battle {
         }
     }
 
-    private void attack(Pokemon attacker, Pokemon defender, Constants.Moves attackerMove) {
+    private void attack(Pokemon attacker, Pokemon defender,
+                        Constants.Moves attackerMove, boolean defenderAttacks) {
         switch (attackerMove) {
             case NORMAL_ATTACK -> normalAttack(attacker, defender);
             case SPECIAL_ATTACK -> specialAttack(attacker, defender);
-            case ABILITY_1 -> firstAbility(attacker, defender);
-            case ABILITY_2 -> secondAbility(attacker, defender);
+            case ABILITY_1 -> firstAbility(attacker, defender, defenderAttacks);
+            case ABILITY_2 -> secondAbility(attacker, defender, defenderAttacks);
+            case NOTHING -> nothing(attacker, defender);
         }
     }
 
@@ -116,12 +130,16 @@ public final class Battle {
         Attacks.specialAttack(attacker, defender);
     }
 
-    private void firstAbility(Pokemon attacker, Pokemon defender) {
-        Attacks.firstAbility(attacker, defender);
+    private void firstAbility(Pokemon attacker, Pokemon defender, boolean defenderAttacks) {
+        Attacks.firstAbility(attacker, defender, defenderAttacks);
     }
 
-    private void secondAbility(Pokemon attacker, Pokemon defender) {
-        Attacks.secondAbility(attacker, defender);
+    private void secondAbility(Pokemon attacker, Pokemon defender, boolean defenderAttacks) {
+        Attacks.secondAbility(attacker, defender, defenderAttacks);
+    }
+
+    private void nothing(Pokemon attacker, Pokemon defender) {
+        Attacks.nothing(attacker, defender);
     }
 
     private void updateHPs(Pokemon pokemon1, Pokemon pokemon2) {
@@ -133,9 +151,17 @@ public final class Battle {
         calculateDamage(pokemon2, pokemon1, currMovePok2);
     }
 
-    private void calculateDamage(Pokemon attacker, Pokemon defender, Constants.Moves currMoveAtacker) {
+    private void calculateDamage(Pokemon attacker, Pokemon defender, Constants.Moves currMoveAttacker) {
+        if (defender.isDodged()) {
+            defender.setDodged(false);
+            return;
+        }
+
+        if (attacker.isStunned())
+            attacker.setStunned(false);
+
         int damageToDefender = 0;
-        switch (currMoveAtacker) {
+        switch (currMoveAttacker) {
             case NORMAL_ATTACK -> damageToDefender = attacker.getAttack() - defender.getDefense();
             case SPECIAL_ATTACK -> damageToDefender = attacker.getSpecialAttack() - defender.getSpecialDefense();
             case ABILITY_1 -> damageToDefender = attacker.getFirstAbility().getDamage();
@@ -157,14 +183,37 @@ public final class Battle {
     }
 
     private Constants.Moves generateRandomMove(Pokemon pokemon) {
+        // Check if countdown of any ability is 0
+        if (pokemon.getFirstAbility() != null && pokemon.getFirstAbility().getCooldown() == 0) {
+            pokemon.getFirstAbility().setAvailable(true);
+            pokemon.getFirstAbility().setCooldown(pokemon.getFirstAbility().getOriginalCooldown());
+        } else {
+            if (pokemon.getFirstAbility() != null && pokemon.getFirstAbility().isAvailable() == false) {
+                pokemon.getFirstAbility().setCooldown(Math.max(pokemon.getFirstAbility().getCooldown() - 1, 0));
+            }
+        }
+
+        if (pokemon.getSecondAbility() != null && pokemon.getSecondAbility().getCooldown() == 0) {
+            pokemon.getSecondAbility().setAvailable(true);
+            pokemon.getSecondAbility().setCooldown(pokemon.getSecondAbility().getOriginalCooldown());
+        } else {
+            if (pokemon.getSecondAbility() != null && pokemon.getSecondAbility().isAvailable() == false) {
+                pokemon.getSecondAbility().setCooldown(Math.max(pokemon.getSecondAbility().getCooldown() - 1, 0));
+            }
+        }
+
+        // Check if stunned
+        if (pokemon.isStunned())
+            return Constants.Moves.NOTHING;
+
         List<Constants.Moves> pokemonAvailableMoves = new ArrayList<>();
         if (pokemon.getAttack() != null)
             pokemonAvailableMoves.add(Constants.Moves.NORMAL_ATTACK);
         if (pokemon.getSpecialAttack() != null)
             pokemonAvailableMoves.add(Constants.Moves.SPECIAL_ATTACK);
-        if (pokemon.getFirstAbility() != null)
+        if (pokemon.getFirstAbility() != null && pokemon.getFirstAbility().isAvailable())
             pokemonAvailableMoves.add(Constants.Moves.ABILITY_1);
-        if (pokemon.getSecondAbility() != null)
+        if (pokemon.getSecondAbility() != null && pokemon.getSecondAbility().isAvailable())
             pokemonAvailableMoves.add(Constants.Moves.ABILITY_2);
 
         Constants.Moves randomMove = Constants.Moves.values()[new Random().nextInt(Constants.Moves.values().length)];

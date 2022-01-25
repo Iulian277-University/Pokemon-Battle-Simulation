@@ -14,5 +14,6 @@ public final class Constants {
         SPECIAL_ATTACK,
         ABILITY_1,
         ABILITY_2,
+        NOTHING,
     }
 }

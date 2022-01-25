@@ -210,7 +210,7 @@ public class Pokemon implements Serializable, Runnable {
         }
     }
 
-
+    // Game functionality
     private transient Battle battle; // transient?
     public void setBattle(Battle battle) {
         this.battle = battle;
@@ -235,7 +235,6 @@ public class Pokemon implements Serializable, Runnable {
         return currentMove;
     }
 
-    // Setters:
     public void setName(String name) {
         this.name = name;
     }
@@ -246,5 +245,22 @@ public class Pokemon implements Serializable, Runnable {
 
     public void setCurrentMove(Moves currentMove) {
         this.currentMove = currentMove;
+    }
+
+
+    private boolean isStunned = false;
+    public boolean isStunned() {
+        return isStunned;
+    }
+    public void setStunned(boolean isStunned) {
+        this.isStunned = isStunned;
+    }
+
+    private boolean isDodged = false;
+    public boolean isDodged() {
+        return isDodged;
+    }
+    public void setDodged(boolean isDodged) {
+        this.isDodged = isDodged;
     }
 }
