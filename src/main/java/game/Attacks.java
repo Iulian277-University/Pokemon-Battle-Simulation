@@ -30,12 +30,21 @@ public final class Attacks {
         attacker.setCurrentMove(Constants.Moves.ABILITY_1);
         attacker.getFirstAbility().setCooldown(attacker.getFirstAbility().getOriginalCooldown() - 1);
         if (Boolean.TRUE.equals(attacker.getFirstAbility().getDodge())) { // if the ability has dodge attribute
-            attacker.setDodged(true);
+            if (!defenderAttacks)
+                attacker.setDodged(true);
+        } else {
+            if (defenderAttacks)
+                attacker.setDodged(false);
         }
+
         if (Boolean.TRUE.equals(attacker.getFirstAbility().getStun())) { // if the ability has stun attribute
             if (!defenderAttacks)
                 defender.setStunned(true);
+        } else {
+            if (defenderAttacks)
+                attacker.setDodged(false);
         }
+
         attacker.getFirstAbility().setAvailable(false);
         System.out.println(attacker.getName() + " ability 1 " +
                 "(A:" + attacker.getFirstAbility().getDamage() +
@@ -48,7 +57,8 @@ public final class Attacks {
         attacker.setCurrentMove(Constants.Moves.ABILITY_2);
         attacker.getSecondAbility().setCooldown(attacker.getSecondAbility().getOriginalCooldown() - 1);
         if (Boolean.TRUE.equals(attacker.getSecondAbility().getDodge())) { // if the ability has dodge attribute
-            attacker.setDodged(true);
+            if (!defenderAttacks)
+                attacker.setDodged(true);
         }
         if (Boolean.TRUE.equals(attacker.getSecondAbility().getStun())) { // if the ability has stun attribute
             if (!defenderAttacks)

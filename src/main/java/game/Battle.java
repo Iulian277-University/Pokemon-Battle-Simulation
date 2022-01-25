@@ -86,10 +86,23 @@ public final class Battle {
 
             attack(pokemon2, pokemon1, generatedMove, true);
 
+            // Dodge the defender itself at this moment
+            if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
+                if(Boolean.TRUE.equals(pokemon2.getFirstAbility().getDodge())) {
+                    pokemon2.setDodged(true);
+                }
+            } else if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_2) {
+                if(Boolean.TRUE.equals(pokemon2.getSecondAbility().getDodge())) {
+                    pokemon2.setDodged(true);
+                }
+            }
+
+
             // Update HPs (check if dodge)
             // For now, ignore dodge
             updateHPs(pokemon1, pokemon2);
             printHPs(pokemon1, pokemon2);
+
 
             // Stun the attacker at the next moment
             if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
@@ -111,8 +124,7 @@ public final class Battle {
         }
     }
 
-    private void attack(Pokemon attacker, Pokemon defender,
-                        Constants.Moves attackerMove, boolean defenderAttacks) {
+    private void attack(Pokemon attacker, Pokemon defender, Constants.Moves attackerMove, boolean defenderAttacks) {
         switch (attackerMove) {
             case NORMAL_ATTACK -> normalAttack(attacker, defender);
             case SPECIAL_ATTACK -> specialAttack(attacker, defender);
@@ -167,7 +179,7 @@ public final class Battle {
             case ABILITY_1 -> damageToDefender = attacker.getFirstAbility().getDamage();
             case ABILITY_2 -> damageToDefender = attacker.getSecondAbility().getDamage();
         }
-        defender.setHP(Math.max(defender.getHP() - damageToDefender, 0));
+        defender.setHP(defender.getHP() - damageToDefender);
     }
 
 
@@ -184,6 +196,7 @@ public final class Battle {
 
     private Constants.Moves generateRandomMove(Pokemon pokemon) {
         // Check if countdown of any ability is 0
+        // First Ability
         if (pokemon.getFirstAbility() != null && pokemon.getFirstAbility().getCooldown() == 0) {
             pokemon.getFirstAbility().setAvailable(true);
             pokemon.getFirstAbility().setCooldown(pokemon.getFirstAbility().getOriginalCooldown());
@@ -193,6 +206,7 @@ public final class Battle {
             }
         }
 
+        // Second Ability
         if (pokemon.getSecondAbility() != null && pokemon.getSecondAbility().getCooldown() == 0) {
             pokemon.getSecondAbility().setAvailable(true);
             pokemon.getSecondAbility().setCooldown(pokemon.getSecondAbility().getOriginalCooldown());
