@@ -153,4 +153,5 @@ public final class PokemonStats {
             new Ability.AbilityBuilder().damage(2).stun(false).dodge(false).cooldown(4).build();
     public static final Ability PSYDUCK_SECOND_ABILITY =
             new Ability.AbilityBuilder().damage(2).stun(true).dodge(false).cooldown(5).build();
+
 }
