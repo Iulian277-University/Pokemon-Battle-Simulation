@@ -40,6 +40,7 @@ public class Pokemon implements Serializable, Runnable {
 
         this.items = builder.items;
         updateStatsWithItems();
+        this.originalHP = this.HP;
     }
 
     @Override
@@ -95,7 +96,9 @@ public class Pokemon implements Serializable, Runnable {
     }
 
     public void incrementStats() {
-        this.HP++;
+        this.originalHP++;
+        this.HP = this.originalHP;
+
         if (this.attack != null)
             this.attack++;
         else if (this.specialAttack != null)
@@ -285,5 +288,13 @@ public class Pokemon implements Serializable, Runnable {
             score += this.specialAttack;
 
         return score;
+    }
+
+    private int originalHP;
+    public int getOriginalHP() {
+        return originalHP;
+    }
+    public void setOriginalHP(int originalHP) {
+        this.originalHP = originalHP;
     }
 }

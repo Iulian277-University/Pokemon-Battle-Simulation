@@ -42,14 +42,28 @@ public final class PokemonFactory {
             return null;
         }
 
+        Ability firstAbility = new Ability.AbilityBuilder()
+                .damage(extractedFirstAbility.getDamage())
+                .stun(extractedFirstAbility.getStun())
+                .dodge(extractedFirstAbility.getDodge())
+                .cooldown(extractedFirstAbility.getOriginalCooldown())
+                .build();
+
+        Ability secondAbility = new Ability.AbilityBuilder()
+                .damage(extractedSecondAbility.getDamage())
+                .stun(extractedSecondAbility.getStun())
+                .dodge(extractedSecondAbility.getDodge())
+                .cooldown(extractedSecondAbility.getOriginalCooldown())
+                .build();
+
         Pokemon.PokemonBuilder pokemonBuilder = new Pokemon.PokemonBuilder(extractedName)
                 .HP(extractedHP)
                 .attack(extractedNormalAttack)
                 .specialAttack(extractedSpecialAttack)
                 .defense(extractedNormalDefense)
                 .specialDefense(extractedSpecialDefense)
-                .firstAbility(DeepCopy.deepCopy(extractedFirstAbility))
-                .secondAbility(DeepCopy.deepCopy(extractedSecondAbility));
+                .firstAbility(firstAbility)
+                .secondAbility(secondAbility);
 
         // Extract item's attributes
         for (String itemName: itemsName) {
