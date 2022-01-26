@@ -87,6 +87,7 @@ public final class Arena {
                 return;
             }
 
+            // TODO: Remove DeepCopy functionality
 
             Constants.Events currEvent = pickRandomEvent();
             while (!currEvent.equals(Constants.Events.VERSUS_OPPONENT)) {
