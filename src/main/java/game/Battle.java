@@ -44,89 +44,155 @@ public final class Battle {
 
     private boolean battleDone = false;
 
-    private final Semaphore semFirstMove  = new Semaphore(1);
-    private final Semaphore semSecondMove = new Semaphore(0);
+//    private final Semaphore semFirstMove  = new Semaphore(1);
+//    private final Semaphore semSecondMove = new Semaphore(0);
+
+//    // Pokemon1 attacks Pokemon2
+//    public void firstMove() {
+//        checkEndGame();
+//        if (battleDone) {
+////            semFirstMove.release();
+////            semSecondMove.release();
+//            return;
+//        }
+//
+//        try {
+//            semFirstMove.acquire();
+//
+//            System.out.print("[" + Thread.currentThread().getId() + "]: ");
+//            // Call methods to attack (pok1 -> pok2)
+//            Constants.Moves generatedMove = generateRandomMove(pokemon1);
+////            attack(pokemon1, pokemon2, generatedMove, false);
+//
+//            Thread.sleep(10);
+//
+//            semSecondMove.release();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//            Thread.currentThread().interrupt();
+//        }
+//
+//    }
+//
+//    // Pokemon2 attacks Pokemon1
+//    public void secondMove() {
+//        checkEndGame();
+//        if (battleDone) {
+////            semFirstMove.release();
+////            semSecondMove.release();
+//            return;
+//        }
+//
+//        try {
+//            semSecondMove.acquire();
+//
+//            System.out.print("[" + Thread.currentThread().getId() + "]: ");
+//            // Call methods to attack (pok2 -> pok1)
+//            Constants.Moves generatedMove = generateRandomMove(pokemon2);
+//
+////            attack(pokemon2, pokemon1, generatedMove, true);
+//
+//            // Dodge the defender itself at this moment
+//            if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
+//                if(Boolean.TRUE.equals(pokemon2.getFirstAbility().getDodge())) {
+//                    pokemon2.setDodged(true);
+//                }
+//            } else if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_2) {
+//                if(Boolean.TRUE.equals(pokemon2.getSecondAbility().getDodge())) {
+//                    pokemon2.setDodged(true);
+//                }
+//            }
+//
+//            // Update HPs (check if dodge)
+//            // For now, ignore dodge
+////            updateHPs(pokemon1, pokemon2);
+//            printHPs(pokemon1, pokemon2);
+//
+//            // Stun the attacker at the next moment
+//            if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
+//                if(Boolean.TRUE.equals(pokemon2.getFirstAbility().getStun())) {
+//                    pokemon1.setStunned(true);
+//                }
+//            } else if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_2) {
+//                if(Boolean.TRUE.equals(pokemon2.getSecondAbility().getStun())) {
+//                    pokemon1.setStunned(true);
+//                }
+//            }
+//
+//            Thread.sleep(10);
+//
+//            semFirstMove.release();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//            Thread.currentThread().interrupt();
+//        }
+//    }
+
 
     // Pokemon1 attacks Pokemon2
     public void firstMove() {
         checkEndGame();
-        if (battleDone) {
-            semFirstMove.release();
-            semSecondMove.release();
+        if (battleDone)
             return;
-        }
 
-        try {
-            semFirstMove.acquire();
-
-            System.out.print("[" + Thread.currentThread().getId() + "]: ");
-            // Call methods to attack (pok1 -> pok2)
-            Constants.Moves generatedMove = generateRandomMove(pokemon1);
-            attack(pokemon1, pokemon2, generatedMove, false);
-
-            Thread.sleep(10);
-
-            semSecondMove.release();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            Thread.currentThread().interrupt();
-        }
-
+        // Call methods to attack (pok1 -> pok2)
+        Constants.Moves generatedMove = generateRandomMove(pokemon1);
+        attack(pokemon1, pokemon2, generatedMove, false);
     }
+
+//    private boolean doneFirstMove = false;
+//    private boolean doneSecondMove = false;
+//
+//    // Pokemon1 attacks Pokemon2
+//    public void firstMove() {
+//        checkEndGame();
+//        if (battleDone)
+//            return;
+//
+//        // Call methods to attack (pok1 -> pok2)
+//        Constants.Moves generatedMove = generateRandomMove(pokemon1);
+//        attack(pokemon1, pokemon2, generatedMove, false);
+//    }
+
 
     // Pokemon2 attacks Pokemon1
     public void secondMove() {
         checkEndGame();
-        if (battleDone) {
-            semFirstMove.release();
-            semSecondMove.release();
+        if (battleDone)
             return;
+
+        // Call methods to attack (pok2 -> pok1)
+        Constants.Moves generatedMove = generateRandomMove(pokemon2);
+        attack(pokemon2, pokemon1, generatedMove, true);
+
+        // Dodge the defender itself at this moment
+        if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
+            if(Boolean.TRUE.equals(pokemon2.getFirstAbility().getDodge())) {
+                pokemon2.setDodged(true);
+            }
+        } else if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_2) {
+            if(Boolean.TRUE.equals(pokemon2.getSecondAbility().getDodge())) {
+                pokemon2.setDodged(true);
+            }
         }
 
-        try {
-            semSecondMove.acquire();
+        // Update HPs
+        updateHPs(pokemon1, pokemon2);
+        printHPs(pokemon1, pokemon2);
 
-            System.out.print("[" + Thread.currentThread().getId() + "]: ");
-            // Call methods to attack (pok2 -> pok1)
-            Constants.Moves generatedMove = generateRandomMove(pokemon2);
-
-            attack(pokemon2, pokemon1, generatedMove, true);
-
-            // Dodge the defender itself at this moment
-            if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
-                if(Boolean.TRUE.equals(pokemon2.getFirstAbility().getDodge())) {
-                    pokemon2.setDodged(true);
-                }
-            } else if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_2) {
-                if(Boolean.TRUE.equals(pokemon2.getSecondAbility().getDodge())) {
-                    pokemon2.setDodged(true);
-                }
+        // Stun the attacker at the next moment
+        if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
+            if(Boolean.TRUE.equals(pokemon2.getFirstAbility().getStun())) {
+                pokemon1.setStunned(true);
             }
-
-            // Update HPs (check if dodge)
-            // For now, ignore dodge
-            updateHPs(pokemon1, pokemon2);
-            printHPs(pokemon1, pokemon2);
-
-            // Stun the attacker at the next moment
-            if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
-                if(Boolean.TRUE.equals(pokemon2.getFirstAbility().getStun())) {
-                    pokemon1.setStunned(true);
-                }
-            } else if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_2) {
-                if(Boolean.TRUE.equals(pokemon2.getSecondAbility().getStun())) {
-                    pokemon1.setStunned(true);
-                }
+        } else if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_2) {
+            if(Boolean.TRUE.equals(pokemon2.getSecondAbility().getStun())) {
+                pokemon1.setStunned(true);
             }
-
-            Thread.sleep(10);
-
-            semFirstMove.release();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            Thread.currentThread().interrupt();
         }
     }
+
+
 
     private void attack(Pokemon attacker, Pokemon defender, Constants.Moves attackerMove, boolean defenderAttacks) {
         switch (attackerMove) {
