@@ -70,41 +70,41 @@ public final class Arena {
         Pokemon neutrel1Orig = Constants.Neutrel1;
         Pokemon neutrel2Orig = Constants.Neutrel2;
 
-        for (int i = 0; i < Math.min(firstTrainer.getPokemons().size(), secondTrainer.getPokemons().size()); ++i) {
-            System.out.println("********** POKEMONS INDEX - " + i + " **********");
-
-            // References to the original trainers pokemons
-            Pokemon firstPokemonOrig  = firstTrainer.getPokemons().get(i);
-            Pokemon secondPokemonOrig = secondTrainer.getPokemons().get(i);
-
-            Constants.Events currEvent = pickRandomEvent();
-            while (!currEvent.equals(Constants.Events.VERSUS_OPPONENT)) {
-                // Battle: pok1 vs neutrel(1/2)
-                Pokemon neutrel;
-                if (currEvent.equals(Constants.Events.VERSUS_NEUTREL_1))
-                    neutrel = neutrel1Orig;
-                else
-                    neutrel = neutrel2Orig;
-
-                // pokemon1 vs neutrel
-                System.out.println("---------- Pok1 vs Neutrel [START] ----------");
-                individualBattle(executorService, firstPokemonOrig, neutrel);
-                System.out.println("---------- Pok1 vs Neutrel [DONE] ----------");
-
-                // pokemon2 vs neutrel
-                System.out.println("---------- Pok2 vs Neutrel [START] ----------");
-                individualBattle(executorService, secondPokemonOrig, neutrel);
-                System.out.println("---------- Pok2 vs Neutrel [DONE] ----------");
-
-                currEvent = pickRandomEvent();
-            }
-
-            // Final battle: pok1 vs pok2
-            System.out.println("---------- Pok1 vs Pok2 [START] ----------");
-            individualBattle(executorService, firstPokemonOrig, secondPokemonOrig);
-            System.out.println("---------- Pok1 vs Pok2 [END] ----------");
-            System.out.println("********************");
-        }
+//        for (int i = 0; i < Math.min(firstTrainer.getPokemons().size(), secondTrainer.getPokemons().size()); ++i) {
+//            System.out.println("********** POKEMONS INDEX - " + i + " **********");
+//
+//            // References to the original trainers pokemons
+//            Pokemon firstPokemonOrig  = firstTrainer.getPokemons().get(i);
+//            Pokemon secondPokemonOrig = secondTrainer.getPokemons().get(i);
+//
+//            Constants.Events currEvent = pickRandomEvent();
+//            while (!currEvent.equals(Constants.Events.VERSUS_OPPONENT)) {
+//                // Battle: pok1 vs neutrel(1/2)
+//                Pokemon neutrel;
+//                if (currEvent.equals(Constants.Events.VERSUS_NEUTREL_1))
+//                    neutrel = neutrel1Orig;
+//                else
+//                    neutrel = neutrel2Orig;
+//
+//                // pokemon1 vs neutrel
+//                System.out.println("---------- Pok1 vs Neutrel [START] ----------");
+//                individualBattle(executorService, firstPokemonOrig, neutrel);
+//                System.out.println("---------- Pok1 vs Neutrel [DONE] ----------");
+//
+//                // pokemon2 vs neutrel
+//                System.out.println("---------- Pok2 vs Neutrel [START] ----------");
+//                individualBattle(executorService, secondPokemonOrig, neutrel);
+//                System.out.println("---------- Pok2 vs Neutrel [DONE] ----------");
+//
+//                currEvent = pickRandomEvent();
+//            }
+//
+//            // Final battle: pok1 vs pok2
+//            System.out.println("---------- Pok1 vs Pok2 [START] ----------");
+//            individualBattle(executorService, firstPokemonOrig, secondPokemonOrig);
+//            System.out.println("---------- Pok1 vs Pok2 [END] ----------");
+//            System.out.println("********************");
+//        }
 
         // [Best pokemon of trainer1] VS [Best pokemon of trainer2]
         Pokemon bestPokemonFirstTrainer  = firstTrainer.getPokemons().get(0);
@@ -155,10 +155,10 @@ public final class Arena {
         secondPokemon.setBattle(battle);
 
         while (firstPokemon.isAlive() && secondPokemon.isAlive()) {
-            firstPokemon.run();
-            secondPokemon.run();
-//            executorService.execute(firstPokemon);
-//            executorService.execute(secondPokemon);
+//            firstPokemon.run();
+//            secondPokemon.run();
+            executorService.execute(firstPokemon);
+            executorService.execute(secondPokemon);
         }
 
         // Update winner's stats

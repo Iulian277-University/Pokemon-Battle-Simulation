@@ -8,6 +8,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.Semaphore;
+import java.util.concurrent.locks.Condition;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 
 public final class Battle {
@@ -43,6 +46,8 @@ public final class Battle {
     }
 
     private boolean battleDone = false;
+
+    // TODO: SEMAPHORES
 
 //    private final Semaphore semFirstMove  = new Semaphore(1);
 //    private final Semaphore semSecondMove = new Semaphore(0);
@@ -128,6 +133,14 @@ public final class Battle {
 //        }
 //    }
 
+    // TODO: LOCKS
+
+    private Lock lock = new ReentrantLock();
+    Condition firstMoveDoneCond  = lock.newCondition();
+    Condition secondMoveDoneCond = lock.newCondition();
+
+    private boolean doneFirstMove  = false;
+    private boolean doneSecondMove = true;
 
     // Pokemon1 attacks Pokemon2
     public void firstMove() {
@@ -135,24 +148,27 @@ public final class Battle {
         if (battleDone)
             return;
 
-        // Call methods to attack (pok1 -> pok2)
-        Constants.Moves generatedMove = generateRandomMove(pokemon1);
-        attack(pokemon1, pokemon2, generatedMove, false);
-    }
+        try {
+            lock.lock();
+            while (!doneSecondMove)
+                secondMoveDoneCond.await();
 
-//    private boolean doneFirstMove = false;
-//    private boolean doneSecondMove = false;
-//
-//    // Pokemon1 attacks Pokemon2
-//    public void firstMove() {
-//        checkEndGame();
-//        if (battleDone)
-//            return;
-//
-//        // Call methods to attack (pok1 -> pok2)
-//        Constants.Moves generatedMove = generateRandomMove(pokemon1);
-//        attack(pokemon1, pokemon2, generatedMove, false);
-//    }
+            doneFirstMove = false;
+            // Call methods to attack (pok1 -> pok2)
+            Constants.Moves generatedMove = generateRandomMove(pokemon1);
+            attack(pokemon1, pokemon2, generatedMove, false);
+            doneFirstMove = true;
+
+            Thread.sleep(10);
+
+            firstMoveDoneCond.signalAll();
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            lock.unlock();
+        }
+    }
 
 
     // Pokemon2 attacks Pokemon1
@@ -161,38 +177,56 @@ public final class Battle {
         if (battleDone)
             return;
 
-        // Call methods to attack (pok2 -> pok1)
-        Constants.Moves generatedMove = generateRandomMove(pokemon2);
-        attack(pokemon2, pokemon1, generatedMove, true);
+        try {
+            lock.lock();
+            while (!doneFirstMove)
+                firstMoveDoneCond.await();
 
-        // Dodge the defender itself at this moment
-        if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
-            if(Boolean.TRUE.equals(pokemon2.getFirstAbility().getDodge())) {
-                pokemon2.setDodged(true);
+            doneSecondMove = false;
+
+            // Call methods to attack (pok2 -> pok1)
+            Constants.Moves generatedMove = generateRandomMove(pokemon2);
+            attack(pokemon2, pokemon1, generatedMove, true);
+
+            // Dodge the defender itself at this moment
+            if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
+                if(Boolean.TRUE.equals(pokemon2.getFirstAbility().getDodge())) {
+                    pokemon2.setDodged(true);
+                }
+            } else if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_2) {
+                if(Boolean.TRUE.equals(pokemon2.getSecondAbility().getDodge())) {
+                    pokemon2.setDodged(true);
+                }
             }
-        } else if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_2) {
-            if(Boolean.TRUE.equals(pokemon2.getSecondAbility().getDodge())) {
-                pokemon2.setDodged(true);
+
+            // Update HPs
+            updateHPs(pokemon1, pokemon2);
+            printHPs(pokemon1, pokemon2);
+
+            // Stun the attacker at the next moment
+            if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
+                if(Boolean.TRUE.equals(pokemon2.getFirstAbility().getStun())) {
+                    pokemon1.setStunned(true);
+                }
+            } else if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_2) {
+                if(Boolean.TRUE.equals(pokemon2.getSecondAbility().getStun())) {
+                    pokemon1.setStunned(true);
+                }
             }
+
+            doneSecondMove = true;
+
+            Thread.sleep(10);
+
+            secondMoveDoneCond.signalAll();
+
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        } finally {
+            lock.unlock();
         }
 
-        // Update HPs
-        updateHPs(pokemon1, pokemon2);
-        printHPs(pokemon1, pokemon2);
-
-        // Stun the attacker at the next moment
-        if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
-            if(Boolean.TRUE.equals(pokemon2.getFirstAbility().getStun())) {
-                pokemon1.setStunned(true);
-            }
-        } else if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_2) {
-            if(Boolean.TRUE.equals(pokemon2.getSecondAbility().getStun())) {
-                pokemon1.setStunned(true);
-            }
-        }
     }
-
-
 
     private void attack(Pokemon attacker, Pokemon defender, Constants.Moves attackerMove, boolean defenderAttacks) {
         switch (attackerMove) {
