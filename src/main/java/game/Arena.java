@@ -1,7 +1,6 @@
 package game;
 
 import common.Constants;
-import common.PokemonStats;
 import entities.Pokemon;
 import entities.Trainer;
 import utils.DeepCopy;
@@ -70,14 +69,6 @@ public final class Arena {
         // Original pokemons [DeepCopy them]
         Pokemon neutrel1Orig = Constants.Neutrel1;
         Pokemon neutrel2Orig = Constants.Neutrel2;
-<<<<<<< HEAD
-
-        if (neutrel1Orig == null || neutrel2Orig == null) {
-            System.out.println("Couldn't copy a neutrel");
-            return;
-        }
-=======
->>>>>>> 654eb87d193506489a85fdedc3c39c7b0df46d04
 
         for (int i = 0; i < Math.min(firstTrainer.getPokemons().size(), secondTrainer.getPokemons().size()); ++i) {
             System.out.println("********** POKEMONS INDEX - " + i + " **********");
@@ -86,41 +77,23 @@ public final class Arena {
             Pokemon firstPokemonOrig  = firstTrainer.getPokemons().get(i);
             Pokemon secondPokemonOrig = secondTrainer.getPokemons().get(i);
 
-<<<<<<< HEAD
-            if (firstPokemonOrig == null || secondPokemonOrig == null) {
-                System.out.println("Couldn't copy a pokemon");
-                return;
-            }
-
-            // TODO: Remove DeepCopy functionality
-
-=======
->>>>>>> 654eb87d193506489a85fdedc3c39c7b0df46d04
             Constants.Events currEvent = pickRandomEvent();
             while (!currEvent.equals(Constants.Events.VERSUS_OPPONENT)) {
                 // Battle: pok1 vs neutrel(1/2)
-                Pokemon neutrelOrig;
+                Pokemon neutrel;
                 if (currEvent.equals(Constants.Events.VERSUS_NEUTREL_1))
-                    neutrelOrig = neutrel1Orig;
+                    neutrel = neutrel1Orig;
                 else
-                    neutrelOrig = neutrel2Orig;
+                    neutrel = neutrel2Orig;
 
                 // pokemon1 vs neutrel
                 System.out.println("---------- Pok1 vs Neutrel [START] ----------");
-<<<<<<< HEAD
-                individualBattle(executorService, firstPokemonOrig, neutrelOrig);
-=======
                 individualBattle(executorService, firstPokemonOrig, neutrel);
->>>>>>> 654eb87d193506489a85fdedc3c39c7b0df46d04
                 System.out.println("---------- Pok1 vs Neutrel [DONE] ----------");
 
                 // pokemon2 vs neutrel
                 System.out.println("---------- Pok2 vs Neutrel [START] ----------");
-<<<<<<< HEAD
-                individualBattle(executorService, secondPokemonOrig, neutrelOrig);
-=======
                 individualBattle(executorService, secondPokemonOrig, neutrel);
->>>>>>> 654eb87d193506489a85fdedc3c39c7b0df46d04
                 System.out.println("---------- Pok2 vs Neutrel [DONE] ----------");
 
                 currEvent = pickRandomEvent();
@@ -155,11 +128,7 @@ public final class Arena {
 
         // Best of the best :)
         System.out.println("---------- Best1 vs Best2 [START] ----------");
-<<<<<<< HEAD
-        individualBattle(executorService, bestPokemonFirstTrainer, bestPokemonSecondTrainer);
-=======
         int winnerIndex = individualBattle(executorService, bestPokemonFirstTrainer, bestPokemonSecondTrainer);
->>>>>>> 654eb87d193506489a85fdedc3c39c7b0df46d04
         System.out.println("---------- Best1 vs Best2 [END] ----------");
 
 //        System.out.println(bestPokemonFirstTrainer);
@@ -175,30 +144,6 @@ public final class Arena {
         executorService.shutdown();
     }
 
-<<<<<<< HEAD
-    private static void individualBattle(ExecutorService executorService, Pokemon firstPokemonOrig, Pokemon secondPokemonOrig) {
-        assert firstPokemonOrig  != null;
-        assert secondPokemonOrig != null;
-
-        Battle battle = Battle.generateBattle(firstPokemonOrig, secondPokemonOrig);
-        firstPokemonOrig.setBattle(battle);
-        secondPokemonOrig.setBattle(battle);
-
-        while (firstPokemonOrig.isAlive() && secondPokemonOrig.isAlive()) {
-            executorService.execute(firstPokemonOrig);
-            executorService.execute(secondPokemonOrig);
-        }
-
-        // Update winner's stats
-        if (firstPokemonOrig.getHP() > secondPokemonOrig.getHP()) {
-            firstPokemonOrig.incrementStats(); // increment the winner's stats
-            secondPokemonOrig.setHP(secondPokemonOrig.getOriginalHP()); // reset the loser to the original HP
-        } else {
-            secondPokemonOrig.incrementStats(); // increment the winner's stats
-            firstPokemonOrig.setHP(firstPokemonOrig.getOriginalHP()); // reset the loser to the original HP
-        }
-
-=======
     private static int individualBattle(ExecutorService executorService, Pokemon firstPokemonOrig, Pokemon secondPokemonOrig) {
         Pokemon firstPokemon  = DeepCopy.deepCopy(firstPokemonOrig);
         Pokemon secondPokemon = DeepCopy.deepCopy(secondPokemonOrig);
@@ -229,7 +174,6 @@ public final class Arena {
             winnerIndex = 0;
 
         return winnerIndex;
->>>>>>> 654eb87d193506489a85fdedc3c39c7b0df46d04
     }
 
     private static Constants.Events pickRandomEvent() {
