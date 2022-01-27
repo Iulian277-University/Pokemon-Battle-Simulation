@@ -4,6 +4,7 @@ import entities.*;
 import game.Arena;
 import game.Battle;
 import io.ImportTestcases;
+import logger.Logger;
 
 import java.util.List;
 
@@ -21,38 +22,18 @@ public class Main {
 
 
         List<Trainer> trainers = ImportTestcases.getTrainers(trainerFactory, pokemonFactory);
-        if (trainers.isEmpty()) {
-            System.out.println("Couldn't get the trainers");
-            return;
-        }
+
+
 
         Trainer firstTrainer  = trainers.get(0);
         Trainer secondTrainer = trainers.get(1);
 
         Arena arena = Arena.generateArena(firstTrainer, secondTrainer);
-//        System.out.println(arena);
         Arena.battle(arena);
 
-
-
-
-
-
-//        System.out.println(firstTrainer);
-//        System.out.println(secondTrainer);
-
-//        Order is preserved
-//        System.out.println(firstTrainer.getPokemonsOrder());
-//        for(Pokemon pokemon: firstTrainer.getPokemons()) {
-//            System.out.print(pokemon.getName() + "; ");
-//        }
-//        System.out.println();
-//        System.out.println(secondTrainer.getPokemonsOrder());
-//        for(Pokemon pokemon: secondTrainer.getPokemons()) {
-//            System.out.print(pokemon.getName() + "; ");
-//        }
-
-        //
+        // TODO: Move this functionality to Logger Class (console or file)
+        String output = Logger.getOutputBuffer().toString();
+        System.out.println(output);
 
     }
 }

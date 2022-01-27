@@ -73,7 +73,7 @@ public class Trainer {
             if(this.pokemons.size() < Constants.TRAINER_MAX_POKEMONS)
                 this.pokemons.add(pokemon);
             else
-                System.out.println("Couldn't add the Pokemon '" +
+                System.err.println("Couldn't add the Pokemon '" +
                         pokemon.getName() + "' because the trainer's capacity is full " +
                         "[Max "+ Constants.TRAINER_MAX_POKEMONS + " pokemons]");
             return this;

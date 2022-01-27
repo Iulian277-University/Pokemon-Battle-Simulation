@@ -34,11 +34,11 @@ public final class PokemonFactory {
 
         // Neutrel1 and Neutrel2 can't be used
         if (PokemonStats.NEUTREL1_NAME.equals(extractedName)) {
-            System.out.println("You can't use Neutrel1");
+            System.err.println("You can't use Neutrel1");
             return null;
         }
         if (PokemonStats.NEUTREL2_NAME.equals(extractedName)) {
-            System.out.println("You can't use Neutrel2");
+            System.err.println("You can't use Neutrel2");
             return null;
         }
 

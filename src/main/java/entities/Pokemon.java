@@ -5,6 +5,8 @@ import game.Battle;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.concurrent.Callable;
 
 import common.Constants.Moves;
 
@@ -92,6 +94,20 @@ public class Pokemon implements Serializable, Runnable {
 
     public ArrayList<Item> getItems() {
         return items;
+    }
+
+    public void incrementStats() {
+        this.HP++;
+        if (this.attack != null)
+            this.attack++;
+        else if (this.specialAttack != null)
+            this.specialAttack++;
+        this.defense++;
+        this.specialDefense++;
+
+        // Reset stun/dodge
+        this.isStunned = false;
+        this.isDodged  = false;
     }
 
     // Public methods
@@ -189,7 +205,7 @@ public class Pokemon implements Serializable, Runnable {
             if(this.items.size() < Constants.POKEMON_MAX_ITEMS)
                 this.items.add(item);
             else
-                System.out.println("Couldn't add the Item '" +
+                System.err.println("Couldn't add the Item '" +
                         item.getName() + "' because the pokemon's capacity is full " +
                         "[Max "+ Constants.POKEMON_MAX_ITEMS + " items]");
 
@@ -201,7 +217,7 @@ public class Pokemon implements Serializable, Runnable {
             if (pokemon.validate())
                 return pokemon;
             else {
-                System.out.println("Couldn't create the pokemon '" + pokemon.getName() +
+                System.err.println("Couldn't create the pokemon '" + pokemon.getName() +
                         "' because the pokemon isn't a valid one " +
                         "[Pokemons are not allowed to have 2 types of attack " +
                         "(NORMAL_ATTACK and SPECIAL_ATTACK)]");
@@ -228,7 +244,6 @@ public class Pokemon implements Serializable, Runnable {
         else
             battle.secondMove();
     }
-
 
     private Moves currentMove;
     public Moves getCurrentMove() {
@@ -262,5 +277,15 @@ public class Pokemon implements Serializable, Runnable {
     }
     public void setDodged(boolean isDodged) {
         this.isDodged = isDodged;
+    }
+
+    public int getScore() {
+        int score = this.HP + this.defense + this.specialDefense;
+        if (this.attack != null)
+            score += this.attack;
+        if (this.specialAttack != null)
+            score += this.specialAttack;
+
+        return score;
     }
 }

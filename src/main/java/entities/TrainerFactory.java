@@ -16,11 +16,11 @@ public final class TrainerFactory {
 
     public Trainer createTrainer(String trainerName, Integer trainerAge, List<Pokemon> pokemons) {
         if (trainerName == null || trainerName.isEmpty()) {
-            System.out.println("A trainer must have a name");
+            System.err.println("A trainer must have a name");
             return null;
         }
         if (pokemons == null || pokemons.isEmpty() || pokemons.size() > Constants.TRAINER_MAX_POKEMONS) {
-            System.out.println("A trainer must have maximum " + Constants.TRAINER_MAX_POKEMONS + " pokemons");
+            System.err.println("A trainer must have maximum " + Constants.TRAINER_MAX_POKEMONS + " pokemons");
             return null;
         }
 

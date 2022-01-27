@@ -33,7 +33,7 @@ public final class ImportTestcases {
         String content = jsonToString();
         boolean deserializationDone = stringToObjects(content);
         if (!deserializationDone) {
-            System.out.println("Couldn't get the trainers");
+            System.err.println("Couldn't get the trainers");
             return Collections.emptyList();
         }
         // At this point, the fields are completed
@@ -81,7 +81,7 @@ public final class ImportTestcases {
 
     private static boolean stringToObjects(String content) {
         if (content == null) {
-            System.out.println("Couldn't read the json file");
+            System.err.println("Couldn't read the json file");
             return false;
         }
 
