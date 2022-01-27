@@ -5,6 +5,8 @@ import game.Battle;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.concurrent.Callable;
 
 import common.Constants.Moves;
 

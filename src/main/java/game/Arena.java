@@ -67,26 +67,15 @@ public final class Arena {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
 
         // Original pokemons [DeepCopy them]
-        Pokemon neutrel1Orig = DeepCopy.deepCopy(Constants.Neutrel1);
-        Pokemon neutrel2Orig = DeepCopy.deepCopy(Constants.Neutrel2);
-
-        if (neutrel1Orig == null || neutrel2Orig == null) {
-            System.out.println("Couldn't copy a neutrel");
-            return;
-        }
+        Pokemon neutrel1Orig = Constants.Neutrel1;
+        Pokemon neutrel2Orig = Constants.Neutrel2;
 
         for (int i = 0; i < Math.min(firstTrainer.getPokemons().size(), secondTrainer.getPokemons().size()); ++i) {
             System.out.println("********** POKEMONS INDEX - " + i + " **********");
 
             // References to the original trainers pokemons
-            Pokemon firstPokemonOrig = firstTrainer.getPokemons().get(i);
+            Pokemon firstPokemonOrig  = firstTrainer.getPokemons().get(i);
             Pokemon secondPokemonOrig = secondTrainer.getPokemons().get(i);
-
-            if (firstPokemonOrig == null || secondPokemonOrig == null) {
-                System.out.println("Couldn't copy a pokemon");
-                return;
-            }
-
 
             Constants.Events currEvent = pickRandomEvent();
             while (!currEvent.equals(Constants.Events.VERSUS_OPPONENT)) {
@@ -99,15 +88,11 @@ public final class Arena {
 
                 // pokemon1 vs neutrel
                 System.out.println("---------- Pok1 vs Neutrel [START] ----------");
-                Pokemon firstPokemon = DeepCopy.deepCopy(firstPokemonOrig);
-                assert firstPokemon != null;
                 individualBattle(executorService, firstPokemonOrig, neutrel);
                 System.out.println("---------- Pok1 vs Neutrel [DONE] ----------");
 
                 // pokemon2 vs neutrel
                 System.out.println("---------- Pok2 vs Neutrel [START] ----------");
-                Pokemon secondPokemon = DeepCopy.deepCopy(secondPokemonOrig);
-                assert secondPokemon != null;
                 individualBattle(executorService, secondPokemonOrig, neutrel);
                 System.out.println("---------- Pok2 vs Neutrel [DONE] ----------");
 
@@ -136,22 +121,30 @@ public final class Arena {
                     secondTrainer.getPokemons().get(i).getScore());
         }
 
-        // TODO: Check unlocking threads after they finish
-        // The process gets slower towards the end
-
-
-        // Best of the best :)
-//        System.out.println("---------- Best1 vs Best2 [START] ----------");
-//        individualBattle(executorService, bestPokemonFirstTrainer, bestPokemonSecondTrainer);
-//        System.out.println("---------- Best1 vs Best2 [END] ----------");
+        // The process slows down towards the end
 
 //        System.out.println(bestPokemonFirstTrainer);
 //        System.out.println(bestPokemonSecondTrainer);
 
+        // Best of the best :)
+        System.out.println("---------- Best1 vs Best2 [START] ----------");
+        int winnerIndex = individualBattle(executorService, bestPokemonFirstTrainer, bestPokemonSecondTrainer);
+        System.out.println("---------- Best1 vs Best2 [END] ----------");
+
+//        System.out.println(bestPokemonFirstTrainer);
+//        System.out.println(bestPokemonSecondTrainer);
+
+        if (winnerIndex == 0)
+            System.out.println("***** DRAW ****");
+        else if (winnerIndex == 1)
+            System.out.println("***** WINNER: " + firstTrainer + " *****");
+        else if (winnerIndex == 2)
+            System.out.println("***** WINNER: " + secondTrainer + " *****");
+
         executorService.shutdown();
     }
 
-    private static void individualBattle(ExecutorService executorService, Pokemon firstPokemonOrig, Pokemon secondPokemonOrig) {
+    private static int individualBattle(ExecutorService executorService, Pokemon firstPokemonOrig, Pokemon secondPokemonOrig) {
         Pokemon firstPokemon  = DeepCopy.deepCopy(firstPokemonOrig);
         Pokemon secondPokemon = DeepCopy.deepCopy(secondPokemonOrig);
         assert firstPokemon  != null;
@@ -162,15 +155,25 @@ public final class Arena {
         secondPokemon.setBattle(battle);
 
         while (firstPokemon.isAlive() && secondPokemon.isAlive()) {
-            executorService.execute(firstPokemon);
-            executorService.execute(secondPokemon);
+            firstPokemon.run();
+            secondPokemon.run();
+//            executorService.execute(firstPokemon);
+//            executorService.execute(secondPokemon);
         }
 
         // Update winner's stats
-        if (firstPokemon.getHP() > secondPokemon.getHP())
+        int winnerIndex;
+        if (firstPokemon.getHP() > secondPokemon.getHP()) {
             firstPokemonOrig.incrementStats();
-        else
+            winnerIndex = 1;
+        }
+        else if (firstPokemon.getHP() < secondPokemon.getHP()) {
             secondPokemonOrig.incrementStats();
+            winnerIndex = 2;
+        } else
+            winnerIndex = 0;
+
+        return winnerIndex;
     }
 
     private static Constants.Events pickRandomEvent() {
