@@ -14,7 +14,7 @@ public final class GetFieldsOfClass {
                 .toList();
 
         if (fields.isEmpty()) {
-            System.out.println("Field '" + name + "' doesn't exist");
+            System.err.println("Field '" + name + "' doesn't exist");
             return Collections.emptyMap();
         }
 

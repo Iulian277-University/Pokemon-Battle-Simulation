@@ -7,7 +7,7 @@ public final class DeepCopy {
 
     public static <T> T deepCopy(Object objectToCopy) {
         if (!(objectToCopy instanceof Serializable)) {
-            System.out.println(objectToCopy.getClass() + " isn't serializable");
+            System.err.println(objectToCopy.getClass() + " isn't serializable");
             return null;
         }
 

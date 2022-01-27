@@ -205,7 +205,7 @@ public class Pokemon implements Serializable, Runnable {
             if(this.items.size() < Constants.POKEMON_MAX_ITEMS)
                 this.items.add(item);
             else
-                System.out.println("Couldn't add the Item '" +
+                System.err.println("Couldn't add the Item '" +
                         item.getName() + "' because the pokemon's capacity is full " +
                         "[Max "+ Constants.POKEMON_MAX_ITEMS + " items]");
 
@@ -217,7 +217,7 @@ public class Pokemon implements Serializable, Runnable {
             if (pokemon.validate())
                 return pokemon;
             else {
-                System.out.println("Couldn't create the pokemon '" + pokemon.getName() +
+                System.err.println("Couldn't create the pokemon '" + pokemon.getName() +
                         "' because the pokemon isn't a valid one " +
                         "[Pokemons are not allowed to have 2 types of attack " +
                         "(NORMAL_ATTACK and SPECIAL_ATTACK)]");
