@@ -1,5 +1,6 @@
 package main;
 
+import common.Constants;
 import entities.*;
 import game.Arena;
 import game.Battle;
@@ -15,25 +16,22 @@ public class Main {
         TrainerFactory trainerFactory = TrainerFactory.generateFactory();
         PokemonFactory pokemonFactory = PokemonFactory.generateFactory();
 
-        // TODO: Get number of testcases (number of .json files in the ./testcases dir)
-
-
 //         GenerateTestcases.generate(10);
 
 
-        List<Trainer> trainers = ImportTestcases.getTrainers(trainerFactory, pokemonFactory);
 
-
+        // TODO: Get number of testcases (number of .json files in the ./testcases dir)
+        // TODO: Run all testcases
+        int testIndex = 1;
+        Logger logger = Logger.generateLogger(Constants.OUTPUT_DIR_PATH + "output_test_" + testIndex + Constants.OUTPUT_FILE_EXT);
+        List<Trainer> trainers = ImportTestcases.getTrainers(trainerFactory, pokemonFactory, testIndex);
 
         Trainer firstTrainer  = trainers.get(0);
         Trainer secondTrainer = trainers.get(1);
 
-        Arena arena = Arena.generateArena(firstTrainer, secondTrainer);
+        Arena arena = Arena.generateArena(firstTrainer, secondTrainer, logger);
         Arena.battle(arena);
 
-        // TODO: Move this functionality to Logger Class (console or file)
-        String output = Logger.getOutputBuffer().toString();
-        System.out.println(output);
 
     }
 }

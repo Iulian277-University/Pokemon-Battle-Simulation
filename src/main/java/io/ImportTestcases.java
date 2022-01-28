@@ -29,8 +29,8 @@ public final class ImportTestcases {
     private static Map<String, List<String>> pokemons2 = new HashMap<>();
 
 
-    public static List<Trainer> getTrainers(TrainerFactory trainerFactory, PokemonFactory pokemonFactory) {
-        String content = jsonToString();
+    public static List<Trainer> getTrainers(TrainerFactory trainerFactory, PokemonFactory pokemonFactory, int testIndex) {
+        String content = jsonToString(testIndex);
         boolean deserializationDone = stringToObjects(content);
         if (!deserializationDone) {
             System.err.println("Couldn't get the trainers");
@@ -65,8 +65,8 @@ public final class ImportTestcases {
     }
 
 
-    private static String jsonToString() {
-        String testcasePath = Constants.TESTCASES_DIR_PATH + "Testcase_" + "1" + ".json";
+    private static String jsonToString(int testIndex) {
+        String testcasePath = Constants.TESTCASES_DIR_PATH + "Testcase_" + testIndex + ".json";
         File testcaseFile = new File(testcasePath);
 
         String content = null;
