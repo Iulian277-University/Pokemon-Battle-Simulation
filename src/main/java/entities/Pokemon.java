@@ -5,8 +5,6 @@ import game.Battle;
 
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.concurrent.Callable;
 
 import common.Constants.Moves;
 
@@ -205,7 +203,7 @@ public class Pokemon implements Serializable, Runnable {
             if(this.items.size() < Constants.POKEMON_MAX_ITEMS)
                 this.items.add(item);
             else
-                System.err.println("Couldn't add the Item '" +
+                System.err.println(Constants.ERROR_LOG + "Couldn't add the Item '" +
                         item.getName() + "' because the pokemon's capacity is full " +
                         "[Max "+ Constants.POKEMON_MAX_ITEMS + " items]");
 
@@ -217,7 +215,8 @@ public class Pokemon implements Serializable, Runnable {
             if (pokemon.validate())
                 return pokemon;
             else {
-                System.err.println("Couldn't create the pokemon '" + pokemon.getName() +
+                System.err.println(Constants.ERROR_LOG +
+                        "Couldn't create the pokemon '" + pokemon.getName() +
                         "' because the pokemon isn't a valid one " +
                         "[Pokemons are not allowed to have 2 types of attack " +
                         "(NORMAL_ATTACK and SPECIAL_ATTACK)]");
@@ -246,22 +245,16 @@ public class Pokemon implements Serializable, Runnable {
     }
 
     private Moves currentMove;
-    public Moves getCurrentMove() {
+    public  Moves getCurrentMove() {
         return currentMove;
     }
-
-    public void setName(String name) {
-        this.name = name;
+    public  void  setCurrentMove(Moves currentMove) {
+        this.currentMove = currentMove;
     }
 
     public void setHP(Integer HP) {
         this.HP = HP;
     }
-
-    public void setCurrentMove(Moves currentMove) {
-        this.currentMove = currentMove;
-    }
-
 
     private boolean isStunned = false;
     public boolean isStunned() {

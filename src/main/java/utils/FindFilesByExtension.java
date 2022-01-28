@@ -1,5 +1,7 @@
 package utils;
 
+import common.Constants;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -19,7 +21,7 @@ public final class FindFilesByExtension {
     public static List<String> findFiles(Path dirPath, String fileExtension) {
 
         if (!Files.isDirectory(dirPath)) {
-            System.err.println("Path must be a valid directory");
+            System.err.println(Constants.ERROR_LOG + "Path must be a valid directory");
             return Collections.emptyList();
         }
 

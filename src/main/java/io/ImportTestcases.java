@@ -1,5 +1,6 @@
 package io;
 
+import common.Constants;
 import entities.Pokemon;
 import entities.PokemonFactory;
 import entities.Trainer;
@@ -34,7 +35,7 @@ public final class ImportTestcases {
         String content = jsonToString(testcasePath);
         boolean deserializationDone = stringToObjects(content);
         if (!deserializationDone) {
-            System.err.println("Couldn't get the trainers");
+            System.err.println(Constants.ERROR_LOG + "Couldn't get the trainers");
             return Collections.emptyList();
         }
 
@@ -82,7 +83,7 @@ public final class ImportTestcases {
 
     private static boolean stringToObjects(String content) {
         if (content == null) {
-            System.err.println("Couldn't read the json file");
+            System.err.println(Constants.ERROR_LOG + "Couldn't read the json file");
             return false;
         }
 

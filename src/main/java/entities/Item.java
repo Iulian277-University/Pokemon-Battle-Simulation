@@ -1,8 +1,5 @@
 package entities;
 
-//import java.io.Serializable;
-// implements Serializable - NO NEED, because items are fixed
-
 import java.io.Serializable;
 
 public class Item implements Serializable {
@@ -109,5 +106,4 @@ public class Item implements Serializable {
             return new Item(this);
         }
     }
-
 }

@@ -1,393 +1,701 @@
 ********** POKEMONS INDEX - 0 **********
----------- Pokemon1 vs Neutrel [START] ----------
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NOTHING
-Snorlax 72HP | Neutrel1 6HP
----
-Snorlax NORMAL_ATTACK (A:6 | D:1) [ab1-cooldown:3 | ab2-cooldown:5]
-Neutrel1 NORMAL_ATTACK (A:3 | D:8) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 72HP | Neutrel1 1HP
----
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-Neutrel1 NORMAL_ATTACK (A:3 | D:8) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Snorlax 72HP | Neutrel1 1HP
----
-Snorlax NORMAL_ATTACK (A:6 | D:1) [ab1-cooldown:1 | ab2-cooldown:3]
-Neutrel1 NORMAL_ATTACK (A:3 | D:8) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 72HP | Neutrel1 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:7]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NOTHING
-Vulpix 36HP | Neutrel1 2HP
----
-Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:6]
-Neutrel1 NORMAL_ATTACK (A:3 | D:5) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Vulpix 36HP | Neutrel1 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
+Pokemon{name='Snorlax', HP=72, attack=6, specialAttack=null, defense=8, specialDefense=6, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
+Pokemon{name='Vulpix', HP=36, attack=8, specialAttack=null, defense=5, specialDefense=9, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
 ---------- Pokemon1 vs Pokemon2 [START] ----------
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:6 | ab2-cooldown:7]
-ABILITY_2 | NORMAL_ATTACK
-Snorlax 73HP | Vulpix 37HP
----
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:6 | ab2-cooldown:7]
-ABILITY_1 | NOTHING
-Snorlax 73HP | Vulpix 33HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:3 | ab2-cooldown:2]
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:5 | ab2-cooldown:5]
 Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:7]
 NORMAL_ATTACK | ABILITY_1
-Snorlax 65HP | Vulpix 32HP
----
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
-Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:6]
-NOTHING | ABILITY_2
-Snorlax 63HP | Vulpix 32HP
----
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:0]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:3 | ab2-cooldown:5]
-NOTHING | NORMAL_ATTACK
-Snorlax 63HP | Vulpix 32HP
----
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:2 | ab2-cooldown:4]
-ABILITY_2 | NORMAL_ATTACK
-Snorlax 63HP | Vulpix 32HP
----
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:3]
-ABILITY_1 | NOTHING
-Snorlax 63HP | Vulpix 28HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:3 | ab2-cooldown:2]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:0 | ab2-cooldown:2]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 63HP | Vulpix 27HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:2 | ab2-cooldown:1]
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:1]
-NORMAL_ATTACK | ABILITY_1
-Snorlax 55HP | Vulpix 26HP
----
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:0]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:4 | ab2-cooldown:0]
-NOTHING | NORMAL_ATTACK
-Snorlax 55HP | Vulpix 26HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:0 | ab2-cooldown:5]
-Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
-NORMAL_ATTACK | ABILITY_2
-Snorlax 53HP | Vulpix 26HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:5 | ab2-cooldown:5]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:2 | ab2-cooldown:5]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 53HP | Vulpix 25HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:5 | ab2-cooldown:5]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:1 | ab2-cooldown:4]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 53HP | Vulpix 24HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:5 | ab2-cooldown:5]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:0 | ab2-cooldown:3]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 53HP | Vulpix 23HP
----
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:2]
-ABILITY_2 | ABILITY_1
-Snorlax 53HP | Vulpix 23HP
----
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:3]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:4 | ab2-cooldown:1]
-NOTHING | NORMAL_ATTACK
-Snorlax 53HP | Vulpix 23HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:5 | ab2-cooldown:2]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:3 | ab2-cooldown:0]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 53HP | Vulpix 22HP
----
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
-Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:7]
-ABILITY_1 | NOTHING
-Snorlax 53HP | Vulpix 18HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:3 | ab2-cooldown:0]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:1 | ab2-cooldown:7]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 53HP | Vulpix 17HP
----
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:0 | ab2-cooldown:7]
-ABILITY_2 | NORMAL_ATTACK
-Snorlax 53HP | Vulpix 17HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:1 | ab2-cooldown:3]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:6 | ab2-cooldown:7]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 53HP | Vulpix 16HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:0 | ab2-cooldown:2]
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:7]
-NORMAL_ATTACK | ABILITY_1
-Snorlax 45HP | Vulpix 15HP
----
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:1]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:4 | ab2-cooldown:7]
-NOTHING | NORMAL_ATTACK
-Snorlax 45HP | Vulpix 15HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:5 | ab2-cooldown:0]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:3 | ab2-cooldown:7]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 45HP | Vulpix 14HP
----
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
-Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:6]
-ABILITY_2 | ABILITY_2
-Snorlax 45HP | Vulpix 14HP
----
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:5]
-ABILITY_1 | NOTHING
-Snorlax 45HP | Vulpix 10HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:3 | ab2-cooldown:2]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:0 | ab2-cooldown:4]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 45HP | Vulpix 9HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:2 | ab2-cooldown:1]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:6 | ab2-cooldown:3]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 45HP | Vulpix 8HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:1 | ab2-cooldown:0]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:6 | ab2-cooldown:2]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 45HP | Vulpix 7HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:0 | ab2-cooldown:5]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:6 | ab2-cooldown:1]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 45HP | Vulpix 6HP
----
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:5 | ab2-cooldown:5]
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:0]
-NORMAL_ATTACK | ABILITY_1
-Snorlax 37HP | Vulpix 5HP
+Snorlax 64HP | Vulpix 35HP
 ---
 Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:5]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:4 | ab2-cooldown:7]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:4 | ab2-cooldown:7]
 NOTHING | NORMAL_ATTACK
-Snorlax 37HP | Vulpix 5HP
+Snorlax 64HP | Vulpix 35HP
+---
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
+Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:7]
+ABILITY_1 | NOTHING
+Snorlax 64HP | Vulpix 31HP
+---
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
+Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:6]
+ABILITY_2 | ABILITY_2
+Snorlax 64HP | Vulpix 31HP
+---
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:2 | ab2-cooldown:3]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:1 | ab2-cooldown:5]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 64HP | Vulpix 30HP
+---
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:1 | ab2-cooldown:2]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:0 | ab2-cooldown:4]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 64HP | Vulpix 29HP
+---
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:0 | ab2-cooldown:1]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:6 | ab2-cooldown:3]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 64HP | Vulpix 28HP
+---
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:0]
+Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:6 | ab2-cooldown:2]
+ABILITY_1 | NOTHING
+Snorlax 64HP | Vulpix 24HP
+---
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:3 | ab2-cooldown:5]
+Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:1]
+NORMAL_ATTACK | ABILITY_1
+Snorlax 56HP | Vulpix 23HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:4 | ab2-cooldown:0]
+NOTHING | NORMAL_ATTACK
+Snorlax 56HP | Vulpix 23HP
+---
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:1 | ab2-cooldown:5]
+Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
+NORMAL_ATTACK | ABILITY_2
+Snorlax 54HP | Vulpix 23HP
+---
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:0 | ab2-cooldown:5]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:2 | ab2-cooldown:5]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 54HP | Vulpix 22HP
 ---
 Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
-Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
-ABILITY_2 | ABILITY_2
-Snorlax 37HP | Vulpix 5HP
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:1 | ab2-cooldown:4]
+ABILITY_2 | NORMAL_ATTACK
+Snorlax 54HP | Vulpix 22HP
 ---
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:5 | ab2-cooldown:3]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:2 | ab2-cooldown:5]
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:5 | ab2-cooldown:3]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:0 | ab2-cooldown:3]
 NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 37HP | Vulpix 4HP
+Snorlax 54HP | Vulpix 21HP
 ---
-Snorlax NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:5 | ab2-cooldown:2]
-Vulpix NORMAL_ATTACK (A:9 | D:9) [ab1-cooldown:1 | ab2-cooldown:4]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 37HP | Vulpix 3HP
----
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
-Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:3]
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
+Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:6 | ab2-cooldown:2]
 ABILITY_1 | NOTHING
-Snorlax 37HP | Vulpix 0HP
+Snorlax 54HP | Vulpix 17HP
 ---
----------- Pokemon1 vs Pokemon2 [START] ----------
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:3 | ab2-cooldown:1]
+Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:1]
+NORMAL_ATTACK | ABILITY_1
+Snorlax 46HP | Vulpix 16HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:0]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:4 | ab2-cooldown:0]
+NOTHING | NORMAL_ATTACK
+Snorlax 46HP | Vulpix 16HP
+---
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:3 | ab2-cooldown:7]
+ABILITY_2 | NORMAL_ATTACK
+Snorlax 46HP | Vulpix 16HP
+---
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:0 | ab2-cooldown:3]
+Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:6]
+NORMAL_ATTACK | ABILITY_2
+Snorlax 44HP | Vulpix 16HP
+---
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
+Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:5]
+ABILITY_1 | NOTHING
+Snorlax 44HP | Vulpix 12HP
+---
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:3 | ab2-cooldown:1]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:0 | ab2-cooldown:4]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 44HP | Vulpix 11HP
+---
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:2 | ab2-cooldown:0]
+Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:3]
+NORMAL_ATTACK | ABILITY_1
+Snorlax 36HP | Vulpix 10HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:5]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:4 | ab2-cooldown:2]
+NOTHING | NORMAL_ATTACK
+Snorlax 36HP | Vulpix 10HP
+---
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:3 | ab2-cooldown:1]
+ABILITY_2 | NORMAL_ATTACK
+Snorlax 36HP | Vulpix 10HP
+---
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
+Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:0]
+ABILITY_1 | NOTHING
+Snorlax 36HP | Vulpix 6HP
+---
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:3 | ab2-cooldown:2]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:1 | ab2-cooldown:7]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 36HP | Vulpix 5HP
+---
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:2 | ab2-cooldown:1]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:0 | ab2-cooldown:7]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 36HP | Vulpix 4HP
+---
+Snorlax NORMAL_ATTACK (A:6 | D:5) [ab1-cooldown:1 | ab2-cooldown:0]
+Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:6 | ab2-cooldown:6]
+NORMAL_ATTACK | ABILITY_2
+Snorlax 34HP | Vulpix 4HP
+---
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
+Vulpix NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:6 | ab2-cooldown:5]
+ABILITY_2 | NORMAL_ATTACK
+Snorlax 34HP | Vulpix 4HP
+---
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
+Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:6 | ab2-cooldown:4]
+ABILITY_1 | NOTHING
+Snorlax 34HP | Vulpix 0HP
+---
+Pokemon{name='Snorlax', HP=73, attack=7, specialAttack=null, defense=9, specialDefense=7, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
+Pokemon{name='Vulpix', HP=36, attack=8, specialAttack=null, defense=5, specialDefense=9, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+---------- Pokemon1 vs Pokemon2 [DONE] ----------
 ********** POKEMONS INDEX - 1 **********
 ---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Charmander', HP=60, attack=7, specialAttack=null, defense=3, specialDefense=5, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
 Charmander NORMAL_ATTACK (A:7 | D:1) [ab1-cooldown:4 | ab2-cooldown:6]
-Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown: | ab2-cooldown:]
+Neutrel1 NORMAL_ATTACK (A:3 | D:3) [ab1-cooldown: | ab2-cooldown:]
 NORMAL_ATTACK | NORMAL_ATTACK
-Charmander 59HP | Neutrel2 14HP
+Charmander 60HP | Neutrel1 4HP
+---
+Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
+Neutrel1 NORMAL_ATTACK (A:3 | D:3) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NORMAL_ATTACK
+Charmander 60HP | Neutrel1 0HP
+---
+Pokemon{name='Charmander', HP=61, attack=8, specialAttack=null, defense=4, specialDefense=6, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Eevee', HP=41, attack=null, specialAttack=6, defense=6, specialDefense=5, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+Neutrel1 NORMAL_ATTACK (A:3 | D:6) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NORMAL_ATTACK
+Eevee 41HP | Neutrel1 5HP
+---
+Eevee SPECIAL_ATTACK (A:6 | D:1) [ab1-cooldown:1 | ab2-cooldown:3]
+Neutrel1 NORMAL_ATTACK (A:3 | D:6) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 41HP | Neutrel1 0HP
+---
+Pokemon{name='Eevee', HP=42, attack=null, specialAttack=7, defense=7, specialDefense=6, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Charmander', HP=61, attack=8, specialAttack=null, defense=4, specialDefense=6, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
+Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NOTHING
+Charmander 61HP | Neutrel2 16HP
+---
+Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NORMAL_ATTACK
+Charmander 61HP | Neutrel2 9HP
+---
+Charmander NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:1 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
+NORMAL_ATTACK | NORMAL_ATTACK
+Charmander 61HP | Neutrel2 2HP
+---
+Charmander NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:0 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
+NORMAL_ATTACK | NORMAL_ATTACK
+Charmander 61HP | Neutrel2 0HP
+---
+Pokemon{name='Charmander', HP=62, attack=9, specialAttack=null, defense=5, specialDefense=7, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Eevee', HP=42, attack=null, specialAttack=7, defense=7, specialDefense=6, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Eevee SPECIAL_ATTACK (A:7 | D:1) [ab1-cooldown:3 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 42HP | Neutrel2 14HP
+---
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NORMAL_ATTACK
+Eevee 42HP | Neutrel2 9HP
+---
+Eevee SPECIAL_ATTACK (A:7 | D:1) [ab1-cooldown:1 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 42HP | Neutrel2 3HP
+---
+Eevee SPECIAL_ATTACK (A:7 | D:1) [ab1-cooldown:0 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 42HP | Neutrel2 0HP
+---
+Pokemon{name='Eevee', HP=43, attack=null, specialAttack=8, defense=8, specialDefense=7, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Charmander', HP=62, attack=9, specialAttack=null, defense=5, specialDefense=7, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Charmander NORMAL_ATTACK (A:9 | D:1) [ab1-cooldown:4 | ab2-cooldown:6]
+Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
+NORMAL_ATTACK | NORMAL_ATTACK
+Charmander 62HP | Neutrel2 12HP
 ---
 Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
 Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
 ABILITY_1 | NOTHING
-Charmander 59HP | Neutrel2 10HP
+Charmander 62HP | Neutrel2 8HP
 ---
 Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
-Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown: | ab2-cooldown:]
+Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
 ABILITY_2 | NORMAL_ATTACK
-Charmander 58HP | Neutrel2 3HP
+Charmander 62HP | Neutrel2 1HP
 ---
-Charmander NORMAL_ATTACK (A:7 | D:1) [ab1-cooldown:1 | ab2-cooldown:4]
-Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown: | ab2-cooldown:]
+Charmander NORMAL_ATTACK (A:9 | D:1) [ab1-cooldown:1 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
 NORMAL_ATTACK | NORMAL_ATTACK
-Charmander 57HP | Neutrel2 0HP
+Charmander 62HP | Neutrel2 0HP
 ---
+Pokemon{name='Charmander', HP=63, attack=10, specialAttack=null, defense=6, specialDefense=8, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
 ---------- Pokemon1 vs Neutrel [DONE] ----------
 ---------- Pokemon2 vs Neutrel [START] ----------
-Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NOTHING
-Eevee 41HP | Neutrel2 17HP
----
-Eevee SPECIAL_ATTACK (A:6 | D:1) [ab1-cooldown:3 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Eevee 41HP | Neutrel2 12HP
----
-Eevee SPECIAL_ATTACK (A:6 | D:1) [ab1-cooldown:3 | ab2-cooldown:0]
-Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Eevee 41HP | Neutrel2 7HP
----
-Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NOTHING
-Eevee 41HP | Neutrel2 4HP
----
-Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown: | ab2-cooldown:]
+Pokemon{name='Eevee', HP=43, attack=null, specialAttack=8, defense=8, specialDefense=7, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown: | ab2-cooldown:]
 ABILITY_1 | NORMAL_ATTACK
-Eevee 41HP | Neutrel2 0HP
+Eevee 43HP | Neutrel2 15HP
 ---
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:1 | ab2-cooldown:2]
+Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NOTHING
+Eevee 43HP | Neutrel2 12HP
+---
+Eevee SPECIAL_ATTACK (A:8 | D:1) [ab1-cooldown:0 | ab2-cooldown:1]
+Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 43HP | Neutrel2 5HP
+---
+Eevee SPECIAL_ATTACK (A:8 | D:1) [ab1-cooldown:3 | ab2-cooldown:0]
+Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 43HP | Neutrel2 0HP
+---
+Pokemon{name='Eevee', HP=44, attack=null, specialAttack=9, defense=9, specialDefense=8, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
 ---------- Pokemon2 vs Neutrel [DONE] ----------
 ---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Charmander', HP=63, attack=10, specialAttack=null, defense=6, specialDefense=8, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
+Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NOTHING
+Charmander 63HP | Neutrel2 16HP
+---
+Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NORMAL_ATTACK
+Charmander 63HP | Neutrel2 9HP
+---
+Charmander NORMAL_ATTACK (A:10 | D:1) [ab1-cooldown:1 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown: | ab2-cooldown:]
+NORMAL_ATTACK | NORMAL_ATTACK
+Charmander 63HP | Neutrel2 0HP
+---
+Pokemon{name='Charmander', HP=64, attack=11, specialAttack=null, defense=7, specialDefense=9, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Eevee', HP=44, attack=null, specialAttack=9, defense=9, specialDefense=8, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NOTHING
+Eevee 44HP | Neutrel2 17HP
+---
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
+Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NORMAL_ATTACK
+Eevee 44HP | Neutrel2 12HP
+---
+Eevee SPECIAL_ATTACK (A:9 | D:1) [ab1-cooldown:1 | ab2-cooldown:0]
+Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 44HP | Neutrel2 4HP
+---
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
+Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NOTHING
+Eevee 44HP | Neutrel2 1HP
+---
+Eevee SPECIAL_ATTACK (A:9 | D:1) [ab1-cooldown:3 | ab2-cooldown:1]
+Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 44HP | Neutrel2 0HP
+---
+Pokemon{name='Eevee', HP=45, attack=null, specialAttack=10, defense=10, specialDefense=9, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Charmander', HP=64, attack=11, specialAttack=null, defense=7, specialDefense=9, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Charmander NORMAL_ATTACK (A:11 | D:1) [ab1-cooldown:4 | ab2-cooldown:6]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
+NORMAL_ATTACK | NORMAL_ATTACK
+Charmander 64HP | Neutrel2 10HP
+---
+Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NORMAL_ATTACK
+Charmander 64HP | Neutrel2 3HP
+---
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
+Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NOTHING
+Charmander 64HP | Neutrel2 0HP
+---
+Pokemon{name='Charmander', HP=65, attack=12, specialAttack=null, defense=8, specialDefense=10, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Eevee', HP=45, attack=null, specialAttack=10, defense=10, specialDefense=9, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:10) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NORMAL_ATTACK
+Eevee 45HP | Neutrel2 15HP
+---
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:1 | ab2-cooldown:2]
+Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NOTHING
+Eevee 45HP | Neutrel2 12HP
+---
+Eevee SPECIAL_ATTACK (A:10 | D:1) [ab1-cooldown:0 | ab2-cooldown:1]
+Neutrel2 NORMAL_ATTACK (A:4 | D:10) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 45HP | Neutrel2 3HP
+---
+Eevee SPECIAL_ATTACK (A:10 | D:1) [ab1-cooldown:3 | ab2-cooldown:0]
+Neutrel2 NORMAL_ATTACK (A:4 | D:10) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 45HP | Neutrel2 0HP
+---
+Pokemon{name='Eevee', HP=46, attack=null, specialAttack=11, defense=11, specialDefense=10, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Charmander', HP=65, attack=12, specialAttack=null, defense=8, specialDefense=10, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
 Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
 Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
 ABILITY_1 | NOTHING
-Charmander 61HP | Neutrel1 6HP
+Charmander 65HP | Neutrel1 6HP
 ---
-Charmander NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:2 | ab2-cooldown:6]
-Neutrel1 NORMAL_ATTACK (A:3 | D:4) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Charmander 61HP | Neutrel1 0HP
+Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
+Neutrel1 NORMAL_ATTACK (A:3 | D:8) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NORMAL_ATTACK
+Charmander 65HP | Neutrel1 0HP
 ---
+Pokemon{name='Charmander', HP=66, attack=13, specialAttack=null, defense=9, specialDefense=11, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
 ---------- Pokemon1 vs Neutrel [DONE] ----------
 ---------- Pokemon2 vs Neutrel [START] ----------
-Eevee SPECIAL_ATTACK (A:7 | D:1) [ab1-cooldown:3 | ab2-cooldown:3]
-Neutrel1 NORMAL_ATTACK (A:3 | D:7) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Eevee 42HP | Neutrel1 4HP
+Pokemon{name='Eevee', HP=46, attack=null, specialAttack=11, defense=11, specialDefense=10, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NOTHING
+Eevee 46HP | Neutrel1 7HP
 ---
-Eevee SPECIAL_ATTACK (A:7 | D:1) [ab1-cooldown:3 | ab2-cooldown:3]
-Neutrel1 NORMAL_ATTACK (A:3 | D:7) [ab1-cooldown: | ab2-cooldown:]
+Eevee SPECIAL_ATTACK (A:11 | D:1) [ab1-cooldown:3 | ab2-cooldown:1]
+Neutrel1 NORMAL_ATTACK (A:3 | D:11) [ab1-cooldown: | ab2-cooldown:]
 SPECIAL_ATTACK | NORMAL_ATTACK
-Eevee 42HP | Neutrel1 0HP
+Eevee 46HP | Neutrel1 0HP
 ---
+Pokemon{name='Eevee', HP=47, attack=null, specialAttack=12, defense=12, specialDefense=11, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
 ---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Charmander', HP=66, attack=13, specialAttack=null, defense=9, specialDefense=11, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Charmander NORMAL_ATTACK (A:13 | D:1) [ab1-cooldown:4 | ab2-cooldown:6]
+Neutrel1 NORMAL_ATTACK (A:3 | D:9) [ab1-cooldown: | ab2-cooldown:]
+NORMAL_ATTACK | NORMAL_ATTACK
+Charmander 66HP | Neutrel1 0HP
+---
+Pokemon{name='Charmander', HP=67, attack=14, specialAttack=null, defense=10, specialDefense=12, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Eevee', HP=47, attack=null, specialAttack=12, defense=12, specialDefense=11, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NOTHING
+Eevee 47HP | Neutrel1 7HP
+---
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
+Neutrel1 NORMAL_ATTACK (A:3 | D:12) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NORMAL_ATTACK
+Eevee 47HP | Neutrel1 2HP
+---
+Eevee SPECIAL_ATTACK (A:12 | D:1) [ab1-cooldown:1 | ab2-cooldown:0]
+Neutrel1 NORMAL_ATTACK (A:3 | D:12) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 47HP | Neutrel1 0HP
+---
+Pokemon{name='Eevee', HP=48, attack=null, specialAttack=13, defense=13, specialDefense=12, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Charmander', HP=67, attack=14, specialAttack=null, defense=10, specialDefense=12, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Charmander NORMAL_ATTACK (A:14 | D:1) [ab1-cooldown:4 | ab2-cooldown:6]
+Neutrel2 NORMAL_ATTACK (A:4 | D:10) [ab1-cooldown: | ab2-cooldown:]
+NORMAL_ATTACK | NORMAL_ATTACK
+Charmander 67HP | Neutrel2 7HP
+---
+Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:10) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NORMAL_ATTACK
+Charmander 67HP | Neutrel2 0HP
+---
+Pokemon{name='Charmander', HP=68, attack=15, specialAttack=null, defense=11, specialDefense=13, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Eevee', HP=48, attack=null, specialAttack=13, defense=13, specialDefense=12, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Eevee SPECIAL_ATTACK (A:13 | D:1) [ab1-cooldown:3 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:13) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 48HP | Neutrel2 8HP
+---
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NOTHING
+Eevee 48HP | Neutrel2 5HP
+---
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
+Neutrel2 NORMAL_ATTACK (A:4 | D:13) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NORMAL_ATTACK
+Eevee 48HP | Neutrel2 0HP
+---
+Pokemon{name='Eevee', HP=49, attack=null, specialAttack=14, defense=14, specialDefense=13, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Charmander', HP=68, attack=15, specialAttack=null, defense=11, specialDefense=13, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
+Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NOTHING
+Charmander 68HP | Neutrel1 6HP
+---
+Charmander NORMAL_ATTACK (A:15 | D:1) [ab1-cooldown:2 | ab2-cooldown:6]
+Neutrel1 NORMAL_ATTACK (A:3 | D:11) [ab1-cooldown: | ab2-cooldown:]
+NORMAL_ATTACK | NORMAL_ATTACK
+Charmander 68HP | Neutrel1 0HP
+---
+Pokemon{name='Charmander', HP=69, attack=16, specialAttack=null, defense=12, specialDefense=14, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Eevee', HP=49, attack=null, specialAttack=14, defense=14, specialDefense=13, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+Neutrel1 NORMAL_ATTACK (A:3 | D:14) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NORMAL_ATTACK
+Eevee 49HP | Neutrel1 5HP
+---
+Eevee SPECIAL_ATTACK (A:14 | D:1) [ab1-cooldown:1 | ab2-cooldown:3]
+Neutrel1 NORMAL_ATTACK (A:3 | D:14) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 49HP | Neutrel1 0HP
+---
+Pokemon{name='Eevee', HP=50, attack=null, specialAttack=15, defense=15, specialDefense=14, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Charmander', HP=69, attack=16, specialAttack=null, defense=12, specialDefense=14, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
+Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NOTHING
+Charmander 69HP | Neutrel1 6HP
+---
+Charmander NORMAL_ATTACK (A:16 | D:1) [ab1-cooldown:2 | ab2-cooldown:6]
+Neutrel1 NORMAL_ATTACK (A:3 | D:12) [ab1-cooldown: | ab2-cooldown:]
+NORMAL_ATTACK | NORMAL_ATTACK
+Charmander 69HP | Neutrel1 0HP
+---
+Pokemon{name='Charmander', HP=70, attack=17, specialAttack=null, defense=13, specialDefense=15, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Eevee', HP=50, attack=null, specialAttack=15, defense=15, specialDefense=14, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Eevee SPECIAL_ATTACK (A:15 | D:1) [ab1-cooldown:3 | ab2-cooldown:3]
+Neutrel1 NORMAL_ATTACK (A:3 | D:15) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 50HP | Neutrel1 0HP
+---
+Pokemon{name='Eevee', HP=51, attack=null, specialAttack=16, defense=16, specialDefense=15, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Charmander', HP=70, attack=17, specialAttack=null, defense=13, specialDefense=15, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
+Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NOTHING
+Charmander 70HP | Neutrel2 16HP
+---
+Charmander NORMAL_ATTACK (A:17 | D:1) [ab1-cooldown:2 | ab2-cooldown:6]
+Neutrel2 NORMAL_ATTACK (A:4 | D:13) [ab1-cooldown: | ab2-cooldown:]
+NORMAL_ATTACK | NORMAL_ATTACK
+Charmander 70HP | Neutrel2 0HP
+---
+Pokemon{name='Charmander', HP=71, attack=18, specialAttack=null, defense=14, specialDefense=16, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Eevee', HP=51, attack=null, specialAttack=16, defense=16, specialDefense=15, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Eevee SPECIAL_ATTACK (A:16 | D:1) [ab1-cooldown:3 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:16) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 51HP | Neutrel2 5HP
+---
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:16) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NORMAL_ATTACK
+Eevee 51HP | Neutrel2 0HP
+---
+Pokemon{name='Eevee', HP=52, attack=null, specialAttack=17, defense=17, specialDefense=16, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Charmander', HP=71, attack=18, specialAttack=null, defense=14, specialDefense=16, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Charmander NORMAL_ATTACK (A:18 | D:1) [ab1-cooldown:4 | ab2-cooldown:6]
+Neutrel1 NORMAL_ATTACK (A:3 | D:14) [ab1-cooldown: | ab2-cooldown:]
+NORMAL_ATTACK | NORMAL_ATTACK
+Charmander 71HP | Neutrel1 0HP
+---
+Pokemon{name='Charmander', HP=72, attack=19, specialAttack=null, defense=15, specialDefense=17, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Eevee', HP=52, attack=null, specialAttack=17, defense=17, specialDefense=16, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_2 | NOTHING
+Eevee 52HP | Neutrel1 7HP
+---
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
+Neutrel1 NORMAL_ATTACK (A:3 | D:17) [ab1-cooldown: | ab2-cooldown:]
+ABILITY_1 | NORMAL_ATTACK
+Eevee 52HP | Neutrel1 2HP
+---
+Eevee SPECIAL_ATTACK (A:17 | D:1) [ab1-cooldown:1 | ab2-cooldown:0]
+Neutrel1 NORMAL_ATTACK (A:3 | D:17) [ab1-cooldown: | ab2-cooldown:]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Eevee 52HP | Neutrel1 0HP
+---
+Pokemon{name='Eevee', HP=53, attack=null, specialAttack=18, defense=18, specialDefense=17, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+Pokemon{name='Charmander', HP=72, attack=19, specialAttack=null, defense=15, specialDefense=17, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Pokemon{name='Eevee', HP=53, attack=null, specialAttack=18, defense=18, specialDefense=17, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
 ---------- Pokemon1 vs Pokemon2 [START] ----------
 Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
 Eevee NOTHING (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
 ABILITY_1 | NOTHING
-Charmander 62HP | Eevee 39HP
+Charmander 72HP | Eevee 49HP
 ---
-Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
-Eevee SPECIAL_ATTACK (A:8 | D:7) [ab1-cooldown:3 | ab2-cooldown:3]
-ABILITY_2 | SPECIAL_ATTACK
-Charmander 61HP | Eevee 32HP
----
-Charmander NORMAL_ATTACK (A:9 | D:8) [ab1-cooldown:1 | ab2-cooldown:4]
-Eevee SPECIAL_ATTACK (A:8 | D:7) [ab1-cooldown:3 | ab2-cooldown:3]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Charmander 60HP | Eevee 31HP
----
-Charmander NORMAL_ATTACK (A:9 | D:8) [ab1-cooldown:0 | ab2-cooldown:3]
-Eevee SPECIAL_ATTACK (A:8 | D:7) [ab1-cooldown:3 | ab2-cooldown:3]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Charmander 59HP | Eevee 30HP
----
-Charmander NORMAL_ATTACK (A:9 | D:8) [ab1-cooldown:4 | ab2-cooldown:2]
-Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
-NORMAL_ATTACK | ABILITY_2
-Charmander 56HP | Eevee 29HP
----
-Charmander NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
-Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
-NOTHING | ABILITY_1
-Charmander 51HP | Eevee 29HP
----
-Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
-Eevee NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:0]
-ABILITY_1 | NOTHING
-Charmander 51HP | Eevee 25HP
----
-Charmander NORMAL_ATTACK (A:9 | D:8) [ab1-cooldown:2 | ab2-cooldown:6]
-Eevee SPECIAL_ATTACK (A:8 | D:7) [ab1-cooldown:0 | ab2-cooldown:3]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Charmander 50HP | Eevee 24HP
----
-Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:1 | ab2-cooldown:5]
-Eevee SPECIAL_ATTACK (A:8 | D:7) [ab1-cooldown:3 | ab2-cooldown:3]
-ABILITY_2 | SPECIAL_ATTACK
-Charmander 49HP | Eevee 17HP
----
-Charmander NORMAL_ATTACK (A:9 | D:8) [ab1-cooldown:0 | ab2-cooldown:4]
+Charmander NORMAL_ATTACK (A:19 | D:18) [ab1-cooldown:2 | ab2-cooldown:6]
 Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
 NORMAL_ATTACK | ABILITY_1
-Charmander 44HP | Eevee 16HP
+Charmander 67HP | Eevee 48HP
 ---
-Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-Eevee NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:3]
-ABILITY_1 | NOTHING
-Charmander 44HP | Eevee 12HP
----
-Charmander NORMAL_ATTACK (A:9 | D:8) [ab1-cooldown:2 | ab2-cooldown:2]
-Eevee SPECIAL_ATTACK (A:8 | D:7) [ab1-cooldown:0 | ab2-cooldown:3]
+Charmander NORMAL_ATTACK (A:19 | D:18) [ab1-cooldown:1 | ab2-cooldown:6]
+Eevee SPECIAL_ATTACK (A:18 | D:17) [ab1-cooldown:1 | ab2-cooldown:3]
 NORMAL_ATTACK | SPECIAL_ATTACK
-Charmander 43HP | Eevee 11HP
+Charmander 66HP | Eevee 47HP
 ---
-Charmander NORMAL_ATTACK (A:9 | D:8) [ab1-cooldown:1 | ab2-cooldown:1]
-Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+Charmander NORMAL_ATTACK (A:19 | D:18) [ab1-cooldown:0 | ab2-cooldown:6]
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
 NORMAL_ATTACK | ABILITY_2
-Charmander 40HP | Eevee 10HP
----
-Charmander NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:0]
-Eevee SPECIAL_ATTACK (A:8 | D:7) [ab1-cooldown:3 | ab2-cooldown:1]
-NOTHING | SPECIAL_ATTACK
-Charmander 39HP | Eevee 10HP
----
-Charmander NORMAL_ATTACK (A:9 | D:8) [ab1-cooldown:4 | ab2-cooldown:6]
-Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:0]
-NORMAL_ATTACK | ABILITY_1
-Charmander 34HP | Eevee 9HP
----
-Charmander NORMAL_ATTACK (A:9 | D:8) [ab1-cooldown:4 | ab2-cooldown:6]
-Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:1 | ab2-cooldown:2]
-NORMAL_ATTACK | ABILITY_2
-Charmander 31HP | Eevee 8HP
+Charmander 63HP | Eevee 46HP
 ---
 Charmander NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:6]
-Eevee SPECIAL_ATTACK (A:8 | D:7) [ab1-cooldown:0 | ab2-cooldown:1]
+Eevee SPECIAL_ATTACK (A:18 | D:17) [ab1-cooldown:3 | ab2-cooldown:1]
 NOTHING | SPECIAL_ATTACK
-Charmander 30HP | Eevee 8HP
+Charmander 62HP | Eevee 46HP
 ---
-Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
-Eevee SPECIAL_ATTACK (A:8 | D:7) [ab1-cooldown:3 | ab2-cooldown:0]
-ABILITY_2 | SPECIAL_ATTACK
-Charmander 29HP | Eevee 1HP
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
+Eevee NOTHING (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
+ABILITY_1 | NOTHING
+Charmander 62HP | Eevee 42HP
 ---
-Charmander NORMAL_ATTACK (A:9 | D:8) [ab1-cooldown:4 | ab2-cooldown:4]
+Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+ABILITY_2 | ABILITY_1
+Charmander 57HP | Eevee 35HP
+---
+Charmander NORMAL_ATTACK (A:19 | D:18) [ab1-cooldown:1 | ab2-cooldown:4]
+Eevee SPECIAL_ATTACK (A:18 | D:17) [ab1-cooldown:1 | ab2-cooldown:3]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Charmander 56HP | Eevee 34HP
+---
+Charmander NORMAL_ATTACK (A:19 | D:18) [ab1-cooldown:0 | ab2-cooldown:3]
+Eevee SPECIAL_ATTACK (A:18 | D:17) [ab1-cooldown:0 | ab2-cooldown:3]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Charmander 55HP | Eevee 33HP
+---
+Charmander NORMAL_ATTACK (A:19 | D:18) [ab1-cooldown:4 | ab2-cooldown:2]
 Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
 NORMAL_ATTACK | ABILITY_2
-Charmander 26HP | Eevee 0HP
+Charmander 52HP | Eevee 32HP
 ---
----------- Pokemon1 vs Pokemon2 [START] ----------
+Charmander NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
+Eevee SPECIAL_ATTACK (A:18 | D:17) [ab1-cooldown:3 | ab2-cooldown:1]
+NOTHING | SPECIAL_ATTACK
+Charmander 51HP | Eevee 32HP
+---
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
+Eevee NOTHING (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
+ABILITY_1 | NOTHING
+Charmander 51HP | Eevee 28HP
+---
+Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
+Eevee SPECIAL_ATTACK (A:18 | D:17) [ab1-cooldown:3 | ab2-cooldown:3]
+ABILITY_2 | SPECIAL_ATTACK
+Charmander 50HP | Eevee 21HP
+---
+Charmander NORMAL_ATTACK (A:19 | D:18) [ab1-cooldown:1 | ab2-cooldown:4]
+Eevee SPECIAL_ATTACK (A:18 | D:17) [ab1-cooldown:3 | ab2-cooldown:3]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Charmander 49HP | Eevee 20HP
+---
+Charmander NORMAL_ATTACK (A:19 | D:18) [ab1-cooldown:0 | ab2-cooldown:3]
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+NORMAL_ATTACK | ABILITY_2
+Charmander 46HP | Eevee 19HP
+---
+Charmander NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
+NOTHING | ABILITY_1
+Charmander 41HP | Eevee 19HP
+---
+Charmander NORMAL_ATTACK (A:19 | D:18) [ab1-cooldown:4 | ab2-cooldown:1]
+Eevee SPECIAL_ATTACK (A:18 | D:17) [ab1-cooldown:1 | ab2-cooldown:0]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Charmander 40HP | Eevee 18HP
+---
+Charmander NORMAL_ATTACK (A:19 | D:18) [ab1-cooldown:4 | ab2-cooldown:0]
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
+NORMAL_ATTACK | ABILITY_2
+Charmander 37HP | Eevee 17HP
+---
+Charmander NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:6]
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
+NOTHING | ABILITY_1
+Charmander 32HP | Eevee 17HP
+---
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:6]
+Eevee NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:0]
+ABILITY_1 | NOTHING
+Charmander 32HP | Eevee 13HP
+---
+Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
+Eevee SPECIAL_ATTACK (A:18 | D:17) [ab1-cooldown:0 | ab2-cooldown:3]
+ABILITY_2 | SPECIAL_ATTACK
+Charmander 31HP | Eevee 6HP
+---
+Charmander NORMAL_ATTACK (A:19 | D:18) [ab1-cooldown:1 | ab2-cooldown:4]
+Eevee SPECIAL_ATTACK (A:18 | D:17) [ab1-cooldown:3 | ab2-cooldown:3]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Charmander 30HP | Eevee 5HP
+---
+Charmander NORMAL_ATTACK (A:19 | D:18) [ab1-cooldown:0 | ab2-cooldown:3]
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+NORMAL_ATTACK | ABILITY_1
+Charmander 25HP | Eevee 4HP
+---
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+Eevee NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:3]
+ABILITY_1 | NOTHING
+Charmander 25HP | Eevee 0HP
+---
+Pokemon{name='Charmander', HP=73, attack=20, specialAttack=null, defense=16, specialDefense=18, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Pokemon{name='Eevee', HP=53, attack=null, specialAttack=18, defense=18, specialDefense=17, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon1 vs Pokemon2 [DONE] ----------
 ********** POKEMONS INDEX - 2 **********
 ---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Bulbasaur', HP=44, attack=null, specialAttack=10, defense=5, specialDefense=3, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
 Bulbasaur SPECIAL_ATTACK (A:10 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
 Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
 SPECIAL_ATTACK | NORMAL_ATTACK
@@ -403,8 +711,10 @@ Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
 SPECIAL_ATTACK | NORMAL_ATTACK
 Bulbasaur 44HP | Neutrel2 0HP
 ---
+Pokemon{name='Bulbasaur', HP=45, attack=null, specialAttack=11, defense=6, specialDefense=4, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
 ---------- Pokemon1 vs Neutrel [DONE] ----------
 ---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Bulbasaur', HP=54, attack=null, specialAttack=10, defense=3, specialDefense=1, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
 Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
 Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown: | ab2-cooldown:]
 ABILITY_1 | NORMAL_ATTACK
@@ -420,281 +730,155 @@ Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown: | ab2-cooldown:]
 SPECIAL_ATTACK | NORMAL_ATTACK
 Bulbasaur 51HP | Neutrel2 0HP
 ---
+Pokemon{name='Bulbasaur', HP=55, attack=null, specialAttack=11, defense=4, specialDefense=2, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
 ---------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Bulbasaur 45HP | Neutrel2 14HP
----
-Bulbasaur SPECIAL_ATTACK (A:11 | D:1) [ab1-cooldown:2 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 45HP | Neutrel2 4HP
----
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:1 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Bulbasaur 45HP | Neutrel2 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Bulbasaur 55HP | Neutrel2 14HP
----
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Bulbasaur 55HP | Neutrel2 9HP
----
-Bulbasaur SPECIAL_ATTACK (A:11 | D:1) [ab1-cooldown:1 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 55HP | Neutrel2 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Bulbasaur 46HP | Neutrel2 15HP
----
-Bulbasaur SPECIAL_ATTACK (A:12 | D:1) [ab1-cooldown:4 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 46HP | Neutrel2 4HP
----
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Bulbasaur 46HP | Neutrel2 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Bulbasaur 56HP | Neutrel2 15HP
----
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Bulbasaur 56HP | Neutrel2 9HP
----
-Bulbasaur SPECIAL_ATTACK (A:12 | D:1) [ab1-cooldown:2 | ab2-cooldown:0]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 56HP | Neutrel2 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Bulbasaur SPECIAL_ATTACK (A:13 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 47HP | Neutrel2 8HP
----
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Bulbasaur 47HP | Neutrel2 3HP
----
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Bulbasaur 47HP | Neutrel2 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Bulbasaur 57HP | Neutrel2 14HP
----
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Bulbasaur 57HP | Neutrel2 9HP
----
-Bulbasaur SPECIAL_ATTACK (A:13 | D:1) [ab1-cooldown:1 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 57HP | Neutrel2 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Bulbasaur SPECIAL_ATTACK (A:14 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 48HP | Neutrel2 7HP
----
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Bulbasaur 48HP | Neutrel2 2HP
----
-Bulbasaur SPECIAL_ATTACK (A:14 | D:1) [ab1-cooldown:4 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 48HP | Neutrel2 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Bulbasaur SPECIAL_ATTACK (A:14 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 58HP | Neutrel2 7HP
----
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Bulbasaur 58HP | Neutrel2 1HP
----
-Bulbasaur SPECIAL_ATTACK (A:14 | D:1) [ab1-cooldown:2 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 58HP | Neutrel2 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
+Pokemon{name='Bulbasaur', HP=45, attack=null, specialAttack=11, defense=6, specialDefense=4, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Pokemon{name='Bulbasaur', HP=55, attack=null, specialAttack=11, defense=4, specialDefense=2, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
 ---------- Pokemon1 vs Pokemon2 [START] ----------
-Bulbasaur SPECIAL_ATTACK (A:15 | D:6) [ab1-cooldown:4 | ab2-cooldown:3]
 Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-SPECIAL_ATTACK | ABILITY_2
-Bulbasaur 44HP | Bulbasaur 50HP
----
-Bulbasaur SPECIAL_ATTACK (A:15 | D:6) [ab1-cooldown:4 | ab2-cooldown:3]
-Bulbasaur SPECIAL_ATTACK (A:15 | D:8) [ab1-cooldown:4 | ab2-cooldown:1]
-SPECIAL_ATTACK | SPECIAL_ATTACK
-Bulbasaur 37HP | Bulbasaur 41HP
----
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
+Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
 ABILITY_2 | ABILITY_1
-Bulbasaur 31HP | Bulbasaur 36HP
+Bulbasaur 39HP | Bulbasaur 50HP
 ---
-Bulbasaur SPECIAL_ATTACK (A:15 | D:6) [ab1-cooldown:4 | ab2-cooldown:1]
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:2]
-SPECIAL_ATTACK | ABILITY_2
-Bulbasaur 26HP | Bulbasaur 27HP
----
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
-Bulbasaur SPECIAL_ATTACK (A:15 | D:8) [ab1-cooldown:1 | ab2-cooldown:1]
+Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
+Bulbasaur SPECIAL_ATTACK (A:11 | D:4) [ab1-cooldown:2 | ab2-cooldown:3]
 ABILITY_1 | SPECIAL_ATTACK
-Bulbasaur 19HP | Bulbasaur 21HP
+Bulbasaur 32HP | Bulbasaur 44HP
 ---
-Bulbasaur SPECIAL_ATTACK (A:15 | D:6) [ab1-cooldown:2 | ab2-cooldown:3]
-Bulbasaur SPECIAL_ATTACK (A:15 | D:8) [ab1-cooldown:0 | ab2-cooldown:0]
-SPECIAL_ATTACK | SPECIAL_ATTACK
-Bulbasaur 12HP | Bulbasaur 12HP
----
-Bulbasaur SPECIAL_ATTACK (A:15 | D:6) [ab1-cooldown:1 | ab2-cooldown:3]
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
+Bulbasaur SPECIAL_ATTACK (A:11 | D:2) [ab1-cooldown:2 | ab2-cooldown:0]
+Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:1 | ab2-cooldown:2]
 SPECIAL_ATTACK | ABILITY_2
-Bulbasaur 7HP | Bulbasaur 3HP
+Bulbasaur 27HP | Bulbasaur 35HP
 ---
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
-ABILITY_2 | ABILITY_1
-Bulbasaur 1HP | Bulbasaur 0HP
+Bulbasaur SPECIAL_ATTACK (A:11 | D:2) [ab1-cooldown:1 | ab2-cooldown:3]
+Bulbasaur SPECIAL_ATTACK (A:11 | D:4) [ab1-cooldown:0 | ab2-cooldown:1]
+SPECIAL_ATTACK | SPECIAL_ATTACK
+Bulbasaur 20HP | Bulbasaur 26HP
 ---
----------- Pokemon1 vs Pokemon2 [START] ----------
-100 | 62
-87 | 66
-86 | 88
-*** Best Pokemons - [BEFORE] - Final Battle ***
-Pokemon{name='Snorlax', HP=74, attack=8, specialAttack=null, defense=10, specialDefense=8, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
-Pokemon{name='Bulbasaur', HP=59, attack=null, specialAttack=15, defense=8, specialDefense=6, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
----------- Best1 vs Best2 [START] ----------
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
-Bulbasaur NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-ABILITY_1 | NOTHING
-Snorlax 74HP | Bulbasaur 55HP
+Bulbasaur SPECIAL_ATTACK (A:11 | D:2) [ab1-cooldown:0 | ab2-cooldown:3]
+Bulbasaur SPECIAL_ATTACK (A:11 | D:4) [ab1-cooldown:4 | ab2-cooldown:0]
+SPECIAL_ATTACK | SPECIAL_ATTACK
+Bulbasaur 13HP | Bulbasaur 17HP
 ---
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
+Bulbasaur SPECIAL_ATTACK (A:11 | D:2) [ab1-cooldown:4 | ab2-cooldown:3]
+Bulbasaur SPECIAL_ATTACK (A:11 | D:4) [ab1-cooldown:4 | ab2-cooldown:3]
+SPECIAL_ATTACK | SPECIAL_ATTACK
+Bulbasaur 6HP | Bulbasaur 8HP
+---
 Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-ABILITY_2 | ABILITY_1
-Snorlax 74HP | Bulbasaur 55HP
+Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+ABILITY_1 | ABILITY_1
+Bulbasaur 0HP | Bulbasaur 2HP
 ---
-Snorlax NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:2 | ab2-cooldown:3]
-Bulbasaur SPECIAL_ATTACK (A:15 | D:8) [ab1-cooldown:2 | ab2-cooldown:3]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Snorlax 67HP | Bulbasaur 55HP
+Pokemon{name='Bulbasaur', HP=45, attack=null, specialAttack=11, defense=6, specialDefense=4, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Pokemon{name='Bulbasaur', HP=56, attack=null, specialAttack=12, defense=5, specialDefense=3, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Pokemon2 [DONE] ----------
+96 | 58
+127 | 106
+66 | 76
+*** Best Pokemons - [BEFORE] - Final Battle ***
+Pokemon{name='Charmander', HP=73, attack=20, specialAttack=null, defense=16, specialDefense=18, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Pokemon{name='Eevee', HP=53, attack=null, specialAttack=18, defense=18, specialDefense=17, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Best1 vs Best2 [START] ----------
+Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
+Eevee SPECIAL_ATTACK (A:18 | D:18) [ab1-cooldown:3 | ab2-cooldown:3]
+ABILITY_2 | SPECIAL_ATTACK
+Charmander 73HP | Eevee 46HP
 ---
-Snorlax NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:1 | ab2-cooldown:2]
-Bulbasaur SPECIAL_ATTACK (A:15 | D:8) [ab1-cooldown:1 | ab2-cooldown:3]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Snorlax 60HP | Bulbasaur 55HP
----
-Snorlax NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:0 | ab2-cooldown:1]
-Bulbasaur SPECIAL_ATTACK (A:15 | D:8) [ab1-cooldown:0 | ab2-cooldown:3]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Snorlax 53HP | Bulbasaur 55HP
----
-Snorlax NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:5 | ab2-cooldown:0]
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-NORMAL_ATTACK | ABILITY_2
-Snorlax 48HP | Bulbasaur 55HP
----
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
-Bulbasaur NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
+Eevee NOTHING (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
 ABILITY_1 | NOTHING
-Snorlax 48HP | Bulbasaur 51HP
+Charmander 73HP | Eevee 42HP
 ---
-Snorlax NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:3 | ab2-cooldown:5]
-Bulbasaur SPECIAL_ATTACK (A:15 | D:8) [ab1-cooldown:4 | ab2-cooldown:0]
+Charmander NORMAL_ATTACK (A:20 | D:18) [ab1-cooldown:2 | ab2-cooldown:3]
+Eevee SPECIAL_ATTACK (A:18 | D:18) [ab1-cooldown:3 | ab2-cooldown:3]
 NORMAL_ATTACK | SPECIAL_ATTACK
-Snorlax 41HP | Bulbasaur 51HP
+Charmander 73HP | Eevee 40HP
 ---
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-ABILITY_2 | ABILITY_2
-Snorlax 41HP | Bulbasaur 51HP
----
-Snorlax NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:1 | ab2-cooldown:3]
-Bulbasaur SPECIAL_ATTACK (A:15 | D:8) [ab1-cooldown:4 | ab2-cooldown:1]
+Charmander NORMAL_ATTACK (A:20 | D:18) [ab1-cooldown:1 | ab2-cooldown:2]
+Eevee SPECIAL_ATTACK (A:18 | D:18) [ab1-cooldown:3 | ab2-cooldown:3]
 NORMAL_ATTACK | SPECIAL_ATTACK
-Snorlax 34HP | Bulbasaur 51HP
+Charmander 73HP | Eevee 38HP
 ---
-Snorlax NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:0 | ab2-cooldown:2]
-Bulbasaur SPECIAL_ATTACK (A:15 | D:8) [ab1-cooldown:4 | ab2-cooldown:0]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Snorlax 27HP | Bulbasaur 51HP
----
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
-Bulbasaur NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-ABILITY_1 | NOTHING
-Snorlax 27HP | Bulbasaur 47HP
----
-Snorlax NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:3 | ab2-cooldown:0]
-Bulbasaur SPECIAL_ATTACK (A:15 | D:8) [ab1-cooldown:4 | ab2-cooldown:3]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Snorlax 20HP | Bulbasaur 47HP
----
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-ABILITY_2 | ABILITY_2
-Snorlax 20HP | Bulbasaur 47HP
----
-Snorlax NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:1 | ab2-cooldown:3]
-Bulbasaur SPECIAL_ATTACK (A:15 | D:8) [ab1-cooldown:4 | ab2-cooldown:1]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Snorlax 13HP | Bulbasaur 47HP
----
-Snorlax NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:0 | ab2-cooldown:2]
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
+Charmander NORMAL_ATTACK (A:20 | D:18) [ab1-cooldown:0 | ab2-cooldown:1]
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
 NORMAL_ATTACK | ABILITY_1
-Snorlax 7HP | Bulbasaur 47HP
+Charmander 68HP | Eevee 36HP
 ---
-Snorlax NORMAL_ATTACK (A:8 | D:8) [ab1-cooldown:5 | ab2-cooldown:1]
-Bulbasaur SPECIAL_ATTACK (A:15 | D:8) [ab1-cooldown:2 | ab2-cooldown:3]
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
+Eevee NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:3]
+ABILITY_1 | NOTHING
+Charmander 68HP | Eevee 32HP
+---
+Charmander NORMAL_ATTACK (A:20 | D:18) [ab1-cooldown:2 | ab2-cooldown:6]
+Eevee SPECIAL_ATTACK (A:18 | D:18) [ab1-cooldown:0 | ab2-cooldown:3]
 NORMAL_ATTACK | SPECIAL_ATTACK
-Snorlax 0HP | Bulbasaur 47HP
+Charmander 68HP | Eevee 30HP
+---
+Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:1 | ab2-cooldown:5]
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+ABILITY_2 | ABILITY_1
+Charmander 63HP | Eevee 23HP
+---
+Charmander NORMAL_ATTACK (A:20 | D:18) [ab1-cooldown:0 | ab2-cooldown:4]
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:1 | ab2-cooldown:2]
+NORMAL_ATTACK | ABILITY_2
+Charmander 60HP | Eevee 21HP
+---
+Charmander NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
+Eevee SPECIAL_ATTACK (A:18 | D:18) [ab1-cooldown:0 | ab2-cooldown:1]
+NOTHING | SPECIAL_ATTACK
+Charmander 60HP | Eevee 21HP
+---
+Charmander ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+Eevee NOTHING (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
+ABILITY_1 | NOTHING
+Charmander 60HP | Eevee 17HP
+---
+Charmander NORMAL_ATTACK (A:20 | D:18) [ab1-cooldown:2 | ab2-cooldown:1]
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+NORMAL_ATTACK | ABILITY_1
+Charmander 55HP | Eevee 15HP
+---
+Charmander NORMAL_ATTACK (A:20 | D:18) [ab1-cooldown:1 | ab2-cooldown:0]
+Eevee SPECIAL_ATTACK (A:18 | D:18) [ab1-cooldown:1 | ab2-cooldown:3]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Charmander 55HP | Eevee 13HP
+---
+Charmander ABILITY_2 (A:7 | D:0) [ab1-cooldown:0 | ab2-cooldown:5]
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
+ABILITY_2 | ABILITY_2
+Charmander 52HP | Eevee 6HP
+---
+Charmander NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
+NOTHING | ABILITY_1
+Charmander 47HP | Eevee 6HP
+---
+Charmander NORMAL_ATTACK (A:20 | D:18) [ab1-cooldown:4 | ab2-cooldown:3]
+Eevee SPECIAL_ATTACK (A:18 | D:18) [ab1-cooldown:1 | ab2-cooldown:0]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Charmander 47HP | Eevee 4HP
+---
+Charmander NORMAL_ATTACK (A:20 | D:18) [ab1-cooldown:4 | ab2-cooldown:2]
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
+NORMAL_ATTACK | ABILITY_2
+Charmander 44HP | Eevee 2HP
+---
+Charmander NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
+Eevee SPECIAL_ATTACK (A:18 | D:18) [ab1-cooldown:3 | ab2-cooldown:1]
+NOTHING | SPECIAL_ATTACK
+Charmander 44HP | Eevee 2HP
+---
+Charmander NORMAL_ATTACK (A:20 | D:18) [ab1-cooldown:4 | ab2-cooldown:0]
+Eevee SPECIAL_ATTACK (A:18 | D:18) [ab1-cooldown:3 | ab2-cooldown:0]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Charmander 44HP | Eevee 0HP
 ---
 ---------- Best1 vs Best2 [DONE] ----------
 *** Best Pokemons - [AFTER] - Final Battle ***
-Pokemon{name='Snorlax', HP=74, attack=8, specialAttack=null, defense=10, specialDefense=8, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
-Pokemon{name='Bulbasaur', HP=60, attack=null, specialAttack=16, defense=9, specialDefense=7, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
+Pokemon{name='Charmander', HP=74, attack=21, specialAttack=null, defense=17, specialDefense=19, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+Pokemon{name='Eevee', HP=53, attack=null, specialAttack=18, defense=18, specialDefense=17, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
 
 ***** WINNER *****
-Trainer{name='Trainer_5_2', age=46, pokemons=[Pokemon{name='Vulpix', HP=37, attack=9, specialAttack=null, defense=6, specialDefense=10, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}, Pokemon{name='Eevee', HP=43, attack=null, specialAttack=8, defense=8, specialDefense=7, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}, Pokemon{name='Bulbasaur', HP=60, attack=null, specialAttack=16, defense=9, specialDefense=7, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}], pokemonsOrder=[Vulpix, Eevee, Bulbasaur]}
+Trainer{name='Trainer_5_1', age=26, pokemons=[Pokemon{name='Snorlax', HP=73, attack=7, specialAttack=null, defense=9, specialDefense=7, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}, Pokemon{name='Charmander', HP=74, attack=21, specialAttack=null, defense=17, specialDefense=19, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=7, stun=false, dodge=false, cooldown=6}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}, Pokemon{name='Bulbasaur', HP=45, attack=null, specialAttack=11, defense=6, specialDefense=4, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}], pokemonsOrder=[Snorlax, Charmander, Bulbasaur]}

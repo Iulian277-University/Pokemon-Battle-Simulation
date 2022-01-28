@@ -1,854 +1,445 @@
 ********** POKEMONS INDEX - 0 **********
----------- Pokemon1 vs Neutrel [START] ----------
-Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Meowth 53HP | Neutrel2 15HP
----
-Meowth NORMAL_ATTACK (A:5 | D:1) [ab1-cooldown:2 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Meowth 53HP | Neutrel2 11HP
----
-Meowth NORMAL_ATTACK (A:5 | D:1) [ab1-cooldown:1 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Meowth 53HP | Neutrel2 7HP
----
-Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Meowth 53HP | Neutrel2 6HP
----
-Meowth NORMAL_ATTACK (A:5 | D:1) [ab1-cooldown:4 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Meowth 53HP | Neutrel2 2HP
----
-Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Meowth 53HP | Neutrel2 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Pikachu SPECIAL_ATTACK (A:4 | D:1) [ab1-cooldown:4 | ab2-cooldown:5]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Pikachu 45HP | Neutrel2 17HP
----
-Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Pikachu 45HP | Neutrel2 11HP
----
-Pikachu SPECIAL_ATTACK (A:4 | D:1) [ab1-cooldown:2 | ab2-cooldown:5]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Pikachu 45HP | Neutrel2 8HP
----
-Pikachu SPECIAL_ATTACK (A:4 | D:1) [ab1-cooldown:1 | ab2-cooldown:5]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Pikachu 45HP | Neutrel2 5HP
----
-Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NOTHING
-Pikachu 45HP | Neutrel2 1HP
----
-Pikachu SPECIAL_ATTACK (A:4 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NOTHING
-Pikachu 45HP | Neutrel2 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Meowth NORMAL_ATTACK (A:6 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Meowth 54HP | Neutrel2 15HP
----
-Meowth NORMAL_ATTACK (A:6 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Meowth 54HP | Neutrel2 10HP
----
-Meowth NORMAL_ATTACK (A:6 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Meowth 54HP | Neutrel2 5HP
----
-Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Meowth 54HP | Neutrel2 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NOTHING
-Pikachu 46HP | Neutrel2 16HP
----
-Pikachu SPECIAL_ATTACK (A:5 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NOTHING
-Pikachu 46HP | Neutrel2 12HP
----
-Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Pikachu 46HP | Neutrel2 6HP
----
-Pikachu SPECIAL_ATTACK (A:5 | D:1) [ab1-cooldown:2 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Pikachu 46HP | Neutrel2 2HP
----
-Pikachu SPECIAL_ATTACK (A:5 | D:1) [ab1-cooldown:1 | ab2-cooldown:0]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Pikachu 46HP | Neutrel2 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
+Pokemon{name='Meowth', HP=53, attack=5, specialAttack=null, defense=4, specialDefense=2, firstAbility=Ability{damage=5, stun=false, dodge=true, cooldown=4}, secondAbility=Ability{damage=1, stun=false, dodge=true, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}
+Pokemon{name='Pikachu', HP=45, attack=null, specialAttack=4, defense=4, specialDefense=8, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
 ---------- Pokemon1 vs Pokemon2 [START] ----------
-Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
-ABILITY_2 | ABILITY_2
-Meowth 55HP | Pikachu 47HP
----
-Meowth NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:4 | ab2-cooldown:3]
-NOTHING | SPECIAL_ATTACK
-Meowth 53HP | Pikachu 47HP
----
-Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
-Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
-ABILITY_1 | ABILITY_1
-Meowth 53HP | Pikachu 42HP
----
-Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:2 | ab2-cooldown:2]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:2 | ab2-cooldown:1]
-ABILITY_2 | SPECIAL_ATTACK
-Meowth 53HP | Pikachu 41HP
----
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:1 | ab2-cooldown:1]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:1 | ab2-cooldown:0]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Meowth 51HP | Pikachu 40HP
----
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:0 | ab2-cooldown:0]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:0 | ab2-cooldown:5]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Meowth 49HP | Pikachu 39HP
+Meowth NORMAL_ATTACK (A:5 | D:4) [ab1-cooldown:4 | ab2-cooldown:3]
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+NORMAL_ATTACK | ABILITY_1
+Meowth 47HP | Pikachu 44HP
 ---
 Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
-ABILITY_1 | ABILITY_2
-Meowth 49HP | Pikachu 39HP
----
-Meowth NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
-Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-NOTHING | ABILITY_1
-Meowth 43HP | Pikachu 39HP
----
-Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:1 | ab2-cooldown:2]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:2 | ab2-cooldown:2]
-ABILITY_2 | SPECIAL_ATTACK
-Meowth 43HP | Pikachu 38HP
----
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:0 | ab2-cooldown:1]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:1 | ab2-cooldown:1]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Meowth 41HP | Pikachu 37HP
----
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:4 | ab2-cooldown:0]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:0 | ab2-cooldown:0]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Meowth 39HP | Pikachu 36HP
----
-Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
-ABILITY_2 | ABILITY_2
-Meowth 39HP | Pikachu 36HP
----
-Meowth NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:4 | ab2-cooldown:3]
-NOTHING | SPECIAL_ATTACK
-Meowth 37HP | Pikachu 36HP
----
-Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
-Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
-ABILITY_1 | ABILITY_1
-Meowth 37HP | Pikachu 31HP
----
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:2 | ab2-cooldown:3]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:2 | ab2-cooldown:1]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Meowth 35HP | Pikachu 30HP
----
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:1 | ab2-cooldown:3]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:1 | ab2-cooldown:0]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Meowth 33HP | Pikachu 29HP
----
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:0 | ab2-cooldown:3]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:0 | ab2-cooldown:5]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Meowth 31HP | Pikachu 28HP
----
-Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-ABILITY_2 | ABILITY_1
-Meowth 31HP | Pikachu 27HP
----
-Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:2 | ab2-cooldown:5]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:2 | ab2-cooldown:5]
 ABILITY_1 | SPECIAL_ATTACK
-Meowth 31HP | Pikachu 22HP
+Meowth 47HP | Pikachu 39HP
 ---
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:2 | ab2-cooldown:0]
-Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
-NORMAL_ATTACK | ABILITY_2
-Meowth 27HP | Pikachu 22HP
----
-Meowth NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:3]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:0 | ab2-cooldown:3]
-NOTHING | SPECIAL_ATTACK
-Meowth 25HP | Pikachu 22HP
----
-Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
-Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
-ABILITY_2 | ABILITY_1
-Meowth 25HP | Pikachu 21HP
----
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:4 | ab2-cooldown:1]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:2 | ab2-cooldown:1]
+Meowth NORMAL_ATTACK (A:5 | D:4) [ab1-cooldown:2 | ab2-cooldown:3]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:1 | ab2-cooldown:5]
 NORMAL_ATTACK | SPECIAL_ATTACK
-Meowth 23HP | Pikachu 20HP
+Meowth 45HP | Pikachu 38HP
 ---
-Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:1 | ab2-cooldown:0]
+Meowth NORMAL_ATTACK (A:5 | D:4) [ab1-cooldown:1 | ab2-cooldown:3]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:0 | ab2-cooldown:5]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Meowth 43HP | Pikachu 37HP
+---
+Meowth NORMAL_ATTACK (A:5 | D:4) [ab1-cooldown:0 | ab2-cooldown:3]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:4 | ab2-cooldown:5]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Meowth 41HP | Pikachu 36HP
+---
+Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:4 | ab2-cooldown:5]
 ABILITY_1 | SPECIAL_ATTACK
-Meowth 23HP | Pikachu 15HP
+Meowth 41HP | Pikachu 31HP
 ---
 Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:2 | ab2-cooldown:2]
-Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
+Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
 ABILITY_2 | ABILITY_2
-Meowth 23HP | Pikachu 15HP
+Meowth 41HP | Pikachu 31HP
 ---
 Meowth NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:1]
 Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
 NOTHING | ABILITY_1
-Meowth 17HP | Pikachu 15HP
+Meowth 35HP | Pikachu 31HP
 ---
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:0 | ab2-cooldown:0]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:2 | ab2-cooldown:2]
+Meowth NORMAL_ATTACK (A:5 | D:4) [ab1-cooldown:0 | ab2-cooldown:0]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:2 | ab2-cooldown:2]
 NORMAL_ATTACK | SPECIAL_ATTACK
-Meowth 15HP | Pikachu 14HP
+Meowth 33HP | Pikachu 30HP
 ---
 Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:1 | ab2-cooldown:1]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:1 | ab2-cooldown:1]
 ABILITY_2 | SPECIAL_ATTACK
-Meowth 15HP | Pikachu 13HP
+Meowth 33HP | Pikachu 29HP
+---
+Meowth NORMAL_ATTACK (A:5 | D:4) [ab1-cooldown:4 | ab2-cooldown:1]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:0 | ab2-cooldown:0]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Meowth 31HP | Pikachu 28HP
+---
+Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
+Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+ABILITY_1 | ABILITY_2
+Meowth 31HP | Pikachu 28HP
+---
+Meowth NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:4 | ab2-cooldown:3]
+NOTHING | SPECIAL_ATTACK
+Meowth 29HP | Pikachu 28HP
+---
+Meowth NORMAL_ATTACK (A:5 | D:4) [ab1-cooldown:1 | ab2-cooldown:3]
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+NORMAL_ATTACK | ABILITY_1
+Meowth 23HP | Pikachu 27HP
+---
+Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:2 | ab2-cooldown:1]
+ABILITY_2 | SPECIAL_ATTACK
+Meowth 23HP | Pikachu 26HP
 ---
 Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:0 | ab2-cooldown:0]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:1 | ab2-cooldown:0]
 ABILITY_1 | SPECIAL_ATTACK
-Meowth 15HP | Pikachu 8HP
+Meowth 23HP | Pikachu 21HP
 ---
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:2 | ab2-cooldown:0]
-Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-NORMAL_ATTACK | ABILITY_1
-Meowth 9HP | Pikachu 7HP
----
-Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:1 | ab2-cooldown:2]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:2 | ab2-cooldown:5]
-ABILITY_2 | SPECIAL_ATTACK
-Meowth 9HP | Pikachu 6HP
----
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:0 | ab2-cooldown:1]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:1 | ab2-cooldown:5]
-NORMAL_ATTACK | SPECIAL_ATTACK
-Meowth 7HP | Pikachu 5HP
----
-Meowth NORMAL_ATTACK (A:7 | D:6) [ab1-cooldown:4 | ab2-cooldown:0]
+Meowth NORMAL_ATTACK (A:5 | D:4) [ab1-cooldown:2 | ab2-cooldown:0]
 Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
 NORMAL_ATTACK | ABILITY_2
-Meowth 3HP | Pikachu 5HP
+Meowth 19HP | Pikachu 21HP
 ---
-Meowth NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:4 | ab2-cooldown:3]
-NOTHING | SPECIAL_ATTACK
-Meowth 1HP | Pikachu 5HP
+Meowth NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:3]
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+NOTHING | ABILITY_1
+Meowth 13HP | Pikachu 21HP
 ---
-Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Pikachu SPECIAL_ATTACK (A:6 | D:4) [ab1-cooldown:4 | ab2-cooldown:2]
+Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:2 | ab2-cooldown:2]
 ABILITY_2 | SPECIAL_ATTACK
-Meowth 1HP | Pikachu 4HP
+Meowth 13HP | Pikachu 20HP
 ---
-Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
+Meowth NORMAL_ATTACK (A:5 | D:4) [ab1-cooldown:4 | ab2-cooldown:1]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:1 | ab2-cooldown:1]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Meowth 11HP | Pikachu 19HP
+---
+Meowth NORMAL_ATTACK (A:5 | D:4) [ab1-cooldown:4 | ab2-cooldown:0]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:0 | ab2-cooldown:0]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Meowth 9HP | Pikachu 18HP
+---
+Meowth ABILITY_1 (A:5 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+ABILITY_1 | ABILITY_1
+Meowth 9HP | Pikachu 13HP
+---
+Meowth ABILITY_2 (A:1 | D:0) [ab1-cooldown:2 | ab2-cooldown:2]
+Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
+ABILITY_2 | ABILITY_2
+Meowth 9HP | Pikachu 13HP
+---
+Meowth NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:1]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:1 | ab2-cooldown:3]
+NOTHING | SPECIAL_ATTACK
+Meowth 7HP | Pikachu 13HP
+---
+Meowth NORMAL_ATTACK (A:5 | D:4) [ab1-cooldown:0 | ab2-cooldown:0]
+Pikachu SPECIAL_ATTACK (A:4 | D:2) [ab1-cooldown:0 | ab2-cooldown:2]
+NORMAL_ATTACK | SPECIAL_ATTACK
+Meowth 5HP | Pikachu 12HP
+---
+Meowth NORMAL_ATTACK (A:5 | D:4) [ab1-cooldown:4 | ab2-cooldown:3]
 Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
-ABILITY_1 | ABILITY_1
-Meowth 1HP | Pikachu 0HP
+NORMAL_ATTACK | ABILITY_1
+Meowth 0HP | Pikachu 11HP
 ---
----------- Pokemon1 vs Pokemon2 [START] ----------
+Pokemon{name='Meowth', HP=53, attack=5, specialAttack=null, defense=4, specialDefense=2, firstAbility=Ability{damage=5, stun=false, dodge=true, cooldown=4}, secondAbility=Ability{damage=1, stun=false, dodge=true, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}
+Pokemon{name='Pikachu', HP=46, attack=null, specialAttack=5, defense=5, specialDefense=9, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Pokemon2 [DONE] ----------
 ********** POKEMONS INDEX - 1 **********
----------- Pokemon1 vs Neutrel [START] ----------
-Psyduck NORMAL_ATTACK (A:5 | D:1) [ab1-cooldown:4 | ab2-cooldown:5]
-Neutrel1 NORMAL_ATTACK (A:3 | D:5) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 55HP | Neutrel1 6HP
----
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-Neutrel1 NORMAL_ATTACK (A:3 | D:5) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Psyduck 55HP | Neutrel1 4HP
----
-Psyduck NORMAL_ATTACK (A:5 | D:1) [ab1-cooldown:2 | ab2-cooldown:5]
-Neutrel1 NORMAL_ATTACK (A:3 | D:5) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 55HP | Neutrel1 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Snorlax NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:5 | ab2-cooldown:5]
-Neutrel1 NORMAL_ATTACK (A:3 | D:8) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 64HP | Neutrel1 3HP
----
-Snorlax NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:5 | ab2-cooldown:5]
-Neutrel1 NORMAL_ATTACK (A:3 | D:8) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 64HP | Neutrel1 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-Neutrel1 NORMAL_ATTACK (A:3 | D:6) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Psyduck 56HP | Neutrel1 8HP
----
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NOTHING
-Psyduck 56HP | Neutrel1 6HP
----
-Psyduck NORMAL_ATTACK (A:6 | D:1) [ab1-cooldown:1 | ab2-cooldown:3]
-Neutrel1 NORMAL_ATTACK (A:3 | D:6) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 56HP | Neutrel1 1HP
----
-Psyduck NORMAL_ATTACK (A:6 | D:1) [ab1-cooldown:0 | ab2-cooldown:2]
-Neutrel1 NORMAL_ATTACK (A:3 | D:6) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 56HP | Neutrel1 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
-Neutrel1 NORMAL_ATTACK (A:3 | D:9) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Snorlax 65HP | Neutrel1 10HP
----
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NOTHING
-Snorlax 65HP | Neutrel1 6HP
----
-Snorlax NORMAL_ATTACK (A:9 | D:1) [ab1-cooldown:3 | ab2-cooldown:2]
-Neutrel1 NORMAL_ATTACK (A:3 | D:9) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 65HP | Neutrel1 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Psyduck 57HP | Neutrel2 18HP
----
-Psyduck NORMAL_ATTACK (A:7 | D:1) [ab1-cooldown:2 | ab2-cooldown:5]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 57HP | Neutrel2 12HP
----
-Psyduck NORMAL_ATTACK (A:7 | D:1) [ab1-cooldown:1 | ab2-cooldown:5]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 57HP | Neutrel2 6HP
----
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NOTHING
-Psyduck 57HP | Neutrel2 4HP
----
-Psyduck NORMAL_ATTACK (A:7 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 57HP | Neutrel2 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NOTHING
-Snorlax 66HP | Neutrel2 16HP
----
-Snorlax NORMAL_ATTACK (A:10 | D:1) [ab1-cooldown:3 | ab2-cooldown:5]
-Neutrel2 NORMAL_ATTACK (A:4 | D:10) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 66HP | Neutrel2 7HP
----
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-Neutrel2 NORMAL_ATTACK (A:4 | D:10) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Snorlax 66HP | Neutrel2 7HP
----
-Snorlax NORMAL_ATTACK (A:10 | D:1) [ab1-cooldown:1 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:10) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 66HP | Neutrel2 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-Neutrel1 NORMAL_ATTACK (A:3 | D:8) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Psyduck 58HP | Neutrel1 8HP
----
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NOTHING
-Psyduck 58HP | Neutrel1 6HP
----
-Psyduck NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:1 | ab2-cooldown:3]
-Neutrel1 NORMAL_ATTACK (A:3 | D:8) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 58HP | Neutrel1 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Snorlax NORMAL_ATTACK (A:11 | D:1) [ab1-cooldown:5 | ab2-cooldown:5]
-Neutrel1 NORMAL_ATTACK (A:3 | D:11) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 67HP | Neutrel1 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Psyduck NORMAL_ATTACK (A:9 | D:1) [ab1-cooldown:4 | ab2-cooldown:5]
-Neutrel1 NORMAL_ATTACK (A:3 | D:9) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 59HP | Neutrel1 2HP
----
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NOTHING
-Psyduck 59HP | Neutrel1 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Snorlax NORMAL_ATTACK (A:12 | D:1) [ab1-cooldown:5 | ab2-cooldown:5]
-Neutrel1 NORMAL_ATTACK (A:3 | D:12) [ab1-cooldown: | ab2-cooldown:]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 68HP | Neutrel1 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
+Pokemon{name='Psyduck', HP=55, attack=5, specialAttack=null, defense=5, specialDefense=5, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Pokemon{name='Snorlax', HP=64, attack=8, specialAttack=null, defense=8, specialDefense=6, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}
 ---------- Pokemon1 vs Pokemon2 [START] ----------
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:5]
-ABILITY_2 | NOTHING
-Psyduck 60HP | Snorlax 67HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:4 | ab2-cooldown:3]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:5 | ab2-cooldown:5]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 57HP | Snorlax 67HP
----
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
-ABILITY_1 | ABILITY_1
-Psyduck 53HP | Snorlax 65HP
----
-Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
-NOTHING | ABILITY_2
-Psyduck 53HP | Snorlax 65HP
----
-Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:0]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:2 | ab2-cooldown:3]
-NOTHING | NORMAL_ATTACK
-Psyduck 50HP | Snorlax 65HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:0 | ab2-cooldown:5]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:1 | ab2-cooldown:2]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 47HP | Snorlax 65HP
----
 Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:0 | ab2-cooldown:1]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:5 | ab2-cooldown:5]
 ABILITY_1 | NORMAL_ATTACK
-Psyduck 44HP | Snorlax 63HP
+Psyduck 52HP | Snorlax 62HP
 ---
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:0]
-ABILITY_2 | NOTHING
-Psyduck 44HP | Snorlax 61HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:1 | ab2-cooldown:3]
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
-NORMAL_ATTACK | ABILITY_1
-Psyduck 40HP | Snorlax 61HP
----
-Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:3 | ab2-cooldown:5]
-NOTHING | NORMAL_ATTACK
-Psyduck 37HP | Snorlax 61HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:4 | ab2-cooldown:1]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:2 | ab2-cooldown:5]
+Psyduck NORMAL_ATTACK (A:5 | D:8) [ab1-cooldown:2 | ab2-cooldown:5]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:5 | ab2-cooldown:5]
 NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 34HP | Snorlax 61HP
+Psyduck 49HP | Snorlax 62HP
 ---
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:4 | ab2-cooldown:0]
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
-NORMAL_ATTACK | ABILITY_2
-Psyduck 34HP | Snorlax 61HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:4 | ab2-cooldown:5]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:0 | ab2-cooldown:3]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 31HP | Snorlax 61HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:4 | ab2-cooldown:5]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:5 | ab2-cooldown:2]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 28HP | Snorlax 61HP
----
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
-ABILITY_1 | ABILITY_1
-Psyduck 24HP | Snorlax 59HP
----
-Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:3 | ab2-cooldown:0]
-NOTHING | NORMAL_ATTACK
-Psyduck 21HP | Snorlax 59HP
----
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
-ABILITY_2 | NOTHING
-Psyduck 21HP | Snorlax 57HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:0 | ab2-cooldown:3]
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
-NORMAL_ATTACK | ABILITY_2
-Psyduck 21HP | Snorlax 57HP
----
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:0 | ab2-cooldown:3]
-ABILITY_1 | NORMAL_ATTACK
-Psyduck 18HP | Snorlax 55HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:2 | ab2-cooldown:1]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:5 | ab2-cooldown:2]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 15HP | Snorlax 55HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:1 | ab2-cooldown:0]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:5 | ab2-cooldown:1]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 12HP | Snorlax 55HP
----
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:0]
-ABILITY_2 | NOTHING
-Psyduck 12HP | Snorlax 53HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:4 | ab2-cooldown:3]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:5 | ab2-cooldown:5]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 9HP | Snorlax 53HP
----
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:5 | ab2-cooldown:5]
-ABILITY_1 | NORMAL_ATTACK
-Psyduck 6HP | Snorlax 51HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:2 | ab2-cooldown:1]
+Psyduck NORMAL_ATTACK (A:5 | D:8) [ab1-cooldown:1 | ab2-cooldown:5]
 Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
 NORMAL_ATTACK | ABILITY_2
-Psyduck 6HP | Snorlax 51HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:13) [ab1-cooldown:1 | ab2-cooldown:0]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:5 | ab2-cooldown:3]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 3HP | Snorlax 51HP
----
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:2]
-ABILITY_2 | NOTHING
-Psyduck 3HP | Snorlax 49HP
----
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-Snorlax NORMAL_ATTACK (A:13 | D:10) [ab1-cooldown:5 | ab2-cooldown:1]
-ABILITY_1 | NORMAL_ATTACK
-Psyduck 0HP | Snorlax 47HP
----
----------- Pokemon1 vs Pokemon2 [START] ----------
-********** POKEMONS INDEX - 2 **********
----------- Pokemon1 vs Neutrel [START] ----------
-Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Eevee 40HP | Neutrel2 15HP
----
-Eevee SPECIAL_ATTACK (A:9 | D:1) [ab1-cooldown:1 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Eevee 39HP | Neutrel2 7HP
----
-Eevee SPECIAL_ATTACK (A:9 | D:1) [ab1-cooldown:0 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Eevee 38HP | Neutrel2 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Bulbasaur SPECIAL_ATTACK (A:7 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 53HP | Neutrel2 14HP
----
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Bulbasaur 52HP | Neutrel2 9HP
----
-Bulbasaur SPECIAL_ATTACK (A:7 | D:1) [ab1-cooldown:4 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 51HP | Neutrel2 3HP
----
-Bulbasaur SPECIAL_ATTACK (A:7 | D:1) [ab1-cooldown:4 | ab2-cooldown:0]
-Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 50HP | Neutrel2 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Eevee 42HP | Neutrel2 15HP
----
-Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:1 | ab2-cooldown:2]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NOTHING
-Eevee 42HP | Neutrel2 12HP
----
-Eevee SPECIAL_ATTACK (A:10 | D:1) [ab1-cooldown:0 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Eevee 42HP | Neutrel2 3HP
----
-Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:0]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Eevee 42HP | Neutrel2 0HP
----
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Bulbasaur SPECIAL_ATTACK (A:8 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 55HP | Neutrel2 13HP
----
-Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_2 | NORMAL_ATTACK
-Bulbasaur 55HP | Neutrel2 8HP
----
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-ABILITY_1 | NORMAL_ATTACK
-Bulbasaur 55HP | Neutrel2 2HP
----
-Bulbasaur SPECIAL_ATTACK (A:8 | D:1) [ab1-cooldown:2 | ab2-cooldown:0]
-Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown: | ab2-cooldown:]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Bulbasaur 55HP | Neutrel2 0HP
----
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Pokemon2 [START] ----------
-Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
-Bulbasaur NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-ABILITY_2 | NOTHING
-Eevee 43HP | Bulbasaur 53HP
----
-Eevee SPECIAL_ATTACK (A:11 | D:3) [ab1-cooldown:3 | ab2-cooldown:1]
-Bulbasaur SPECIAL_ATTACK (A:9 | D:8) [ab1-cooldown:4 | ab2-cooldown:3]
-SPECIAL_ATTACK | SPECIAL_ATTACK
-Eevee 42HP | Bulbasaur 45HP
----
-Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:0]
-Bulbasaur SPECIAL_ATTACK (A:9 | D:8) [ab1-cooldown:4 | ab2-cooldown:3]
-ABILITY_1 | SPECIAL_ATTACK
-Eevee 41HP | Bulbasaur 40HP
----
-Eevee SPECIAL_ATTACK (A:11 | D:3) [ab1-cooldown:1 | ab2-cooldown:3]
-Bulbasaur SPECIAL_ATTACK (A:9 | D:8) [ab1-cooldown:4 | ab2-cooldown:3]
-SPECIAL_ATTACK | SPECIAL_ATTACK
-Eevee 40HP | Bulbasaur 32HP
----
-Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
-Bulbasaur NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-ABILITY_2 | NOTHING
-Eevee 40HP | Bulbasaur 29HP
----
-Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
-Bulbasaur SPECIAL_ATTACK (A:9 | D:8) [ab1-cooldown:4 | ab2-cooldown:3]
-ABILITY_1 | SPECIAL_ATTACK
-Eevee 39HP | Bulbasaur 24HP
----
-Eevee SPECIAL_ATTACK (A:11 | D:3) [ab1-cooldown:1 | ab2-cooldown:0]
-Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-SPECIAL_ATTACK | ABILITY_1
-Eevee 33HP | Bulbasaur 16HP
----
-Eevee SPECIAL_ATTACK (A:11 | D:3) [ab1-cooldown:0 | ab2-cooldown:3]
-Bulbasaur SPECIAL_ATTACK (A:9 | D:8) [ab1-cooldown:2 | ab2-cooldown:3]
-SPECIAL_ATTACK | SPECIAL_ATTACK
-Eevee 32HP | Bulbasaur 8HP
----
-Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
-Bulbasaur SPECIAL_ATTACK (A:9 | D:8) [ab1-cooldown:1 | ab2-cooldown:3]
-ABILITY_1 | SPECIAL_ATTACK
-Eevee 31HP | Bulbasaur 3HP
----
-Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:1 | ab2-cooldown:2]
-Bulbasaur NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:3]
-ABILITY_2 | NOTHING
-Eevee 31HP | Bulbasaur 0HP
----
----------- Pokemon1 vs Pokemon2 [START] ----------
-76 | 69
-90 | 110
-71 | 73
-*** Best Pokemons - [BEFORE] - Final Battle ***
-Pokemon{name='Psyduck', HP=60, attack=10, specialAttack=null, defense=10, specialDefense=10, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
-Pokemon{name='Snorlax', HP=70, attack=14, specialAttack=null, defense=14, specialDefense=12, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}
----------- Best1 vs Best2 [START] ----------
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:5]
-ABILITY_2 | NOTHING
-Psyduck 60HP | Snorlax 68HP
----
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
-ABILITY_1 | ABILITY_2
-Psyduck 60HP | Snorlax 68HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:14) [ab1-cooldown:2 | ab2-cooldown:2]
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-NORMAL_ATTACK | ABILITY_1
-Psyduck 56HP | Snorlax 68HP
----
-Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:1]
-Snorlax NORMAL_ATTACK (A:14 | D:10) [ab1-cooldown:3 | ab2-cooldown:2]
-NOTHING | NORMAL_ATTACK
-Psyduck 52HP | Snorlax 68HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:14) [ab1-cooldown:0 | ab2-cooldown:0]
-Snorlax NORMAL_ATTACK (A:14 | D:10) [ab1-cooldown:2 | ab2-cooldown:1]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 48HP | Snorlax 68HP
----
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-Snorlax NORMAL_ATTACK (A:14 | D:10) [ab1-cooldown:1 | ab2-cooldown:0]
-ABILITY_1 | NORMAL_ATTACK
-Psyduck 44HP | Snorlax 66HP
----
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:5]
-ABILITY_2 | NOTHING
-Psyduck 44HP | Snorlax 64HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:14) [ab1-cooldown:1 | ab2-cooldown:3]
-Snorlax NORMAL_ATTACK (A:14 | D:10) [ab1-cooldown:5 | ab2-cooldown:5]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 40HP | Snorlax 64HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:14) [ab1-cooldown:0 | ab2-cooldown:2]
-Snorlax NORMAL_ATTACK (A:14 | D:10) [ab1-cooldown:5 | ab2-cooldown:5]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 36HP | Snorlax 64HP
----
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
-Snorlax NORMAL_ATTACK (A:14 | D:10) [ab1-cooldown:5 | ab2-cooldown:5]
-ABILITY_1 | NORMAL_ATTACK
-Psyduck 32HP | Snorlax 62HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:14) [ab1-cooldown:2 | ab2-cooldown:0]
-Snorlax NORMAL_ATTACK (A:14 | D:10) [ab1-cooldown:5 | ab2-cooldown:5]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 28HP | Snorlax 62HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:14) [ab1-cooldown:1 | ab2-cooldown:5]
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
-NORMAL_ATTACK | ABILITY_2
-Psyduck 28HP | Snorlax 62HP
+Psyduck 49HP | Snorlax 62HP
 ---
 Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
 Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:3]
 ABILITY_2 | NOTHING
-Psyduck 28HP | Snorlax 60HP
+Psyduck 49HP | Snorlax 60HP
 ---
 Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
-Snorlax NORMAL_ATTACK (A:14 | D:10) [ab1-cooldown:5 | ab2-cooldown:2]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:5 | ab2-cooldown:2]
 ABILITY_1 | NORMAL_ATTACK
-Psyduck 24HP | Snorlax 58HP
+Psyduck 46HP | Snorlax 58HP
 ---
-Psyduck NORMAL_ATTACK (A:10 | D:14) [ab1-cooldown:2 | ab2-cooldown:2]
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
+Psyduck NORMAL_ATTACK (A:5 | D:8) [ab1-cooldown:2 | ab2-cooldown:2]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:5 | ab2-cooldown:1]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 43HP | Snorlax 58HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:8) [ab1-cooldown:1 | ab2-cooldown:1]
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:0]
 NORMAL_ATTACK | ABILITY_1
-Psyduck 20HP | Snorlax 58HP
+Psyduck 39HP | Snorlax 58HP
 ---
-Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:1]
-Snorlax NORMAL_ATTACK (A:14 | D:10) [ab1-cooldown:3 | ab2-cooldown:0]
+Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:0]
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
+NOTHING | ABILITY_2
+Psyduck 39HP | Snorlax 58HP
+---
+Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:2 | ab2-cooldown:3]
 NOTHING | NORMAL_ATTACK
-Psyduck 16HP | Snorlax 58HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:14) [ab1-cooldown:0 | ab2-cooldown:0]
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-NORMAL_ATTACK | ABILITY_2
-Psyduck 16HP | Snorlax 58HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:14) [ab1-cooldown:4 | ab2-cooldown:5]
-Snorlax NORMAL_ATTACK (A:14 | D:10) [ab1-cooldown:1 | ab2-cooldown:3]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 12HP | Snorlax 58HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:14) [ab1-cooldown:4 | ab2-cooldown:5]
-Snorlax NORMAL_ATTACK (A:14 | D:10) [ab1-cooldown:0 | ab2-cooldown:2]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 8HP | Snorlax 58HP
----
-Psyduck NORMAL_ATTACK (A:10 | D:14) [ab1-cooldown:4 | ab2-cooldown:5]
-Snorlax NORMAL_ATTACK (A:14 | D:10) [ab1-cooldown:5 | ab2-cooldown:1]
-NORMAL_ATTACK | NORMAL_ATTACK
-Psyduck 4HP | Snorlax 58HP
+Psyduck 36HP | Snorlax 58HP
 ---
 Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:0]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:1 | ab2-cooldown:2]
+ABILITY_1 | NORMAL_ATTACK
+Psyduck 33HP | Snorlax 56HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:1]
+ABILITY_2 | NOTHING
+Psyduck 33HP | Snorlax 54HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:8) [ab1-cooldown:1 | ab2-cooldown:3]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:5 | ab2-cooldown:0]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 30HP | Snorlax 54HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:8) [ab1-cooldown:0 | ab2-cooldown:2]
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
+NORMAL_ATTACK | ABILITY_2
+Psyduck 30HP | Snorlax 54HP
+---
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
 ABILITY_1 | ABILITY_1
-Psyduck 0HP | Snorlax 56HP
+Psyduck 26HP | Snorlax 52HP
+---
+Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:0]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:3 | ab2-cooldown:2]
+NOTHING | NORMAL_ATTACK
+Psyduck 23HP | Snorlax 52HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
+ABILITY_2 | NOTHING
+Psyduck 23HP | Snorlax 50HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:8) [ab1-cooldown:0 | ab2-cooldown:3]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:1 | ab2-cooldown:0]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 20HP | Snorlax 50HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:8) [ab1-cooldown:4 | ab2-cooldown:2]
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
+NORMAL_ATTACK | ABILITY_2
+Psyduck 20HP | Snorlax 50HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:8) [ab1-cooldown:4 | ab2-cooldown:1]
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
+NORMAL_ATTACK | ABILITY_1
+Psyduck 16HP | Snorlax 50HP
+---
+Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:0]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:3 | ab2-cooldown:2]
+NOTHING | NORMAL_ATTACK
+Psyduck 13HP | Snorlax 50HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:1]
+ABILITY_2 | NOTHING
+Psyduck 13HP | Snorlax 48HP
+---
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:1 | ab2-cooldown:0]
+ABILITY_1 | NORMAL_ATTACK
+Psyduck 10HP | Snorlax 46HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:8) [ab1-cooldown:2 | ab2-cooldown:2]
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
+NORMAL_ATTACK | ABILITY_2
+Psyduck 10HP | Snorlax 46HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:8) [ab1-cooldown:1 | ab2-cooldown:1]
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
+NORMAL_ATTACK | ABILITY_1
+Psyduck 6HP | Snorlax 46HP
+---
+Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:0]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:3 | ab2-cooldown:2]
+NOTHING | NORMAL_ATTACK
+Psyduck 3HP | Snorlax 46HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:8) [ab1-cooldown:4 | ab2-cooldown:5]
+Snorlax NORMAL_ATTACK (A:8 | D:5) [ab1-cooldown:2 | ab2-cooldown:1]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 0HP | Snorlax 46HP
+---
+Pokemon{name='Psyduck', HP=55, attack=5, specialAttack=null, defense=5, specialDefense=5, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Pokemon{name='Snorlax', HP=65, attack=9, specialAttack=null, defense=9, specialDefense=7, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Pokemon2 [DONE] ----------
+********** POKEMONS INDEX - 2 **********
+Pokemon{name='Eevee', HP=41, attack=null, specialAttack=9, defense=3, specialDefense=6, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}]}
+Pokemon{name='Bulbasaur', HP=54, attack=null, specialAttack=7, defense=3, specialDefense=1, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Pokemon2 [START] ----------
+Eevee SPECIAL_ATTACK (A:9 | D:1) [ab1-cooldown:3 | ab2-cooldown:3]
+Bulbasaur SPECIAL_ATTACK (A:7 | D:6) [ab1-cooldown:4 | ab2-cooldown:3]
+SPECIAL_ATTACK | SPECIAL_ATTACK
+Eevee 40HP | Bulbasaur 46HP
+---
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+Bulbasaur NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
+ABILITY_2 | NOTHING
+Eevee 40HP | Bulbasaur 43HP
+---
+Eevee SPECIAL_ATTACK (A:9 | D:1) [ab1-cooldown:3 | ab2-cooldown:1]
+Bulbasaur SPECIAL_ATTACK (A:7 | D:6) [ab1-cooldown:4 | ab2-cooldown:3]
+SPECIAL_ATTACK | SPECIAL_ATTACK
+Eevee 39HP | Bulbasaur 35HP
+---
+Eevee SPECIAL_ATTACK (A:9 | D:1) [ab1-cooldown:3 | ab2-cooldown:0]
+Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+SPECIAL_ATTACK | ABILITY_1
+Eevee 33HP | Bulbasaur 27HP
+---
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:2]
+ABILITY_1 | ABILITY_2
+Eevee 28HP | Bulbasaur 22HP
+---
+Eevee ABILITY_2 (A:3 | D:0) [ab1-cooldown:1 | ab2-cooldown:2]
+Bulbasaur NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:1]
+ABILITY_2 | NOTHING
+Eevee 28HP | Bulbasaur 19HP
+---
+Eevee SPECIAL_ATTACK (A:9 | D:1) [ab1-cooldown:0 | ab2-cooldown:1]
+Bulbasaur SPECIAL_ATTACK (A:7 | D:6) [ab1-cooldown:0 | ab2-cooldown:0]
+SPECIAL_ATTACK | SPECIAL_ATTACK
+Eevee 27HP | Bulbasaur 11HP
+---
+Eevee ABILITY_1 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:0]
+Bulbasaur ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+ABILITY_1 | ABILITY_1
+Eevee 21HP | Bulbasaur 6HP
+---
+Eevee SPECIAL_ATTACK (A:9 | D:1) [ab1-cooldown:1 | ab2-cooldown:3]
+Bulbasaur ABILITY_2 (A:5 | D:0) [ab1-cooldown:2 | ab2-cooldown:2]
+SPECIAL_ATTACK | ABILITY_2
+Eevee 16HP | Bulbasaur 0HP
+---
+Pokemon{name='Eevee', HP=42, attack=null, specialAttack=10, defense=4, specialDefense=7, firstAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=3}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}]}
+Pokemon{name='Bulbasaur', HP=54, attack=null, specialAttack=7, defense=3, specialDefense=1, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Pokemon2 [DONE] ----------
+64 | 65
+70 | 90
+63 | 65
+*** Best Pokemons - [BEFORE] - Final Battle ***
+Pokemon{name='Psyduck', HP=55, attack=5, specialAttack=null, defense=5, specialDefense=5, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Pokemon{name='Snorlax', HP=65, attack=9, specialAttack=null, defense=9, specialDefense=7, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}
+---------- Best1 vs Best2 [START] ----------
+Psyduck NORMAL_ATTACK (A:5 | D:9) [ab1-cooldown:4 | ab2-cooldown:5]
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
+NORMAL_ATTACK | ABILITY_2
+Psyduck 55HP | Snorlax 65HP
+---
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+Snorlax NORMAL_ATTACK (A:9 | D:5) [ab1-cooldown:5 | ab2-cooldown:3]
+ABILITY_1 | NORMAL_ATTACK
+Psyduck 51HP | Snorlax 63HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:2]
+ABILITY_2 | NOTHING
+Psyduck 51HP | Snorlax 61HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:9) [ab1-cooldown:1 | ab2-cooldown:3]
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
+NORMAL_ATTACK | ABILITY_1
+Psyduck 47HP | Snorlax 61HP
+---
+Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
+Snorlax NORMAL_ATTACK (A:9 | D:5) [ab1-cooldown:3 | ab2-cooldown:0]
+NOTHING | NORMAL_ATTACK
+Psyduck 43HP | Snorlax 61HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:9) [ab1-cooldown:4 | ab2-cooldown:1]
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
+NORMAL_ATTACK | ABILITY_2
+Psyduck 43HP | Snorlax 61HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:9) [ab1-cooldown:4 | ab2-cooldown:0]
+Snorlax NORMAL_ATTACK (A:9 | D:5) [ab1-cooldown:1 | ab2-cooldown:3]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 39HP | Snorlax 61HP
+---
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+Snorlax NORMAL_ATTACK (A:9 | D:5) [ab1-cooldown:0 | ab2-cooldown:2]
+ABILITY_1 | NORMAL_ATTACK
+Psyduck 35HP | Snorlax 59HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:1]
+ABILITY_2 | NOTHING
+Psyduck 35HP | Snorlax 57HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:9) [ab1-cooldown:1 | ab2-cooldown:3]
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:0]
+NORMAL_ATTACK | ABILITY_1
+Psyduck 31HP | Snorlax 57HP
+---
+Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
+NOTHING | ABILITY_2
+Psyduck 31HP | Snorlax 57HP
+---
+Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
+Snorlax NORMAL_ATTACK (A:9 | D:5) [ab1-cooldown:2 | ab2-cooldown:3]
+NOTHING | NORMAL_ATTACK
+Psyduck 27HP | Snorlax 57HP
+---
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
+Snorlax NORMAL_ATTACK (A:9 | D:5) [ab1-cooldown:1 | ab2-cooldown:2]
+ABILITY_1 | NORMAL_ATTACK
+Psyduck 23HP | Snorlax 55HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:9) [ab1-cooldown:2 | ab2-cooldown:5]
+Snorlax NORMAL_ATTACK (A:9 | D:5) [ab1-cooldown:0 | ab2-cooldown:1]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 19HP | Snorlax 55HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:0]
+ABILITY_2 | NOTHING
+Psyduck 19HP | Snorlax 53HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:9) [ab1-cooldown:0 | ab2-cooldown:3]
+Snorlax NORMAL_ATTACK (A:9 | D:5) [ab1-cooldown:5 | ab2-cooldown:5]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 15HP | Snorlax 53HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:9) [ab1-cooldown:4 | ab2-cooldown:2]
+Snorlax NORMAL_ATTACK (A:9 | D:5) [ab1-cooldown:5 | ab2-cooldown:5]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 11HP | Snorlax 53HP
+---
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
+ABILITY_1 | ABILITY_1
+Psyduck 7HP | Snorlax 51HP
+---
+Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:0]
+Snorlax NORMAL_ATTACK (A:9 | D:5) [ab1-cooldown:3 | ab2-cooldown:5]
+NOTHING | NORMAL_ATTACK
+Psyduck 3HP | Snorlax 51HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
+ABILITY_2 | NOTHING
+Psyduck 3HP | Snorlax 49HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:9) [ab1-cooldown:0 | ab2-cooldown:3]
+Snorlax NORMAL_ATTACK (A:9 | D:5) [ab1-cooldown:1 | ab2-cooldown:5]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 0HP | Snorlax 49HP
 ---
 ---------- Best1 vs Best2 [DONE] ----------
 *** Best Pokemons - [AFTER] - Final Battle ***
-Pokemon{name='Psyduck', HP=60, attack=10, specialAttack=null, defense=10, specialDefense=10, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
-Pokemon{name='Snorlax', HP=71, attack=15, specialAttack=null, defense=15, specialDefense=13, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}
+Pokemon{name='Psyduck', HP=55, attack=5, specialAttack=null, defense=5, specialDefense=5, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Pokemon{name='Snorlax', HP=66, attack=10, specialAttack=null, defense=10, specialDefense=8, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}
 
 ***** WINNER *****
-Trainer{name='Trainer_9_2', age=52, pokemons=[Pokemon{name='Pikachu', HP=47, attack=null, specialAttack=6, defense=6, specialDefense=10, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}, Pokemon{name='Snorlax', HP=71, attack=15, specialAttack=null, defense=15, specialDefense=13, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}, Pokemon{name='Bulbasaur', HP=56, attack=null, specialAttack=9, defense=5, specialDefense=3, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}], pokemonsOrder=[Pikachu, Snorlax, Bulbasaur]}
+Trainer{name='Trainer_9_2', age=52, pokemons=[Pokemon{name='Pikachu', HP=46, attack=null, specialAttack=5, defense=5, specialDefense=9, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}, Pokemon{name='Snorlax', HP=66, attack=10, specialAttack=null, defense=10, specialDefense=8, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}, Pokemon{name='Bulbasaur', HP=54, attack=null, specialAttack=7, defense=3, specialDefense=1, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=5, stun=false, dodge=false, cooldown=3}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}]}], pokemonsOrder=[Pikachu, Snorlax, Bulbasaur]}

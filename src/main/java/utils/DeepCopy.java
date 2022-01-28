@@ -1,5 +1,7 @@
 package utils;
 
+import common.Constants;
+
 import java.io.*;
 
 public final class DeepCopy {
@@ -7,7 +9,7 @@ public final class DeepCopy {
 
     public static <T> T deepCopy(Object objectToCopy) {
         if (!(objectToCopy instanceof Serializable)) {
-            System.err.println(objectToCopy.getClass() + " isn't serializable");
+            System.err.println(Constants.ERROR_LOG + objectToCopy.getClass() + " isn't serializable");
             return null;
         }
 

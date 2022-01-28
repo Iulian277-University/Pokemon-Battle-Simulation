@@ -84,21 +84,29 @@ public final class Arena {
 
                 // Pokemon1 vs Neutrel
                 logger.print("---------- Pokemon1 vs Neutrel [START] ----------");
+                logger.print(firstPokemonOrig);
                 individualBattle(executorService, firstPokemonOrig, neutrel);
+                logger.print(firstPokemonOrig);
                 logger.print("---------- Pokemon1 vs Neutrel [DONE] ----------");
 
                 // Pokemon2 vs Neutrel
                 logger.print("---------- Pokemon2 vs Neutrel [START] ----------");
+                logger.print(secondPokemonOrig);
                 individualBattle(executorService, secondPokemonOrig, neutrel);
+                logger.print(secondPokemonOrig);
                 logger.print("---------- Pokemon2 vs Neutrel [DONE] ----------");
 
                 currEvent = pickRandomEvent();
             }
 
             // Final battle: Pokemon1 vs Pokemon2
+            logger.print(firstPokemonOrig);
+            logger.print(secondPokemonOrig);
             logger.print("---------- Pokemon1 vs Pokemon2 [START] ----------");
             individualBattle(executorService, firstPokemonOrig, secondPokemonOrig);
-            logger.print("---------- Pokemon1 vs Pokemon2 [START] ----------");
+            logger.print(firstPokemonOrig);
+            logger.print(secondPokemonOrig);
+            logger.print("---------- Pokemon1 vs Pokemon2 [DONE] ----------");
         }
 
         // [Best pokemon of trainer1] VS [Best pokemon of trainer2]

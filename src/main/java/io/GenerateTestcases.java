@@ -16,13 +16,13 @@ public final class GenerateTestcases {
     // Trainer 1
     private static String trainerName1;
     private static Integer trainerAge1;
-    private static List<String> pokemonsOrder1 = new ArrayList<>();
+    private static final List<String> pokemonsOrder1 = new ArrayList<>();
     private static Map<String, List<String>> pokemons1;
 
     // Trainer 2
     private static String trainerName2;
     private static Integer trainerAge2;
-    private static List<String> pokemonsOrder2 = new ArrayList<>();
+    private static final List<String> pokemonsOrder2 = new ArrayList<>();
     private static Map<String, List<String>> pokemons2;
 
     public static void generate(int numberOfTests) {
