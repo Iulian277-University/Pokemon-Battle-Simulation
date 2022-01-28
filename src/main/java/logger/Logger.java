@@ -33,6 +33,8 @@ public final class Logger {
             writer.write(output.toString());
         } catch (IOException e) {
             e.printStackTrace();
+        } finally {
+            output.setLength(0);
         }
     }
 }
