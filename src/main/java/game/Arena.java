@@ -34,20 +34,15 @@ public final class Arena {
 
     // Pattern: Singleton
     private static Arena arena;
-
-    private Arena(Trainer firstTrainer, Trainer secondTrainer, Logger logger) {
-        this.firstTrainer = firstTrainer;
-        this.secondTrainer = secondTrainer;
-        this.logger = logger;
-    }
+    private Arena() {}
 
     public static Arena generateArena(Trainer firstTrainer, Trainer secondTrainer, Logger logger) {
         if (arena == null)
-            arena = new Arena(firstTrainer, secondTrainer, logger);
-        // Update trainers if queried
+            arena = new Arena();
+        // Set trainers and logger
         arena.firstTrainer  = firstTrainer;
         arena.secondTrainer = secondTrainer;
-        arena.logger = logger;
+        Arena.logger = logger;
         return arena;
     }
 

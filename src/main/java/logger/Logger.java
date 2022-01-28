@@ -1,5 +1,11 @@
 package logger;
 
+import common.Constants;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public final class Logger {
     private String outputStream;
 
@@ -16,7 +22,17 @@ public final class Logger {
         return logger;
     }
 
+    private StringBuilder output = new StringBuilder();
     public void print(Object outputInfo) {
-        System.out.println(outputInfo);
+        output.append(outputInfo).append("\n");
+    }
+
+    public void writeToFile(Integer testIndex) {
+        String filePath = Constants.OUTPUT_DIR_PATH + "output_test_" + testIndex + Constants.OUTPUT_FILE_EXT;
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+            writer.write(output.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -1,6 +1,5 @@
 package io;
 
-import common.Constants;
 import entities.Pokemon;
 import entities.PokemonFactory;
 import entities.Trainer;
@@ -28,14 +27,17 @@ public final class ImportTestcases {
     private static Integer trainerAge2;
     private static Map<String, List<String>> pokemons2 = new HashMap<>();
 
+    public static List<Trainer> getTrainers(TrainerFactory trainerFactory, PokemonFactory pokemonFactory, String testcasePath) {
+        pokemons1.clear();
+        pokemons2.clear();
 
-    public static List<Trainer> getTrainers(TrainerFactory trainerFactory, PokemonFactory pokemonFactory, int testIndex) {
-        String content = jsonToString(testIndex);
+        String content = jsonToString(testcasePath);
         boolean deserializationDone = stringToObjects(content);
         if (!deserializationDone) {
             System.err.println("Couldn't get the trainers");
             return Collections.emptyList();
         }
+
         // At this point, the fields are completed
         Trainer firstTrainer   = createTrainer(trainerFactory, pokemonFactory, trainerName1, trainerAge1, pokemons1);
         Trainer secondTrainer  = createTrainer(trainerFactory, pokemonFactory, trainerName2, trainerAge2, pokemons2);
@@ -50,7 +52,7 @@ public final class ImportTestcases {
     private static Trainer createTrainer(TrainerFactory trainerFactory, PokemonFactory pokemonFactory,
                                       String trainerName, Integer trainerAge, Map<String, List<String>> pokemons) {
 
-        List<String> pokemonsName = new ArrayList<>();
+        List<String> pokemonsName        = new ArrayList<>();
         List<List<String>> pokemonsItems = new ArrayList<>();
         for (Map.Entry<String, List<String>> entry: pokemons.entrySet()) {
             pokemonsName.add(entry.getKey());
@@ -65,8 +67,7 @@ public final class ImportTestcases {
     }
 
 
-    private static String jsonToString(int testIndex) {
-        String testcasePath = Constants.TESTCASES_DIR_PATH + "Testcase_" + testIndex + ".json";
+    private static String jsonToString(String testcasePath) {
         File testcaseFile = new File(testcasePath);
 
         String content = null;
