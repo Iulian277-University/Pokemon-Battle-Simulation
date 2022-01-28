@@ -22,6 +22,8 @@ public class Main {
 
 //         GenerateTestcases.generate(10);
 
+        // TODO: Adapter pattern for IO
+        // TODO: Refactor + Modularization
 
         List<String> filteredPaths = FindFilesByExtension.findFiles(Paths.get(Constants.TESTCASES_DIR_PATH),
                 Constants.TESTCASES_FILE_EXT);
