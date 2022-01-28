@@ -17,6 +17,7 @@ import java.util.concurrent.Executors;
 public final class Arena {
     private Trainer firstTrainer;
     private Trainer secondTrainer;
+    private static Logger logger;
 
     // Getters and private setters
     public Trainer getFirstTrainer() {
@@ -27,28 +28,21 @@ public final class Arena {
         return secondTrainer;
     }
 
-    private void setFirstTrainer(Trainer firstTrainer) {
-        this.firstTrainer = firstTrainer;
-    }
-
-    private void setSecondTrainer(Trainer secondTrainer) {
-        this.secondTrainer = secondTrainer;
+    public static Logger getLogger() {
+        return logger;
     }
 
     // Pattern: Singleton
     private static Arena arena;
+    private Arena() {}
 
-    private Arena(Trainer firstTrainer, Trainer secondTrainer) {
-        this.firstTrainer = firstTrainer;
-        this.secondTrainer = secondTrainer;
-    }
-
-    public static Arena generateArena(Trainer firstTrainer, Trainer secondTrainer) {
+    public static Arena generateArena(Trainer firstTrainer, Trainer secondTrainer, Logger logger) {
         if (arena == null)
-            arena = new Arena(firstTrainer, secondTrainer);
-        // Update trainers if queried
-        arena.setFirstTrainer(firstTrainer);
-        arena.setSecondTrainer(secondTrainer);
+            arena = new Arena();
+        // Set trainers and logger
+        arena.firstTrainer  = firstTrainer;
+        arena.secondTrainer = secondTrainer;
+        Arena.logger = logger;
         return arena;
     }
 
@@ -62,7 +56,7 @@ public final class Arena {
 
     // Arena (game) functionality
     public static void battle(Arena arena) {
-        Trainer firstTrainer = arena.getFirstTrainer();
+        Trainer firstTrainer  = arena.getFirstTrainer();
         Trainer secondTrainer = arena.getSecondTrainer();
 
         ExecutorService executorService = Executors.newFixedThreadPool(2);
@@ -71,10 +65,9 @@ public final class Arena {
         Pokemon neutrel1Orig = Constants.Neutrel1;
         Pokemon neutrel2Orig = Constants.Neutrel2;
 
-        StringBuilder outputBuffer = Logger.getOutputBuffer();
 
         for (int i = 0; i < Math.min(firstTrainer.getPokemons().size(), secondTrainer.getPokemons().size()); ++i) {
-            outputBuffer.append("\n********** POKEMONS INDEX - ").append(i).append(" **********\n");
+            logger.print("********** POKEMONS INDEX - " + i + " **********");
 
             // References to the original trainers pokemons
             Pokemon firstPokemonOrig  = firstTrainer.getPokemons().get(i);
@@ -89,23 +82,23 @@ public final class Arena {
                 else
                     neutrel = neutrel2Orig;
 
-                // pokemon1 vs neutrel
-                outputBuffer.append("---------- Pokemon1 vs Neutrel [START] ----------\n");
+                // Pokemon1 vs Neutrel
+                logger.print("---------- Pokemon1 vs Neutrel [START] ----------");
                 individualBattle(executorService, firstPokemonOrig, neutrel);
-                outputBuffer.append("---------- Pokemon1 vs Neutrel [DONE] ----------\n");
+                logger.print("---------- Pokemon1 vs Neutrel [DONE] ----------");
 
-                // pokemon2 vs neutrel
-                outputBuffer.append("---------- Pokemon2 vs Neutrel [START] ----------\n");
+                // Pokemon2 vs Neutrel
+                logger.print("---------- Pokemon2 vs Neutrel [START] ----------");
                 individualBattle(executorService, secondPokemonOrig, neutrel);
-                outputBuffer.append("---------- Pokemon2 vs Neutrel [DONE] ----------\n");
+                logger.print("---------- Pokemon2 vs Neutrel [DONE] ----------");
 
                 currEvent = pickRandomEvent();
             }
 
-            // Final battle: pok1 vs pok2
-            outputBuffer.append("---------- Pokemon1 vs Pokemon2 [START] ----------\n");
+            // Final battle: Pokemon1 vs Pokemon2
+            logger.print("---------- Pokemon1 vs Pokemon2 [START] ----------");
             individualBattle(executorService, firstPokemonOrig, secondPokemonOrig);
-            outputBuffer.append("---------- Pokemon1 vs Pokemon2 [END] ----------\n");
+            logger.print("---------- Pokemon1 vs Pokemon2 [START] ----------");
         }
 
         // [Best pokemon of trainer1] VS [Best pokemon of trainer2]
@@ -119,33 +112,34 @@ public final class Arena {
         }
 
         for (int i = 0; i < 3; ++i) {
-            outputBuffer
-                    .append(firstTrainer.getPokemons().get(i).getScore())
-                    .append(" | ")
-                    .append(secondTrainer.getPokemons().get(i).getScore())
-                    .append("\n");
+            logger.print(firstTrainer.getPokemons().get(i).getScore() + " | " +
+                    secondTrainer.getPokemons().get(i).getScore());
         }
 
-        outputBuffer.append("*** Best Pokemons - [BEFORE] - Final Battle ***\n");
-        outputBuffer.append(bestPokemonFirstTrainer).append("\n");
-        outputBuffer.append(bestPokemonSecondTrainer).append("\n");
+        logger.print("*** Best Pokemons - [BEFORE] - Final Battle ***");
+        logger.print(bestPokemonFirstTrainer);
+        logger.print(bestPokemonSecondTrainer);
 
         // Best of the best :)
-        outputBuffer.append("---------- Best1 vs Best2 [START] ----------\n");
+        logger.print("---------- Best1 vs Best2 [START] ----------");
         int winnerIndex = individualBattle(executorService, bestPokemonFirstTrainer, bestPokemonSecondTrainer);
-        outputBuffer.append("---------- Best1 vs Best2 [END] ----------\n");
+        logger.print("---------- Best1 vs Best2 [DONE] ----------");
 
-        outputBuffer.append("*** Best Pokemons - [AFTER] - Final Battle ***\n");
-        outputBuffer.append(bestPokemonFirstTrainer);
-        outputBuffer.append(bestPokemonSecondTrainer);
+        logger.print("*** Best Pokemons - [AFTER] - Final Battle ***");
+        logger.print(bestPokemonFirstTrainer);
+        logger.print(bestPokemonSecondTrainer);
 
-        outputBuffer.append("\n");
+        logger.print("");
         if (winnerIndex == 0)
-            outputBuffer.append("***** DRAW ****\n");
-        else if (winnerIndex == 1)
-            outputBuffer.append("***** WINNER: ").append(firstTrainer).append(" *****").append("\n");
-        else if (winnerIndex == 2)
-            outputBuffer.append("***** WINNER: ").append(secondTrainer).append(" *****").append("\n");
+            logger.print("***** DRAW ****");
+        else if (winnerIndex == 1) {
+            logger.print("***** WINNER *****");
+            logger.print(firstTrainer);
+        }
+        else if (winnerIndex == 2) {
+            logger.print("***** WINNER *****");
+            logger.print(secondTrainer);
+        }
 
         executorService.shutdown();
     }
@@ -159,6 +153,7 @@ public final class Arena {
         Battle battle = Battle.generateBattle(firstPokemon, secondPokemon);
         firstPokemon.setBattle(battle);
         secondPokemon.setBattle(battle);
+        Battle.setLogger(logger);
 
         while (firstPokemon.isAlive() && secondPokemon.isAlive()) {
             firstPokemon.run();

@@ -8,14 +8,16 @@ public class Trainer {
     /** Attributes */
     private String name;
     private Integer age;
-    private ArrayList<Pokemon> pokemons = new ArrayList<>(); // 3 pokemons
-    private ArrayList<String> pokemonsOrder = new ArrayList<>();
+    private ArrayList<Pokemon> pokemons; // 3 pokemons
+    private ArrayList<String> pokemonsOrder;
 
     /** Constructors */
     private Trainer(TrainerBuilder builder) {
         this.name = builder.name;
         this.age = builder.age;
-        this.pokemons.addAll(builder.pokemons);
+        this.pokemons = builder.pokemons;
+
+        pokemonsOrder = new ArrayList<>();
         for (Pokemon pokemon: pokemons) {
            pokemonsOrder.add(pokemon.getName());
         }

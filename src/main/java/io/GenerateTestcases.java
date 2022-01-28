@@ -13,29 +13,6 @@ public final class GenerateTestcases {
     private GenerateTestcases() {
     }
 
-    enum Pokemons {
-        PIKACHU,
-        BULBASAUR,
-        CHARMANDER,
-        SQUIRTLE,
-        SNORLAX,
-        VULPIX,
-        EEVEE,
-        JIGGLYPUFF,
-        MEOWTH,
-        PSYDUCK,
-    }
-
-    enum Items {
-        SHIELD,
-        VEST,
-        SWORD,
-        WAND,
-        VITAMINS,
-        TREE,
-        CAPE,
-    }
-
     // Trainer 1
     private static String trainerName1;
     private static Integer trainerAge1;
@@ -60,7 +37,6 @@ public final class GenerateTestcases {
         }
     }
 
-    // Json testcases need to have 2 trainers, not one
     private static void fieldsToJson(Integer testIndex) {
         JSONObject trainer1 = new JSONObject();
         trainer1.put("trainerName", trainerName1)
@@ -85,9 +61,8 @@ public final class GenerateTestcases {
         writeToFile(rootJson, testIndex);
     }
 
-
     private static void writeToFile(String rootJson, Integer testIndex) {
-        String filePath = Constants.TESTCASES_DIR_PATH + "Testcase_" + testIndex + ".json";
+        String filePath = Constants.TESTCASES_DIR_PATH + "Testcase_" + testIndex + Constants.TESTCASES_FILE_EXT;
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
             writer.write(rootJson);
         } catch (IOException e) {
@@ -111,16 +86,16 @@ public final class GenerateTestcases {
 
             // Generate a random pokemon
             String randomPokemonName;
-            randomPokemonName = Pokemons.values()[new Random().nextInt(Pokemons.values().length)].toString();
+            randomPokemonName = Constants.Pokemons.values()[new Random().nextInt(Constants.Pokemons.values().length)].toString();
             while (pokemonsToReturn.containsKey(randomPokemonName))
-                randomPokemonName = Pokemons.values()[new Random().nextInt(Pokemons.values().length)].toString();
+                randomPokemonName = Constants.Pokemons.values()[new Random().nextInt(Constants.Pokemons.values().length)].toString();
             pokemonsCounter++;
 
             // Generate 3 items for the current pokemon
             List<String> randomItems = new ArrayList<>();
             int counter = 0;
             while (counter < Constants.POKEMON_MAX_ITEMS) {
-                String itemName = Items.values()[new Random().nextInt(Items.values().length)].toString();
+                String itemName = Constants.Items.values()[new Random().nextInt(Constants.Items.values().length)].toString();
                 if (!randomItems.contains(itemName)) {
                     randomItems.add(itemName);
                     counter++;

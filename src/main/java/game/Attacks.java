@@ -6,24 +6,38 @@ import entities.Pokemon;
 public final class Attacks {
     private Attacks() {}
 
-    // attacker -> defender
-    public static String normalAttack(Pokemon attacker, Pokemon defender) {
-        attacker.setCurrentMove(Constants.Moves.NORMAL_ATTACK);
-        return attacker.getName() + " normal attack " +
-                "(A:" + attacker.getAttack() +
-                " | D:" + defender.getDefense() + ")" +
-                " [ab1-cooldown:" + (attacker.getFirstAbility() != null ? attacker.getFirstAbility().getCooldown() : "") +
-                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "") + "]";
+    private static String info(Pokemon attacker, Pokemon defender, Constants.Moves attackType) {
+        int attackHP = 0;
+        int defenseHP = 0;
+        switch (attackType) {
+            case NORMAL_ATTACK -> {
+                attackHP  = attacker.getAttack();
+                defenseHP = defender.getDefense();
+            }
+            case SPECIAL_ATTACK -> {
+                attackHP  = attacker.getSpecialAttack();
+                defenseHP = defender.getSpecialDefense();
+            }
+            case ABILITY_1 -> attackHP  = attacker.getFirstAbility().getDamage();
+            case ABILITY_2 -> attackHP  = attacker.getSecondAbility().getDamage();
+        }
+
+        return attacker.getName() + " " + attackType +
+                " (A:"  + attackHP  +
+                " | D:" + defenseHP + ")" +
+                " [ab1-cooldown:"  + (attacker.getFirstAbility()  != null ? attacker.getFirstAbility().getCooldown()  : "") +
+                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "") +
+                "]";
     }
 
-    // attacker -> defender
+    public static String normalAttack(Pokemon attacker, Pokemon defender) {
+        attacker.setCurrentMove(Constants.Moves.NORMAL_ATTACK);
+        return info(attacker, defender, Constants.Moves.NORMAL_ATTACK);
+    }
+
     public static String specialAttack(Pokemon attacker, Pokemon defender) {
         attacker.setCurrentMove(Constants.Moves.SPECIAL_ATTACK);
-        return attacker.getName() + " special attack " +
-                "(A:" + attacker.getSpecialAttack() +
-                " | D:" + defender.getSpecialDefense() + ")" +
-                " [ab1-cooldown:" + (attacker.getFirstAbility() != null ? attacker.getFirstAbility().getCooldown() : "") +
-                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "") + "]";
+        return info(attacker, defender, Constants.Moves.SPECIAL_ATTACK);
     }
 
 
@@ -47,11 +61,7 @@ public final class Attacks {
         }
 
         attacker.getFirstAbility().setAvailable(false);
-        return attacker.getName() + " ability 1 " +
-                "(A:" + attacker.getFirstAbility().getDamage() +
-                " | D:" +  "0)" +
-                " [ab1-cooldown:" + (attacker.getFirstAbility() != null ? attacker.getFirstAbility().getCooldown() : "") +
-                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "") + "]";
+        return info(attacker, defender, Constants.Moves.ABILITY_1);
     }
 
     public static String secondAbility(Pokemon attacker, Pokemon defender, boolean defenderAttacks) {
@@ -67,19 +77,13 @@ public final class Attacks {
                 defender.setStunned(true);
         }
         attacker.getSecondAbility().setAvailable(false);
-        return attacker.getName() + " ability 2 " +
-                "(A:" + attacker.getSecondAbility().getDamage() +
-                " | D:" +  "0)" +
-                " [ab1-cooldown:" + (attacker.getFirstAbility() != null ? attacker.getFirstAbility().getCooldown() : "") +
-                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "") + "]";
+        return info(attacker, defender, Constants.Moves.ABILITY_2);
+
     }
 
     public static String nothing(Pokemon attacker, Pokemon defender) {
         attacker.setCurrentMove(Constants.Moves.NOTHING);
-       return attacker.getName() + " nothing " +
-                "(A:" + attacker.getAttack() +
-                " | D:" + defender.getDefense() + ")" +
-                " [ab1-cooldown:" + (attacker.getFirstAbility() != null ? attacker.getFirstAbility().getCooldown() : "") +
-                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "") + "]";
+        return info(attacker, defender, Constants.Moves.NOTHING);
+
     }
 }
