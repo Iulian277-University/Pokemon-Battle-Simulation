@@ -6,13 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Trainer {
-    /** Attributes */
-    private String name;
-    private Integer age;
-    private ArrayList<Pokemon> pokemons; // 3 pokemons
-    private ArrayList<String> pokemonsOrder;
+    // Attributes
+    private final String name;
+    private final Integer age;
+    private final List<Pokemon> pokemons;
+    private final List<String> pokemonsOrder;
 
-    /** Constructors */
+    // Constructors
     private Trainer(TrainerBuilder builder) {
         this.name = builder.name;
         this.age = builder.age;
@@ -53,17 +53,17 @@ public class Trainer {
 
     // Pattern: Builder
     public static class TrainerBuilder {
-        /** Attributes */
-        private String name;
+        // Attributes
+        private final String name;
         private Integer age;
-        private ArrayList<Pokemon> pokemons = new ArrayList<>(); // 3 pokemons
+        private final List<Pokemon> pokemons = new ArrayList<>();
 
-        /** Constructors */
+        // Constructors
         public TrainerBuilder(String name) {
             this.name = name;
         }
 
-        /** Complete Trainer fields */
+        // Complete Trainer fields
         public TrainerBuilder age(Integer age) {
             this.age = age;
             return this;
@@ -86,6 +86,5 @@ public class Trainer {
         public Trainer build() {
             return new Trainer(this);
         }
-
     }
 }

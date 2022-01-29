@@ -1,4 +1,4 @@
-package logger;
+package io;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -20,6 +20,7 @@ public final class Logger {
         return logger;
     }
 
+    // Pattern: Adapter
     private final StringBuilder output = new StringBuilder();
     public void print(Object outputInfo) {
         output.append(outputInfo).append("\n");

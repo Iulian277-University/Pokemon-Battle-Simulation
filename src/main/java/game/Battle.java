@@ -3,7 +3,7 @@ package game;
 import common.Constants;
 import entities.Ability;
 import entities.Pokemon;
-import logger.Logger;
+import io.Logger;
 
 import java.util.ArrayList;
 import java.util.List;

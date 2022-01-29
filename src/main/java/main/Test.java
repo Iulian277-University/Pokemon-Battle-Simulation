@@ -6,7 +6,7 @@ import entities.Trainer;
 import entities.TrainerFactory;
 import game.Arena;
 import io.ImportTestcases;
-import logger.Logger;
+import io.Logger;
 import utils.FindFilesByExtension;
 
 import java.nio.file.Paths;

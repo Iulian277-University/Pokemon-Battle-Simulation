@@ -11,13 +11,14 @@ import java.util.*;
 public final class PokemonFactory {
     // Pattern: Singleton
     private static PokemonFactory factory;
-    public PokemonFactory() {}
+    private PokemonFactory() {}
     public static PokemonFactory generateFactory() {
         if(factory == null)
             factory = new PokemonFactory();
         return factory;
     }
 
+    // Pattern: Factory
     public Pokemon createPokemon(String pokemonName, List<String> itemsName) {
         Map<String, Object> pokemonStatsMap = GetFieldsOfClass.getFieldObjectMap(PokemonStats.class, pokemonName);
         if (pokemonStatsMap.isEmpty())
@@ -43,7 +44,7 @@ public final class PokemonFactory {
             return null;
         }
 
-        Pokemon.PokemonBuilder pokemonBuilder = new Pokemon.PokemonBuilder(extractedName)
+        PokemonBuilder pokemonBuilder = new PokemonBuilder(extractedName)
                 .HP(extractedHP)
                 .attack(extractedNormalAttack)
                 .specialAttack(extractedSpecialAttack)
@@ -55,8 +56,9 @@ public final class PokemonFactory {
         // Extract item's attributes
         for (String itemName: itemsName) {
             Map<String, Object> itemStatsMap = GetFieldsOfClass.getFieldObjectMap(ItemStats.class, itemName);
+            // Item doesn't exist in the db
             if (itemStatsMap.isEmpty())
-                continue; // Item doesn't exist in the db
+                continue;
 
             extractedName           = (String)  extractFieldValues(itemStatsMap, "NAME");
             extractedHP             = (Integer) extractFieldValues(itemStatsMap, "HP");

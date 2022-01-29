@@ -15,6 +15,7 @@ public class Main {
 
         // TODO: Adapter pattern for IO
         // TODO: Refactor + Modularization
+        // TODO: Javadoc
 
         Test.runTestcases(trainerFactory, pokemonFactory);
     }

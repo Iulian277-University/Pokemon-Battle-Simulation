@@ -2,16 +2,18 @@ package entities;
 
 import java.io.Serializable;
 
-/** Special ability */
+/**
+ * Special ability
+ */
 public class Ability implements Serializable {
-    /** Attributes */
-    private Integer damage;
-    private Boolean stun;
-    private Boolean dodge;
+    // Attributes
+    private final Integer damage;
+    private final Boolean stun;
+    private final Boolean dodge;
     private Integer cooldown;
-    private Integer originalCooldown;
+    private final Integer originalCooldown;
 
-    /** Constructors */
+    // Constructors
     private Ability(AbilityBuilder builder) {
         this.damage = builder.damage;
         this.stun = builder.stun;
@@ -30,7 +32,7 @@ public class Ability implements Serializable {
                 '}';
     }
 
-    // NO setters to provide immutability
+    // No setters to provide immutability
     public Integer getDamage() {
         return damage;
     }
@@ -53,7 +55,7 @@ public class Ability implements Serializable {
 
     // Pattern: Builder
     public static class AbilityBuilder {
-        /** Attributes */
+        // Attributes
         private Integer damage;
         private Boolean stun;
         private Boolean dodge;
@@ -82,14 +84,15 @@ public class Ability implements Serializable {
         public Ability build() {
             return new Ability(this);
         }
-
     }
 
     // Game functionality
     private boolean isAvailable = true;
+
     public boolean isAvailable() {
         return isAvailable;
     }
+
     public void setAvailable(boolean available) {
         isAvailable = available;
     }

@@ -3,17 +3,15 @@ package entities;
 import java.io.Serializable;
 
 public class Item implements Serializable {
-    /** Attributes */
-    private String name;
-    private Integer HP;
+    // Attributes
+    private final String name;
+    private final Integer HP;
+    private final Integer attack;
+    private final Integer specialAttack;
+    private final Integer defense;
+    private final Integer specialDefense;
 
-    private Integer attack;
-    private Integer specialAttack;
-
-    private Integer defense;
-    private Integer specialDefense;
-
-    /** Constructors */
+    // Constructors
     private Item(ItemBuilder builder) {
         this.name = builder.name;
         this.HP = builder.HP;
@@ -62,17 +60,15 @@ public class Item implements Serializable {
 
     // Pattern: Builder
     public static class ItemBuilder {
-        /** Attributes */
-        private String name;
+        // Attributes
+        private final String name;
         private Integer HP;
-
         private Integer attack;
         private Integer specialAttack;
-
         private Integer defense;
         private Integer specialDefense;
 
-        /** Constructors */
+        // Constructors
         public ItemBuilder(String name) {
             this.name = name;
         }

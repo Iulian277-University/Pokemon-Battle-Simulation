@@ -7,13 +7,14 @@ import java.util.List;
 public final class TrainerFactory {
     // Pattern: Singleton
     private static TrainerFactory factory;
-    public TrainerFactory() {}
+    private TrainerFactory() {}
     public static TrainerFactory generateFactory() {
         if(factory == null)
             factory = new TrainerFactory();
         return factory;
     }
 
+    // Pattern: Factory
     public Trainer createTrainer(String trainerName, Integer trainerAge, List<Pokemon> pokemons) {
         if (trainerName == null || trainerName.isEmpty()) {
             System.err.println(Constants.ERROR_LOG + "A trainer must have a name");
@@ -31,5 +32,4 @@ public final class TrainerFactory {
 
         return trainerBuilder.build();
     }
-
 }

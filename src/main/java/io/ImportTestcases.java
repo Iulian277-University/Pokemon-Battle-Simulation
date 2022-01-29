@@ -21,13 +21,15 @@ public final class ImportTestcases {
     // Trainer 1
     private static String trainerName1;
     private static Integer trainerAge1;
-    private static Map<String, List<String>> pokemons1 = new HashMap<>();
+    private static final Map<String, List<String>> pokemons1 = new HashMap<>();
 
     // Trainer 2
     private static String trainerName2;
     private static Integer trainerAge2;
-    private static Map<String, List<String>> pokemons2 = new HashMap<>();
+    private static final Map<String, List<String>> pokemons2 = new HashMap<>();
 
+    // Pattern: Adapter
+    // Only one public method hiding the backend functionality
     public static List<Trainer> getTrainers(TrainerFactory trainerFactory, PokemonFactory pokemonFactory, String testcasePath) {
         pokemons1.clear();
         pokemons2.clear();
@@ -102,10 +104,10 @@ public final class ImportTestcases {
 
         if (trainerIndex == 1) {
             trainerName1 = trainerName;
-            trainerAge1 = trainerAge;
+            trainerAge1  = trainerAge;
         } else {
             trainerName2 = trainerName;
-            trainerAge2 = trainerAge;
+            trainerAge2  = trainerAge;
         }
 
         JSONObject jsonPokemons = jsonTrainer.getJSONObject("pokemons");

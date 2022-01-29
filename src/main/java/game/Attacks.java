@@ -44,7 +44,9 @@ public final class Attacks {
     public static String firstAbility(Pokemon attacker, Pokemon defender, boolean defenderAttacks) {
         attacker.setCurrentMove(Constants.Moves.ABILITY_1);
         attacker.getFirstAbility().setCooldown(attacker.getFirstAbility().getOriginalCooldown() - 1);
-        if (Boolean.TRUE.equals(attacker.getFirstAbility().getDodge())) { // if the ability has dodge attribute
+
+        // If the ability has dodge attribute
+        if (Boolean.TRUE.equals(attacker.getFirstAbility().getDodge())) {
             if (!defenderAttacks)
                 attacker.setDodged(true);
         } else {
@@ -52,7 +54,8 @@ public final class Attacks {
                 attacker.setDodged(false);
         }
 
-        if (Boolean.TRUE.equals(attacker.getFirstAbility().getStun())) { // if the ability has stun attribute
+        // If the ability has stun attribute
+        if (Boolean.TRUE.equals(attacker.getFirstAbility().getStun())) {
             if (!defenderAttacks)
                 defender.setStunned(true);
         } else {
@@ -67,23 +70,21 @@ public final class Attacks {
     public static String secondAbility(Pokemon attacker, Pokemon defender, boolean defenderAttacks) {
         attacker.setCurrentMove(Constants.Moves.ABILITY_2);
         attacker.getSecondAbility().setCooldown(attacker.getSecondAbility().getOriginalCooldown() - 1);
-        if (Boolean.TRUE.equals(attacker.getSecondAbility().getDodge())) { // if the ability has dodge attribute
-            if (!defenderAttacks) {
-                attacker.setDodged(true);
-            }
-        }
-        if (Boolean.TRUE.equals(attacker.getSecondAbility().getStun())) { // if the ability has stun attribute
-            if (!defenderAttacks)
-                defender.setStunned(true);
-        }
+
+        // If the ability has dodge attribute
+        if (Boolean.TRUE.equals(attacker.getSecondAbility().getDodge()) && !defenderAttacks)
+            attacker.setDodged(true);
+
+        // If the ability has stun attribute
+        if (Boolean.TRUE.equals(attacker.getSecondAbility().getStun()) && !defenderAttacks)
+            defender.setStunned(true);
+
         attacker.getSecondAbility().setAvailable(false);
         return info(attacker, defender, Constants.Moves.ABILITY_2);
-
     }
 
     public static String nothing(Pokemon attacker, Pokemon defender) {
         attacker.setCurrentMove(Constants.Moves.NOTHING);
         return info(attacker, defender, Constants.Moves.NOTHING);
-
     }
 }

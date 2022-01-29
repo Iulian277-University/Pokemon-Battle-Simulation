@@ -1,8 +1,7 @@
 package common;
 
 import entities.Pokemon;
-
-// TODO: Delete asserts from the entire project
+import entities.PokemonBuilder;
 
 public final class Constants {
     private Constants() {}
@@ -23,14 +22,14 @@ public final class Constants {
     public static final String  OUTPUT_FILE_NAME_FORMAT = "output_test_";
 
 
-    public static final Pokemon Neutrel1 = new Pokemon.PokemonBuilder(PokemonStats.NEUTREL1_NAME)
+    public static final Pokemon Neutrel1 = new PokemonBuilder(PokemonStats.NEUTREL1_NAME)
             .HP(PokemonStats.NEUTREL1_HP)
             .attack(PokemonStats.NEUTREL1_NORMAL_ATTACK)
             .defense(PokemonStats.NEUTREL1_NORMAL_DEFENSE)
             .specialDefense(PokemonStats.NEUTREL1_SPECIAL_DEFENSE)
             .build();
 
-    public static final Pokemon Neutrel2 = new Pokemon.PokemonBuilder(PokemonStats.NEUTREL2_NAME)
+    public static final Pokemon Neutrel2 = new PokemonBuilder(PokemonStats.NEUTREL2_NAME)
             .HP(PokemonStats.NEUTREL2_HP)
             .attack(PokemonStats.NEUTREL2_NORMAL_ATTACK)
             .defense(PokemonStats.NEUTREL2_NORMAL_DEFENSE)

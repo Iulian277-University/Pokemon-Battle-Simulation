@@ -10,8 +10,7 @@ import java.io.IOException;
 import java.util.*;
 
 public final class GenerateTestcases {
-    private GenerateTestcases() {
-    }
+    private GenerateTestcases() {}
 
     // Trainer 1
     private static String trainerName1;
