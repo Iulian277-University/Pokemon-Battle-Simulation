@@ -13,6 +13,7 @@ import java.nio.file.Paths;
 import java.util.Comparator;
 import java.util.List;
 
+/** This class is used for running the testcases */
 public final class Test {
     private Test() {}
 

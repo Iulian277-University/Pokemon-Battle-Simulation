@@ -6,6 +6,10 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.*;
 
+/**
+ * This is a handler class used for getting
+ * the public attributes from a given class
+ */
 public final class GetFieldsOfClass {
     private GetFieldsOfClass() {}
 

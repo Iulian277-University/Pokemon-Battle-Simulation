@@ -4,6 +4,7 @@ import common.Constants;
 
 import java.io.*;
 
+/** This is a handler class used for 'cloning' an object*/
 public final class DeepCopy {
     private DeepCopy() {}
 

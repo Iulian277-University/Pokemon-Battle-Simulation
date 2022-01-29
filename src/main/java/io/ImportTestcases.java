@@ -15,6 +15,11 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.IntStream;
 
+/**
+ * This class is used for import the testcases
+ * It uses an external json library for deserializing
+ * https://stleary.github.io/JSON-java/
+ */
 public final class ImportTestcases {
     private ImportTestcases() {}
 

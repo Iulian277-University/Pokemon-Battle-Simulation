@@ -4,6 +4,10 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * This class is used for printing the state
+ * of each battle to an external file
+ */
 public final class Logger {
     private String outputStream;
 
