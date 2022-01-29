@@ -1,9 +1,15 @@
 package utils;
 
+import common.Constants;
+
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.*;
 
+/**
+ * This is a handler class used for getting
+ * the public attributes from a given class
+ */
 public final class GetFieldsOfClass {
     private GetFieldsOfClass() {}
 
@@ -14,7 +20,7 @@ public final class GetFieldsOfClass {
                 .toList();
 
         if (fields.isEmpty()) {
-            System.err.println("Field '" + name + "' doesn't exist");
+            System.err.println(Constants.ERROR_LOG + "Field '" + name + "' doesn't exist");
             return Collections.emptyMap();
         }
 

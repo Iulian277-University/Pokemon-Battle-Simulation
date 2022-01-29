@@ -1,13 +1,16 @@
 package utils;
 
+import common.Constants;
+
 import java.io.*;
 
+/** This is a handler class used for 'cloning' an object*/
 public final class DeepCopy {
     private DeepCopy() {}
 
     public static <T> T deepCopy(Object objectToCopy) {
         if (!(objectToCopy instanceof Serializable)) {
-            System.err.println(objectToCopy.getClass() + " isn't serializable");
+            System.err.println(Constants.ERROR_LOG + objectToCopy.getClass() + " isn't serializable");
             return null;
         }
 

@@ -1,11 +1,15 @@
 package common;
 
 import entities.Pokemon;
+import entities.PokemonBuilder;
 
-// TODO: Delete asserts from the entire project
-
+/** This is a handler class for storing constants */
 public final class Constants {
     private Constants() {}
+
+    public static final String  INFO_LOG   = "[INFO]: ";
+    public static final String  STATUS_LOG = "[STATUS]: ";
+    public static final String  ERROR_LOG  = "[ERROR]: ";
 
     public static final Integer TRAINER_MAX_POKEMONS = 3;
     public static final Integer POKEMON_MAX_ITEMS = 3;
@@ -16,16 +20,17 @@ public final class Constants {
 
     public static final String  OUTPUT_DIR_PATH = "./logger_output/";
     public static final String  OUTPUT_FILE_EXT = ".txt";
+    public static final String  OUTPUT_FILE_NAME_FORMAT = "output_test_";
 
 
-    public static final Pokemon Neutrel1 = new Pokemon.PokemonBuilder(PokemonStats.NEUTREL1_NAME)
+    public static final Pokemon Neutrel1 = new PokemonBuilder(PokemonStats.NEUTREL1_NAME)
             .HP(PokemonStats.NEUTREL1_HP)
             .attack(PokemonStats.NEUTREL1_NORMAL_ATTACK)
             .defense(PokemonStats.NEUTREL1_NORMAL_DEFENSE)
             .specialDefense(PokemonStats.NEUTREL1_SPECIAL_DEFENSE)
             .build();
 
-    public static final Pokemon Neutrel2 = new Pokemon.PokemonBuilder(PokemonStats.NEUTREL2_NAME)
+    public static final Pokemon Neutrel2 = new PokemonBuilder(PokemonStats.NEUTREL2_NAME)
             .HP(PokemonStats.NEUTREL2_HP)
             .attack(PokemonStats.NEUTREL2_NORMAL_ATTACK)
             .defense(PokemonStats.NEUTREL2_NORMAL_DEFENSE)

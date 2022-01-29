@@ -9,20 +9,24 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * This class is used for randomly generate a set of testcases
+ * It uses an external json library for serializing
+ * https://stleary.github.io/JSON-java/
+ */
 public final class GenerateTestcases {
-    private GenerateTestcases() {
-    }
+    private GenerateTestcases() {}
 
     // Trainer 1
     private static String trainerName1;
     private static Integer trainerAge1;
-    private static List<String> pokemonsOrder1 = new ArrayList<>();
+    private static final List<String> pokemonsOrder1 = new ArrayList<>();
     private static Map<String, List<String>> pokemons1;
 
     // Trainer 2
     private static String trainerName2;
     private static Integer trainerAge2;
-    private static List<String> pokemonsOrder2 = new ArrayList<>();
+    private static final List<String> pokemonsOrder2 = new ArrayList<>();
     private static Map<String, List<String>> pokemons2;
 
     public static void generate(int numberOfTests) {

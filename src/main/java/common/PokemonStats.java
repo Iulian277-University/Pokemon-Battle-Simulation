@@ -2,17 +2,16 @@ package common;
 
 import entities.Ability;
 
+/**
+ * To add a new pokemon, use the following format:
+ * public static final <data_type> <pokemonName>_ATTRIBUTE, where ATTRIBUTE can be:
+ * NAME, HP,
+ * NORMAL_ATTACK, SPECIAL_ATTACK,
+ * NORMAL_DEFENSE, SPECIAL_DEFENSE,
+ * FIRST_ABILITY, SECOND_ABILITY
+ */
 public final class PokemonStats {
     private PokemonStats() {}
-
-    /**
-     * To add a new pokemon, use the following format:
-     * public static final <data_type> <pokemonName>_ATTRIBUTE, where ATTRIBUTE can be:
-     * NAME, HP,
-     * NORMAL_ATTACK, SPECIAL_ATTACK,
-     * NORMAL_DEFENSE, SPECIAL_DEFENSE,
-     * FIRST_ABILITY, SECOND_ABILITY
-     * */
 
     // Neutrel1
     public static final String  NEUTREL1_NAME = "Neutrel1";

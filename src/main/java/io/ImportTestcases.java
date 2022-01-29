@@ -1,5 +1,6 @@
 package io;
 
+import common.Constants;
 import entities.Pokemon;
 import entities.PokemonFactory;
 import entities.Trainer;
@@ -14,19 +15,26 @@ import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.IntStream;
 
+/**
+ * This class is used for import the testcases
+ * It uses an external json library for deserializing
+ * https://stleary.github.io/JSON-java/
+ */
 public final class ImportTestcases {
     private ImportTestcases() {}
 
     // Trainer 1
     private static String trainerName1;
     private static Integer trainerAge1;
-    private static Map<String, List<String>> pokemons1 = new HashMap<>();
+    private static final Map<String, List<String>> pokemons1 = new HashMap<>();
 
     // Trainer 2
     private static String trainerName2;
     private static Integer trainerAge2;
-    private static Map<String, List<String>> pokemons2 = new HashMap<>();
+    private static final Map<String, List<String>> pokemons2 = new HashMap<>();
 
+    // Pattern: Adapter
+    // Only one public method hiding the backend functionality
     public static List<Trainer> getTrainers(TrainerFactory trainerFactory, PokemonFactory pokemonFactory, String testcasePath) {
         pokemons1.clear();
         pokemons2.clear();
@@ -34,7 +42,7 @@ public final class ImportTestcases {
         String content = jsonToString(testcasePath);
         boolean deserializationDone = stringToObjects(content);
         if (!deserializationDone) {
-            System.err.println("Couldn't get the trainers");
+            System.err.println(Constants.ERROR_LOG + "Couldn't get the trainers");
             return Collections.emptyList();
         }
 
@@ -82,7 +90,7 @@ public final class ImportTestcases {
 
     private static boolean stringToObjects(String content) {
         if (content == null) {
-            System.err.println("Couldn't read the json file");
+            System.err.println(Constants.ERROR_LOG + "Couldn't read the json file");
             return false;
         }
 
@@ -101,10 +109,10 @@ public final class ImportTestcases {
 
         if (trainerIndex == 1) {
             trainerName1 = trainerName;
-            trainerAge1 = trainerAge;
+            trainerAge1  = trainerAge;
         } else {
             trainerName2 = trainerName;
-            trainerAge2 = trainerAge;
+            trainerAge2  = trainerAge;
         }
 
         JSONObject jsonPokemons = jsonTrainer.getJSONObject("pokemons");

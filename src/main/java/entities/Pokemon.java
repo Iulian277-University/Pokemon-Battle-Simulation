@@ -1,46 +1,43 @@
 package entities;
 
-import common.Constants;
 import game.Battle;
 
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.concurrent.Callable;
+import java.util.List;
 
 import common.Constants.Moves;
 
+/**
+ * This class is used for creating a pokemon
+ * and setting the game functionalities
+ */
 public class Pokemon implements Serializable, Runnable {
-    /** Attributes */
-    private String name;
+    // Attributes
+    private final String name;
     private Integer HP;
-
     private Integer attack;
     private Integer specialAttack;
-
     private Integer defense;
     private Integer specialDefense;
+    private final Ability firstAbility;
+    private final Ability secondAbility;
+    private final List<Item> items;
 
-    private Ability firstAbility;
-    private Ability secondAbility;
+    // Constructors
+    public Pokemon(PokemonBuilder builder) {
+        this.name = builder.getName();
+        this.HP = builder.getHP();
 
-    private ArrayList<Item> items; // 3 items
+        this.attack = builder.getAttack();
+        this.specialAttack = builder.getSpecialAttack();
 
-    /** Constructors */
-    private Pokemon(PokemonBuilder builder) {
-        this.name = builder.name;
-        this.HP = builder.HP;
+        this.defense = builder.getDefense();
+        this.specialDefense = builder.getSpecialDefense();
 
-        this.attack = builder.attack;
-        this.specialAttack = builder.specialAttack;
+        this.firstAbility = builder.getFirstAbility();
+        this.secondAbility = builder.getSecondAbility();
 
-        this.defense = builder.defense;
-        this.specialDefense = builder.specialDefense;
-
-        this.firstAbility = builder.firstAbility;
-        this.secondAbility = builder.secondAbility;
-
-        this.items = builder.items;
+        this.items = builder.getItems();
         updateStatsWithItems();
     }
 
@@ -92,7 +89,7 @@ public class Pokemon implements Serializable, Runnable {
         return secondAbility;
     }
 
-    public ArrayList<Item> getItems() {
+    public List<Item> getItems() {
         return items;
     }
 
@@ -140,94 +137,8 @@ public class Pokemon implements Serializable, Runnable {
         }
     }
 
-    // Pattern: Builder
-    public static class PokemonBuilder {
-        /** Attributes */
-        private String name;
-        private Integer HP;
-
-        private Integer attack;
-        private Integer specialAttack;
-
-        private Integer defense;
-        private Integer specialDefense;
-
-        private Ability firstAbility;
-        private Ability secondAbility;
-
-        private ArrayList<Item> items = new ArrayList<>(); // 3 items
-
-        /** Constructors */
-        public PokemonBuilder(String name) {
-            this.name = name;
-        }
-
-        /** Complete Pokemon fields */
-        public PokemonBuilder HP(Integer HP) {
-            this.HP = HP;
-            return this;
-        }
-
-        public PokemonBuilder attack(Integer attack) {
-            this.attack = attack;
-            return this;
-        }
-
-        public PokemonBuilder specialAttack(Integer specialAttack) {
-            this.specialAttack = specialAttack;
-            return this;
-        }
-
-        public PokemonBuilder defense(Integer defense) {
-            this.defense = defense;
-            return this;
-        }
-
-        public PokemonBuilder specialDefense(Integer specialDefense) {
-            this.specialDefense = specialDefense;
-            return this;
-        }
-
-        public PokemonBuilder firstAbility(Ability ability) {
-            this.firstAbility = ability;
-            return this;
-        }
-
-        public PokemonBuilder secondAbility(Ability ability) {
-            this.secondAbility = ability;
-            return this;
-        }
-
-        public PokemonBuilder addItem(Item item) {
-            if (item == null)
-                return this;
-
-            if(this.items.size() < Constants.POKEMON_MAX_ITEMS)
-                this.items.add(item);
-            else
-                System.err.println("Couldn't add the Item '" +
-                        item.getName() + "' because the pokemon's capacity is full " +
-                        "[Max "+ Constants.POKEMON_MAX_ITEMS + " items]");
-
-            return this;
-        }
-
-        public Pokemon build() {
-            Pokemon pokemon = new Pokemon(this);
-            if (pokemon.validate())
-                return pokemon;
-            else {
-                System.err.println("Couldn't create the pokemon '" + pokemon.getName() +
-                        "' because the pokemon isn't a valid one " +
-                        "[Pokemons are not allowed to have 2 types of attack " +
-                        "(NORMAL_ATTACK and SPECIAL_ATTACK)]");
-                return null;
-            }
-        }
-    }
-
     // Game functionality
-    private transient Battle battle; // transient?
+    private transient Battle battle;
     public void setBattle(Battle battle) {
         this.battle = battle;
     }
@@ -246,22 +157,16 @@ public class Pokemon implements Serializable, Runnable {
     }
 
     private Moves currentMove;
-    public Moves getCurrentMove() {
+    public  Moves getCurrentMove() {
         return currentMove;
     }
-
-    public void setName(String name) {
-        this.name = name;
+    public  void  setCurrentMove(Moves currentMove) {
+        this.currentMove = currentMove;
     }
 
     public void setHP(Integer HP) {
         this.HP = HP;
     }
-
-    public void setCurrentMove(Moves currentMove) {
-        this.currentMove = currentMove;
-    }
-
 
     private boolean isStunned = false;
     public boolean isStunned() {

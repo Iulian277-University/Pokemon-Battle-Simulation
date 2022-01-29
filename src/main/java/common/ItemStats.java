@@ -1,5 +1,6 @@
 package common;
 
+/** This is a handler class for storing attributes of items */
 public final class ItemStats {
     private ItemStats() {}
 

@@ -1,5 +1,7 @@
 package utils;
 
+import common.Constants;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -7,19 +9,17 @@ import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
+/**
+ * This is a handler class used for getting a
+ * list of file-paths within a given directory
+ */
 public final class FindFilesByExtension {
     private FindFilesByExtension() {}
 
-    /**
-     * Get a list of file-paths as a string list
-     * @param dirPath of the directory where the files are located
-     * @param fileExtension for selecting only those files
-     * @return a list of file-paths as strings
-     */
     public static List<String> findFiles(Path dirPath, String fileExtension) {
 
         if (!Files.isDirectory(dirPath)) {
-            System.err.println("Path must be a valid directory");
+            System.err.println(Constants.ERROR_LOG + "Path must be a valid directory");
             return Collections.emptyList();
         }
 
