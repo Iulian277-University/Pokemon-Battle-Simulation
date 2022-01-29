@@ -11,11 +11,9 @@ public class Main {
         TrainerFactory trainerFactory = TrainerFactory.generateFactory();
         PokemonFactory pokemonFactory = PokemonFactory.generateFactory();
 
-//         GenerateTestcases.generate(10);
+        // GenerateTestcases.generate(10);
 
         // TODO: Adapter pattern for IO
-        // TODO: Refactor + Modularization
-        // TODO: Javadoc
 
         Test.runTestcases(trainerFactory, pokemonFactory);
     }

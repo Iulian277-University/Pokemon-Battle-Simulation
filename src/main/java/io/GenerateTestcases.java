@@ -9,6 +9,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * This class is used for randomly generate a set of testcases
+ * It uses an external json library for serializing
+ */
 public final class GenerateTestcases {
     private GenerateTestcases() {}
 

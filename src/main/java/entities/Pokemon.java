@@ -7,20 +7,20 @@ import java.util.List;
 
 import common.Constants.Moves;
 
+/**
+ * This class is used for creating a pokemon
+ * and setting the game functionalities
+ */
 public class Pokemon implements Serializable, Runnable {
     // Attributes
     private final String name;
     private Integer HP;
-
     private Integer attack;
     private Integer specialAttack;
-
     private Integer defense;
     private Integer specialDefense;
-
     private final Ability firstAbility;
     private final Ability secondAbility;
-
     private final List<Item> items;
 
     // Constructors

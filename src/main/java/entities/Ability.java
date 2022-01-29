@@ -2,9 +2,7 @@ package entities;
 
 import java.io.Serializable;
 
-/**
- * Special ability
- */
+/** This class is used for creating a special ability */
 public class Ability implements Serializable {
     // Attributes
     private final Integer damage;

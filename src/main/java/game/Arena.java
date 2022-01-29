@@ -11,13 +11,14 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
+ * This class is used for generating an arena
+ * Arena is the place where the battles take place
  * There is a unique arena in the game
  * Only one game can be played at a time
  */
 public final class Arena {
     private Trainer firstTrainer;
     private Trainer secondTrainer;
-    private static Logger logger;
 
     // Getters and private setters
     public Trainer getFirstTrainer() {
@@ -32,7 +33,8 @@ public final class Arena {
     private static Arena arena;
     private Arena() {}
 
-    public static Arena generateArena(Trainer firstTrainer, Trainer secondTrainer, Logger logger) {
+    private static Logger logger;
+    public  static Arena generateArena(Trainer firstTrainer, Trainer secondTrainer, Logger logger) {
         if (arena == null)
             arena = new Arena();
         // Set trainers and logger
@@ -85,7 +87,7 @@ public final class Arena {
         // [Best pokemon of trainer1] VS [Best pokemon of trainer2]
         int winnerIndex = bestOfTheBest(firstTrainer, secondTrainer, executorService);
 
-        // Print the winner
+        // Display the winner
         battleResults(firstTrainer, secondTrainer, winnerIndex);
 
         executorService.shutdown();

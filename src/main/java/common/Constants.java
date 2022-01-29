@@ -3,6 +3,7 @@ package common;
 import entities.Pokemon;
 import entities.PokemonBuilder;
 
+/** This is a handler class for storing constants */
 public final class Constants {
     private Constants() {}
 

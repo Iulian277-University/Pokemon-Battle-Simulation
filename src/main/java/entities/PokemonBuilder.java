@@ -5,6 +5,7 @@ import common.Constants;
 import java.util.ArrayList;
 import java.util.List;
 
+/** This class is used for creating an item */
 public class PokemonBuilder {
     // Pattern: Builder
     // Attributes

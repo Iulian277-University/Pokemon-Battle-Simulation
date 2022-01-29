@@ -2,6 +2,7 @@ package entities;
 
 import java.io.Serializable;
 
+/** This class is used for creating an item */
 public class Item implements Serializable {
     // Attributes
     private final String name;

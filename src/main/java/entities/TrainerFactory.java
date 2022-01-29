@@ -4,6 +4,10 @@ import common.Constants;
 
 import java.util.List;
 
+/**
+ * This class is used for instantiating a trainer
+ * It allows you to sequentially add attributes
+ */
 public final class TrainerFactory {
     // Pattern: Singleton
     private static TrainerFactory factory;

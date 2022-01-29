@@ -3,6 +3,7 @@ package game;
 import common.Constants;
 import entities.Pokemon;
 
+/** This class is used for defining attacks for pokemons */
 public final class Attacks {
     private Attacks() {}
 

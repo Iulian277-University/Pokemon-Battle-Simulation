@@ -8,6 +8,10 @@ import utils.GetFieldsOfClass;
 
 import java.util.*;
 
+/**
+ * This class is used for instantiating a pokemon
+ * It allows you to sequentially add attributes
+ */
 public final class PokemonFactory {
     // Pattern: Singleton
     private static PokemonFactory factory;

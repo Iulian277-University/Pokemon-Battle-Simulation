@@ -9,6 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * This class is used for setting a battle with 2 pokemons
+ * It contains some helper methods for updating the stats of the pokemons
+ */
 public final class Battle {
     private Pokemon pokemon1;
     private Pokemon pokemon2;
@@ -81,7 +85,7 @@ public final class Battle {
 
         // Update HPs
         logger.print(updateHPs(pokemon1, pokemon2));
-        logger.print(printHPs(pokemon1, pokemon2));
+        logger.print(displayHPs(pokemon1, pokemon2));
 
         // Stun the attacker at the next moment
         if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
@@ -137,7 +141,7 @@ public final class Battle {
     }
 
 
-    private String printHPs(Pokemon pokemon1, Pokemon pokemon2) {
+    private String displayHPs(Pokemon pokemon1, Pokemon pokemon2) {
         String outputHPs = "";
         outputHPs += pokemon1.getName() + " " + pokemon1.getHP() + "HP |";
         outputHPs += " " + pokemon2.getName() + " " + pokemon2.getHP() + "HP\n";
