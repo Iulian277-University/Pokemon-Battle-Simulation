@@ -13,6 +13,7 @@ public class Main {
 
         // GenerateTestcases.generate(10);
 
+        // TODO: Battle on threads
         // TODO: Adapter pattern for IO
 
         Test.runTestcases(trainerFactory, pokemonFactory);
