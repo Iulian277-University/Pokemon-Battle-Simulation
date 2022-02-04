@@ -6,9 +6,11 @@ import entities.Trainer;
 import io.Logger;
 import utils.DeepCopy;
 
+import java.util.Arrays;
+import java.util.List;
 import java.util.Random;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
+
 
 /**
  * This class is used for generating an arena
@@ -57,8 +59,6 @@ public final class Arena {
         Trainer firstTrainer  = arena.getFirstTrainer();
         Trainer secondTrainer = arena.getSecondTrainer();
 
-        ExecutorService executorService = Executors.newFixedThreadPool(2);
-
         // Original pokemons (deep copy them)
         Pokemon neutrel1Orig = Constants.Neutrel1;
         Pokemon neutrel2Orig = Constants.Neutrel2;
@@ -74,23 +74,20 @@ public final class Arena {
             Constants.Events currEvent = pickRandomEvent();
             while (!currEvent.equals(Constants.Events.VERSUS_OPPONENT)) {
                 currEvent = pokemonsVersusNeutrels(
-                        executorService,
                         neutrel1Orig, neutrel2Orig,
                         firstPokemonOrig, secondPokemonOrig,
                         currEvent);
             }
 
             // Final battle: Pokemon1 vs Pokemon2
-            finalBattle(executorService, firstPokemonOrig, secondPokemonOrig);
+            finalBattle(firstPokemonOrig, secondPokemonOrig);
         }
 
         // [Best pokemon of trainer1] VS [Best pokemon of trainer2]
-        int winnerIndex = bestOfTheBest(firstTrainer, secondTrainer, executorService);
+        int winnerIndex = bestOfTheBest(firstTrainer, secondTrainer);
 
         // Display the winner
         battleResults(firstTrainer, secondTrainer, winnerIndex);
-
-        executorService.shutdown();
     }
 
     private static void battleResults(Trainer firstTrainer, Trainer secondTrainer, int winnerIndex) {
@@ -107,7 +104,7 @@ public final class Arena {
         }
     }
 
-    private static int bestOfTheBest(Trainer firstTrainer, Trainer secondTrainer, ExecutorService executorService) {
+    private static int bestOfTheBest(Trainer firstTrainer, Trainer secondTrainer) {
         Pokemon bestPokemonFirstTrainer  = firstTrainer.getPokemons().get(0);
         Pokemon bestPokemonSecondTrainer = secondTrainer.getPokemons().get(0);
         for (int i = 0; i < Math.min(firstTrainer.getPokemons().size(), secondTrainer.getPokemons().size()); ++i) {
@@ -128,7 +125,7 @@ public final class Arena {
 
         // Best of the best :)
         logger.print("---------- Best1 vs Best2 [START] ----------");
-        int winnerIndex = individualBattle(executorService, bestPokemonFirstTrainer, bestPokemonSecondTrainer);
+        int winnerIndex = individualBattle(bestPokemonFirstTrainer, bestPokemonSecondTrainer);
         logger.print("---------- Best1 vs Best2 [DONE] ----------");
 
         logger.print("*** Best Pokemons - [AFTER] - Final Battle ***");
@@ -137,18 +134,17 @@ public final class Arena {
         return winnerIndex;
     }
 
-    private static void finalBattle(ExecutorService executorService, Pokemon firstPokemonOrig, Pokemon secondPokemonOrig) {
+    private static void finalBattle(Pokemon firstPokemonOrig, Pokemon secondPokemonOrig) {
         logger.print(firstPokemonOrig);
         logger.print(secondPokemonOrig);
         logger.print("---------- Pokemon1 vs Pokemon2 [START] ----------");
-        individualBattle(executorService, firstPokemonOrig, secondPokemonOrig);
+        individualBattle(firstPokemonOrig, secondPokemonOrig);
         logger.print(firstPokemonOrig);
         logger.print(secondPokemonOrig);
         logger.print("---------- Pokemon1 vs Pokemon2 [DONE] ----------");
     }
 
-    private static Constants.Events pokemonsVersusNeutrels(ExecutorService executorService,
-                                                           Pokemon neutrel1Orig, Pokemon neutrel2Orig,
+    private static Constants.Events pokemonsVersusNeutrels(Pokemon neutrel1Orig, Pokemon neutrel2Orig,
                                                            Pokemon firstPokemonOrig, Pokemon secondPokemonOrig,
                                                            Constants.Events currEvent) {
         // Battle: pok1 vs neutrel(1/2)
@@ -161,14 +157,14 @@ public final class Arena {
         // Pokemon1 vs Neutrel
         logger.print("---------- Pokemon1 vs Neutrel [START] ----------");
         logger.print(firstPokemonOrig);
-        individualBattle(executorService, firstPokemonOrig, neutrel);
+        individualBattle(firstPokemonOrig, neutrel);
         logger.print(firstPokemonOrig);
         logger.print("---------- Pokemon1 vs Neutrel [DONE] ----------");
 
         // Pokemon2 vs Neutrel
         logger.print("---------- Pokemon2 vs Neutrel [START] ----------");
         logger.print(secondPokemonOrig);
-        individualBattle(executorService, secondPokemonOrig, neutrel);
+        individualBattle(secondPokemonOrig, neutrel);
         logger.print(secondPokemonOrig);
         logger.print("---------- Pokemon2 vs Neutrel [DONE] ----------");
 
@@ -176,7 +172,7 @@ public final class Arena {
         return currEvent;
     }
 
-    private static int individualBattle(ExecutorService executorService, Pokemon firstPokemonOrig, Pokemon secondPokemonOrig) {
+    private static int individualBattle(Pokemon firstPokemonOrig, Pokemon secondPokemonOrig) {
         Pokemon firstPokemon  = DeepCopy.deepCopy(firstPokemonOrig);
         Pokemon secondPokemon = DeepCopy.deepCopy(secondPokemonOrig);
         if (firstPokemon == null || secondPokemon == null) {
@@ -189,11 +185,26 @@ public final class Arena {
         secondPokemon.setBattle(battle);
         Battle.setLogger(logger);
 
+        ExecutorService executorService = Executors.newFixedThreadPool(2);
+        List<Callable<Constants.Moves>> callablesPokemons = Arrays.asList(firstPokemon, secondPokemon);
+
         // Run the battle
         while (firstPokemon.isAlive() && secondPokemon.isAlive()) {
-            firstPokemon.run();
-            secondPokemon.run();
+            try {
+                List<Future<Constants.Moves>> moves = executorService.invokeAll(callablesPokemons);
+
+                Constants.Moves firstMove  = moves.get(0).get();
+                Constants.Moves secondMove = moves.get(1).get();
+
+                firstPokemon.run(firstMove);
+                secondPokemon.run(secondMove);
+
+            } catch (InterruptedException | ExecutionException e) {
+                e.printStackTrace();
+            }
         }
+
+        executorService.shutdown();
 
         // Update winner's stats
         int winnerIndex;

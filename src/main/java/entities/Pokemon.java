@@ -4,6 +4,7 @@ import game.Battle;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.concurrent.Callable;
 
 import common.Constants.Moves;
 
@@ -11,7 +12,7 @@ import common.Constants.Moves;
  * This class is used for creating a pokemon
  * and setting the game functionalities
  */
-public class Pokemon implements Serializable, Runnable {
+public class Pokemon implements Serializable, Callable<Moves> {
     // Attributes
     private final String name;
     private Integer HP;
@@ -143,17 +144,21 @@ public class Pokemon implements Serializable, Runnable {
         this.battle = battle;
     }
 
+    @Override
+    public Moves call() {
+        return battle.generateRandomMove(this);
+    }
+
     private boolean isAttacker = false; // pokemon1
     public void isAttacker(boolean attacker) {
         isAttacker = attacker;
     }
 
-    @Override
-    public void run() {
+    public void run(Moves move) {
         if (isAttacker)
-            battle.firstMove();
+            battle.firstMove(move);
         else
-            battle.secondMove();
+            battle.secondMove(move);
     }
 
     private Moves currentMove;
@@ -164,23 +169,23 @@ public class Pokemon implements Serializable, Runnable {
         this.currentMove = currentMove;
     }
 
-    public void setHP(Integer HP) {
+    public  void setHP(Integer HP) {
         this.HP = HP;
     }
 
     private boolean isStunned = false;
-    public boolean isStunned() {
+    public  boolean isStunned() {
         return isStunned;
     }
-    public void setStunned(boolean isStunned) {
+    public  void setStunned(boolean isStunned) {
         this.isStunned = isStunned;
     }
 
     private boolean isDodged = false;
-    public boolean isDodged() {
+    public  boolean isDodged() {
         return isDodged;
     }
-    public void setDodged(boolean isDodged) {
+    public  void setDodged(boolean isDodged) {
         this.isDodged = isDodged;
     }
 
