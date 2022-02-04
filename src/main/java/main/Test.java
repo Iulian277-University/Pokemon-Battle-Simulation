@@ -35,6 +35,8 @@ public final class Test {
                     testIndex +
                     Constants.OUTPUT_FILE_EXT);
 
+            logger.print("<<< TESTCASE " + testIndex + " >>>");
+
             List<Trainer> trainers = ImportTestcases.getTrainers(trainerFactory, pokemonFactory, testcasePath);
 
             Trainer firstTrainer  = trainers.get(0);
@@ -43,7 +45,7 @@ public final class Test {
             Arena arena = Arena.generateArena(firstTrainer, secondTrainer, logger);
             Arena.battle(arena);
 
-            logger.writeToFile();
+            logger.writeToStream();
             testIndex++;
         }
 

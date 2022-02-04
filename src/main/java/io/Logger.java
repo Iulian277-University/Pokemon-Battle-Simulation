@@ -1,5 +1,8 @@
 package io;
 
+import common.Constants;
+import main.Main;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -30,15 +33,35 @@ public final class Logger {
         output.append(outputInfo).append("\n");
     }
 
-    public void writeToFile() {
+    private boolean stdout = false;
+    private boolean file   = false;
+    public void writeToStream() {
         String filePath = outputStream;
 
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
-            writer.write(output.toString());
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            output.setLength(0);
+        Constants.Streams outputFileDescriptor = OutputStream.getOutputStream();
+        switch (outputFileDescriptor) {
+            case FILE   -> file   = true;
+            case STDOUT -> stdout = true;
+            case STDOUT_AND_FILE -> {
+                file   = true;
+                stdout = true;
+            }
         }
+
+        // Write to file if queried
+        if (file) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(filePath))) {
+                writer.write(output.toString());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        // Write to stdout if queried
+        if (stdout) {
+            System.out.println(output);
+        }
+
+        output.setLength(0);
     }
 }

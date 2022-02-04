@@ -74,4 +74,10 @@ public final class Constants {
         TREE,
         CAPE,
     }
+
+    public enum Streams {
+        STDOUT(),
+        FILE(),
+        STDOUT_AND_FILE(),
+    }
 }
