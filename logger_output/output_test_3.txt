@@ -2,612 +2,887 @@
 ********** POKEMONS INDEX - 0 **********
 ---------- Pokemon1 vs Neutrel [START] ----------
 Pokemon{name='Vulpix', HP=38, attack=10, specialAttack=null, defense=2, specialDefense=4, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Vulpix NORMAL_ATTACK (A:10 | D:1) [ab1-cooldown:6 | ab2-cooldown:7]
-Neutrel1 NORMAL_ATTACK (A:3 | D:2) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 37HP | Neutrel1 1HP
----
 Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:6 | ab2-cooldown:6]
-Neutrel1 NORMAL_ATTACK (A:3 | D:2) [ab1-cooldown:- | ab2-cooldown:-]
+Neutrel2 NORMAL_ATTACK (A:4 | D:2) [ab1-cooldown:- | ab2-cooldown:-]
 ABILITY_2 | NORMAL_ATTACK
-Vulpix 37HP | Neutrel1 0HP
+Vulpix 38HP | Neutrel2 18HP
+---
+Vulpix NORMAL_ATTACK (A:10 | D:1) [ab1-cooldown:6 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:2) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Vulpix 36HP | Neutrel2 9HP
+---
+Vulpix NORMAL_ATTACK (A:10 | D:1) [ab1-cooldown:6 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:2) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Vulpix 34HP | Neutrel2 0HP
 ---
 Pokemon{name='Vulpix', HP=39, attack=11, specialAttack=null, defense=3, specialDefense=5, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
 ---------- Pokemon1 vs Neutrel [DONE] ----------
 ---------- Pokemon2 vs Neutrel [START] ----------
 Pokemon{name='Vulpix', HP=36, attack=8, specialAttack=null, defense=2, specialDefense=7, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
 Vulpix NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:6 | ab2-cooldown:7]
-Neutrel1 NORMAL_ATTACK (A:3 | D:2) [ab1-cooldown:- | ab2-cooldown:-]
+Neutrel2 NORMAL_ATTACK (A:4 | D:2) [ab1-cooldown:- | ab2-cooldown:-]
 NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 35HP | Neutrel1 3HP
+Vulpix 34HP | Neutrel2 13HP
 ---
-Vulpix NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:6 | ab2-cooldown:7]
-Neutrel1 NORMAL_ATTACK (A:3 | D:2) [ab1-cooldown:- | ab2-cooldown:-]
+Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:7]
+Neutrel2 NORMAL_ATTACK (A:4 | D:2) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Vulpix 32HP | Neutrel2 5HP
+---
+Vulpix NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:4 | ab2-cooldown:7]
+Neutrel2 NORMAL_ATTACK (A:4 | D:2) [ab1-cooldown:- | ab2-cooldown:-]
 NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 34HP | Neutrel1 0HP
+Vulpix 30HP | Neutrel2 0HP
 ---
 Pokemon{name='Vulpix', HP=37, attack=9, specialAttack=null, defense=3, specialDefense=8, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
 ---------- Pokemon2 vs Neutrel [DONE] ----------
 ---------- Pokemon1 vs Neutrel [START] ----------
 Pokemon{name='Vulpix', HP=39, attack=11, specialAttack=null, defense=3, specialDefense=5, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Vulpix NORMAL_ATTACK (A:11 | D:1) [ab1-cooldown:6 | ab2-cooldown:7]
-Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 38HP | Neutrel2 10HP
----
 Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:7]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_1 | NOTHING
-Vulpix 38HP | Neutrel2 2HP
+Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Vulpix 38HP | Neutrel2 12HP
 ---
 Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:6]
 Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown:- | ab2-cooldown:-]
 ABILITY_2 | NORMAL_ATTACK
-Vulpix 38HP | Neutrel2 0HP
+Vulpix 38HP | Neutrel2 10HP
+---
+Vulpix NORMAL_ATTACK (A:11 | D:1) [ab1-cooldown:3 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Vulpix 37HP | Neutrel2 0HP
 ---
 Pokemon{name='Vulpix', HP=40, attack=12, specialAttack=null, defense=4, specialDefense=6, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
 ---------- Pokemon1 vs Neutrel [DONE] ----------
 ---------- Pokemon2 vs Neutrel [START] ----------
 Pokemon{name='Vulpix', HP=37, attack=9, specialAttack=null, defense=3, specialDefense=8, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:7]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_1 | NOTHING
-Vulpix 37HP | Neutrel2 12HP
----
-Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:6]
+Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:6 | ab2-cooldown:6]
 Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown:- | ab2-cooldown:-]
 ABILITY_2 | NORMAL_ATTACK
-Vulpix 37HP | Neutrel2 10HP
+Vulpix 37HP | Neutrel2 18HP
 ---
-Vulpix NORMAL_ATTACK (A:9 | D:1) [ab1-cooldown:3 | ab2-cooldown:5]
+Vulpix NORMAL_ATTACK (A:9 | D:1) [ab1-cooldown:6 | ab2-cooldown:5]
 Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown:- | ab2-cooldown:-]
 NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 36HP | Neutrel2 2HP
+Vulpix 36HP | Neutrel2 10HP
 ---
-Vulpix NORMAL_ATTACK (A:9 | D:1) [ab1-cooldown:2 | ab2-cooldown:4]
+Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Vulpix 35HP | Neutrel2 2HP
+---
+Vulpix NORMAL_ATTACK (A:9 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
 Neutrel2 NORMAL_ATTACK (A:4 | D:3) [ab1-cooldown:- | ab2-cooldown:-]
 NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 35HP | Neutrel2 0HP
+Vulpix 34HP | Neutrel2 0HP
 ---
 Pokemon{name='Vulpix', HP=38, attack=10, specialAttack=null, defense=4, specialDefense=9, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
 ---------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
 Pokemon{name='Vulpix', HP=40, attack=12, specialAttack=null, defense=4, specialDefense=6, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Vulpix NORMAL_ATTACK (A:12 | D:1) [ab1-cooldown:6 | ab2-cooldown:7]
-Neutrel1 NORMAL_ATTACK (A:3 | D:4) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 40HP | Neutrel1 0HP
----
-Pokemon{name='Vulpix', HP=41, attack=13, specialAttack=null, defense=5, specialDefense=7, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
 Pokemon{name='Vulpix', HP=38, attack=10, specialAttack=null, defense=4, specialDefense=9, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:7]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_1 | NOTHING
-Vulpix 38HP | Neutrel1 2HP
----
-Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:6]
-Neutrel1 NORMAL_ATTACK (A:3 | D:4) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_2 | NORMAL_ATTACK
-Vulpix 38HP | Neutrel1 0HP
----
-Pokemon{name='Vulpix', HP=39, attack=11, specialAttack=null, defense=5, specialDefense=10, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Pokemon{name='Vulpix', HP=41, attack=13, specialAttack=null, defense=5, specialDefense=7, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Vulpix NORMAL_ATTACK (A:13 | D:1) [ab1-cooldown:6 | ab2-cooldown:7]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 41HP | Neutrel2 8HP
----
-Vulpix NORMAL_ATTACK (A:13 | D:1) [ab1-cooldown:6 | ab2-cooldown:7]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 41HP | Neutrel2 0HP
----
-Pokemon{name='Vulpix', HP=42, attack=14, specialAttack=null, defense=6, specialDefense=8, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Pokemon{name='Vulpix', HP=39, attack=11, specialAttack=null, defense=5, specialDefense=10, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:6 | ab2-cooldown:6]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_2 | NORMAL_ATTACK
-Vulpix 39HP | Neutrel2 18HP
----
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:5]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_1 | NOTHING
-Vulpix 39HP | Neutrel2 10HP
----
-Vulpix NORMAL_ATTACK (A:11 | D:1) [ab1-cooldown:4 | ab2-cooldown:4]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 39HP | Neutrel2 0HP
----
-Pokemon{name='Vulpix', HP=40, attack=12, specialAttack=null, defense=6, specialDefense=11, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Pokemon{name='Vulpix', HP=42, attack=14, specialAttack=null, defense=6, specialDefense=8, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:7]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_1 | NOTHING
-Vulpix 42HP | Neutrel1 2HP
----
-Vulpix NORMAL_ATTACK (A:14 | D:1) [ab1-cooldown:4 | ab2-cooldown:7]
-Neutrel1 NORMAL_ATTACK (A:3 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 42HP | Neutrel1 0HP
----
-Pokemon{name='Vulpix', HP=43, attack=15, specialAttack=null, defense=7, specialDefense=9, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Pokemon{name='Vulpix', HP=40, attack=12, specialAttack=null, defense=6, specialDefense=11, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Vulpix NORMAL_ATTACK (A:12 | D:1) [ab1-cooldown:6 | ab2-cooldown:7]
-Neutrel1 NORMAL_ATTACK (A:3 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 40HP | Neutrel1 0HP
----
-Pokemon{name='Vulpix', HP=41, attack=13, specialAttack=null, defense=7, specialDefense=12, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Pokemon{name='Vulpix', HP=43, attack=15, specialAttack=null, defense=7, specialDefense=9, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:7]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_1 | NOTHING
-Vulpix 43HP | Neutrel2 12HP
----
-Vulpix NORMAL_ATTACK (A:15 | D:1) [ab1-cooldown:4 | ab2-cooldown:7]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 43HP | Neutrel2 0HP
----
-Pokemon{name='Vulpix', HP=44, attack=16, specialAttack=null, defense=8, specialDefense=10, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Pokemon{name='Vulpix', HP=41, attack=13, specialAttack=null, defense=7, specialDefense=12, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Vulpix NORMAL_ATTACK (A:13 | D:1) [ab1-cooldown:6 | ab2-cooldown:7]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 41HP | Neutrel2 8HP
----
-Vulpix NORMAL_ATTACK (A:13 | D:1) [ab1-cooldown:6 | ab2-cooldown:7]
-Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 41HP | Neutrel2 0HP
----
-Pokemon{name='Vulpix', HP=42, attack=14, specialAttack=null, defense=8, specialDefense=13, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
----------- Pokemon2 vs Neutrel [DONE] ----------
-Pokemon{name='Vulpix', HP=44, attack=16, specialAttack=null, defense=8, specialDefense=10, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Pokemon{name='Vulpix', HP=42, attack=14, specialAttack=null, defense=8, specialDefense=13, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
 ---------- Pokemon1 vs Pokemon2 [START] ----------
-Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:6 | ab2-cooldown:6]
 Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:7]
-ABILITY_2 | ABILITY_1
-Vulpix 44HP | Vulpix 40HP
+Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:6 | ab2-cooldown:6]
+ABILITY_1 | ABILITY_2
+Vulpix 38HP | Vulpix 38HP
 ---
-Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:6 | ab2-cooldown:5]
 Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:6]
-NOTHING | ABILITY_2
-Vulpix 42HP | Vulpix 40HP
+Vulpix NORMAL_ATTACK (A:10 | D:4) [ab1-cooldown:6 | ab2-cooldown:5]
+ABILITY_2 | NORMAL_ATTACK
+Vulpix 38HP | Vulpix 36HP
 ---
-Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:6 | ab2-cooldown:4]
-Vulpix NORMAL_ATTACK (A:14 | D:8) [ab1-cooldown:3 | ab2-cooldown:5]
-NOTHING | NORMAL_ATTACK
-Vulpix 36HP | Vulpix 40HP
+Vulpix NORMAL_ATTACK (A:12 | D:4) [ab1-cooldown:3 | ab2-cooldown:5]
+Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
+NORMAL_ATTACK | ABILITY_1
+Vulpix 30HP | Vulpix 28HP
 ---
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:3]
 Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-ABILITY_1 | NOTHING
-Vulpix 36HP | Vulpix 32HP
----
-Vulpix NORMAL_ATTACK (A:16 | D:8) [ab1-cooldown:4 | ab2-cooldown:2]
-Vulpix NORMAL_ATTACK (A:14 | D:8) [ab1-cooldown:1 | ab2-cooldown:3]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 30HP | Vulpix 24HP
----
-Vulpix NORMAL_ATTACK (A:16 | D:8) [ab1-cooldown:3 | ab2-cooldown:1]
-Vulpix NORMAL_ATTACK (A:14 | D:8) [ab1-cooldown:0 | ab2-cooldown:2]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 24HP | Vulpix 16HP
----
-Vulpix NORMAL_ATTACK (A:16 | D:8) [ab1-cooldown:2 | ab2-cooldown:0]
-Vulpix NORMAL_ATTACK (A:14 | D:8) [ab1-cooldown:6 | ab2-cooldown:1]
-NORMAL_ATTACK | NORMAL_ATTACK
-Vulpix 18HP | Vulpix 8HP
----
-Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:1 | ab2-cooldown:6]
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:0]
-ABILITY_2 | ABILITY_1
-Vulpix 18HP | Vulpix 6HP
----
-Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:5]
-Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:6]
-NOTHING | ABILITY_2
-Vulpix 16HP | Vulpix 6HP
----
-Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:6 | ab2-cooldown:4]
-Vulpix NORMAL_ATTACK (A:14 | D:8) [ab1-cooldown:3 | ab2-cooldown:5]
+Vulpix NORMAL_ATTACK (A:10 | D:4) [ab1-cooldown:4 | ab2-cooldown:3]
 NOTHING | NORMAL_ATTACK
-Vulpix 10HP | Vulpix 6HP
+Vulpix 24HP | Vulpix 28HP
 ---
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:3]
-Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-ABILITY_1 | NOTHING
-Vulpix 10HP | Vulpix 0HP
+Vulpix NORMAL_ATTACK (A:12 | D:4) [ab1-cooldown:1 | ab2-cooldown:3]
+Vulpix NORMAL_ATTACK (A:10 | D:4) [ab1-cooldown:3 | ab2-cooldown:2]
+NORMAL_ATTACK | NORMAL_ATTACK
+Vulpix 18HP | Vulpix 20HP
 ---
-Pokemon{name='Vulpix', HP=45, attack=17, specialAttack=null, defense=9, specialDefense=11, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
-Pokemon{name='Vulpix', HP=42, attack=14, specialAttack=null, defense=8, specialDefense=13, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
+Vulpix NORMAL_ATTACK (A:12 | D:4) [ab1-cooldown:0 | ab2-cooldown:2]
+Vulpix NORMAL_ATTACK (A:10 | D:4) [ab1-cooldown:2 | ab2-cooldown:1]
+NORMAL_ATTACK | NORMAL_ATTACK
+Vulpix 12HP | Vulpix 12HP
+---
+Vulpix NORMAL_ATTACK (A:12 | D:4) [ab1-cooldown:6 | ab2-cooldown:1]
+Vulpix NORMAL_ATTACK (A:10 | D:4) [ab1-cooldown:1 | ab2-cooldown:0]
+NORMAL_ATTACK | NORMAL_ATTACK
+Vulpix 6HP | Vulpix 4HP
+---
+Vulpix NORMAL_ATTACK (A:12 | D:4) [ab1-cooldown:6 | ab2-cooldown:0]
+Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:0 | ab2-cooldown:6]
+NORMAL_ATTACK | ABILITY_2
+Vulpix 4HP | Vulpix 4HP
+---
+Vulpix NORMAL_ATTACK (A:12 | D:4) [ab1-cooldown:6 | ab2-cooldown:7]
+Vulpix NORMAL_ATTACK (A:10 | D:4) [ab1-cooldown:6 | ab2-cooldown:5]
+NORMAL_ATTACK | NORMAL_ATTACK
+Vulpix 0HP | Vulpix 0HP
+---
+Pokemon{name='Vulpix', HP=40, attack=12, specialAttack=null, defense=4, specialDefense=6, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
+Pokemon{name='Vulpix', HP=38, attack=10, specialAttack=null, defense=4, specialDefense=9, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
 ---------- Pokemon1 vs Pokemon2 [DONE] ----------
 ********** POKEMONS INDEX - 1 **********
+---------- Pokemon1 vs Neutrel [START] ----------
 Pokemon{name='Pikachu', HP=37, attack=null, specialAttack=9, defense=3, specialDefense=3, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
-Pokemon{name='Psyduck', HP=53, attack=3, specialAttack=null, defense=5, specialDefense=5, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
----------- Pokemon1 vs Pokemon2 [START] ----------
-Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-ABILITY_1 | ABILITY_1
-Pikachu 35HP | Psyduck 47HP
+Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+Neutrel1 NORMAL_ATTACK (A:3 | D:3) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_2 | NORMAL_ATTACK
+Pikachu 37HP | Neutrel1 6HP
 ---
-Pikachu SPECIAL_ATTACK (A:9 | D:5) [ab1-cooldown:2 | ab2-cooldown:5]
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-SPECIAL_ATTACK | ABILITY_2
-Pikachu 33HP | Psyduck 43HP
----
-Pikachu NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:5]
-Psyduck NORMAL_ATTACK (A:3 | D:3) [ab1-cooldown:1 | ab2-cooldown:3]
-NOTHING | NORMAL_ATTACK
-Pikachu 33HP | Psyduck 43HP
----
-Pikachu SPECIAL_ATTACK (A:9 | D:5) [ab1-cooldown:0 | ab2-cooldown:5]
-Psyduck NORMAL_ATTACK (A:3 | D:3) [ab1-cooldown:0 | ab2-cooldown:2]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Pikachu 33HP | Psyduck 39HP
----
-Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-Psyduck NORMAL_ATTACK (A:3 | D:3) [ab1-cooldown:4 | ab2-cooldown:1]
-ABILITY_1 | NORMAL_ATTACK
-Pikachu 33HP | Psyduck 33HP
----
-Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:0]
-ABILITY_2 | NOTHING
-Pikachu 33HP | Psyduck 29HP
----
-Pikachu SPECIAL_ATTACK (A:9 | D:5) [ab1-cooldown:1 | ab2-cooldown:3]
-Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
-SPECIAL_ATTACK | NOTHING
-Pikachu 33HP | Psyduck 25HP
----
-Pikachu SPECIAL_ATTACK (A:9 | D:5) [ab1-cooldown:0 | ab2-cooldown:2]
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
-SPECIAL_ATTACK | ABILITY_2
-Pikachu 31HP | Psyduck 21HP
----
-Pikachu NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
-Psyduck NORMAL_ATTACK (A:3 | D:3) [ab1-cooldown:4 | ab2-cooldown:3]
-NOTHING | NORMAL_ATTACK
-Pikachu 31HP | Psyduck 21HP
----
-Pikachu SPECIAL_ATTACK (A:9 | D:5) [ab1-cooldown:4 | ab2-cooldown:0]
-Psyduck NORMAL_ATTACK (A:3 | D:3) [ab1-cooldown:4 | ab2-cooldown:2]
-SPECIAL_ATTACK | NORMAL_ATTACK
-Pikachu 31HP | Psyduck 17HP
----
-Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
-Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
-ABILITY_1 | ABILITY_1
-Pikachu 29HP | Psyduck 11HP
----
-Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
-Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:0]
-ABILITY_2 | NOTHING
-Pikachu 29HP | Psyduck 7HP
----
-Pikachu SPECIAL_ATTACK (A:9 | D:5) [ab1-cooldown:1 | ab2-cooldown:3]
-Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:5]
-SPECIAL_ATTACK | NOTHING
-Pikachu 29HP | Psyduck 3HP
----
-Pikachu SPECIAL_ATTACK (A:9 | D:5) [ab1-cooldown:0 | ab2-cooldown:2]
-Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
-SPECIAL_ATTACK | ABILITY_2
-Pikachu 27HP | Psyduck 0HP
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NOTHING
+Pikachu 37HP | Neutrel1 0HP
 ---
 Pokemon{name='Pikachu', HP=38, attack=null, specialAttack=10, defense=4, specialDefense=4, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
 Pokemon{name='Psyduck', HP=53, attack=3, specialAttack=null, defense=5, specialDefense=5, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Psyduck NORMAL_ATTACK (A:3 | D:1) [ab1-cooldown:4 | ab2-cooldown:5]
+Neutrel1 NORMAL_ATTACK (A:3 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 53HP | Neutrel1 8HP
+---
+Psyduck NORMAL_ATTACK (A:3 | D:1) [ab1-cooldown:4 | ab2-cooldown:5]
+Neutrel1 NORMAL_ATTACK (A:3 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 53HP | Neutrel1 6HP
+---
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+Neutrel1 NORMAL_ATTACK (A:3 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Psyduck 53HP | Neutrel1 4HP
+---
+Psyduck NORMAL_ATTACK (A:3 | D:1) [ab1-cooldown:2 | ab2-cooldown:5]
+Neutrel1 NORMAL_ATTACK (A:3 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 53HP | Neutrel1 2HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
+Neutrel1 NORMAL_ATTACK (A:3 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_2 | NORMAL_ATTACK
+Psyduck 53HP | Neutrel1 0HP
+---
+Pokemon{name='Psyduck', HP=54, attack=4, specialAttack=null, defense=6, specialDefense=6, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Pikachu', HP=38, attack=null, specialAttack=10, defense=4, specialDefense=4, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Pikachu 38HP | Neutrel2 14HP
+---
+Pikachu SPECIAL_ATTACK (A:10 | D:1) [ab1-cooldown:2 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown:- | ab2-cooldown:-]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Pikachu 38HP | Neutrel2 5HP
+---
+Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:4) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_2 | NORMAL_ATTACK
+Pikachu 38HP | Neutrel2 1HP
+---
+Pikachu SPECIAL_ATTACK (A:10 | D:1) [ab1-cooldown:0 | ab2-cooldown:3]
+Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
+SPECIAL_ATTACK | NOTHING
+Pikachu 38HP | Neutrel2 0HP
+---
+Pokemon{name='Pikachu', HP=39, attack=null, specialAttack=11, defense=5, specialDefense=5, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Psyduck', HP=54, attack=4, specialAttack=null, defense=6, specialDefense=6, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Psyduck 54HP | Neutrel2 18HP
+---
+Psyduck NORMAL_ATTACK (A:4 | D:1) [ab1-cooldown:2 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 54HP | Neutrel2 15HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_2 | NORMAL_ATTACK
+Psyduck 54HP | Neutrel2 13HP
+---
+Psyduck NORMAL_ATTACK (A:4 | D:1) [ab1-cooldown:0 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 54HP | Neutrel2 10HP
+---
+Psyduck NORMAL_ATTACK (A:4 | D:1) [ab1-cooldown:4 | ab2-cooldown:2]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 54HP | Neutrel2 7HP
+---
+Psyduck NORMAL_ATTACK (A:4 | D:1) [ab1-cooldown:4 | ab2-cooldown:1]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 54HP | Neutrel2 4HP
+---
+Psyduck NORMAL_ATTACK (A:4 | D:1) [ab1-cooldown:4 | ab2-cooldown:0]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 54HP | Neutrel2 1HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_2 | NORMAL_ATTACK
+Psyduck 54HP | Neutrel2 0HP
+---
+Pokemon{name='Psyduck', HP=55, attack=5, specialAttack=null, defense=7, specialDefense=7, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Pikachu', HP=39, attack=null, specialAttack=11, defense=5, specialDefense=5, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_2 | NORMAL_ATTACK
+Pikachu 39HP | Neutrel2 16HP
+---
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NOTHING
+Pikachu 39HP | Neutrel2 10HP
+---
+Pikachu SPECIAL_ATTACK (A:11 | D:1) [ab1-cooldown:2 | ab2-cooldown:2]
+Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Pikachu 39HP | Neutrel2 0HP
+---
+Pokemon{name='Pikachu', HP=40, attack=null, specialAttack=12, defense=6, specialDefense=6, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Psyduck', HP=55, attack=5, specialAttack=null, defense=7, specialDefense=7, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Psyduck NORMAL_ATTACK (A:5 | D:1) [ab1-cooldown:4 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 55HP | Neutrel2 16HP
+---
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Psyduck 55HP | Neutrel2 14HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_2 | NORMAL_ATTACK
+Psyduck 55HP | Neutrel2 12HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:1) [ab1-cooldown:1 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 55HP | Neutrel2 8HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:1) [ab1-cooldown:0 | ab2-cooldown:2]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 55HP | Neutrel2 4HP
+---
+Psyduck NORMAL_ATTACK (A:5 | D:1) [ab1-cooldown:4 | ab2-cooldown:1]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 55HP | Neutrel2 0HP
+---
+Pokemon{name='Psyduck', HP=56, attack=6, specialAttack=null, defense=8, specialDefense=8, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Pikachu', HP=40, attack=null, specialAttack=12, defense=6, specialDefense=6, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Pikachu 40HP | Neutrel2 14HP
+---
+Pikachu SPECIAL_ATTACK (A:12 | D:1) [ab1-cooldown:2 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Pikachu 40HP | Neutrel2 3HP
+---
+Pikachu SPECIAL_ATTACK (A:12 | D:1) [ab1-cooldown:1 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Pikachu 40HP | Neutrel2 0HP
+---
+Pokemon{name='Pikachu', HP=41, attack=null, specialAttack=13, defense=7, specialDefense=7, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Psyduck', HP=56, attack=6, specialAttack=null, defense=8, specialDefense=8, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Psyduck NORMAL_ATTACK (A:6 | D:1) [ab1-cooldown:4 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 56HP | Neutrel2 15HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_2 | NORMAL_ATTACK
+Psyduck 56HP | Neutrel2 13HP
+---
+Psyduck NORMAL_ATTACK (A:6 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 56HP | Neutrel2 8HP
+---
+Psyduck NORMAL_ATTACK (A:6 | D:1) [ab1-cooldown:4 | ab2-cooldown:2]
+Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 56HP | Neutrel2 3HP
+---
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
+Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Psyduck 56HP | Neutrel2 1HP
+---
+Psyduck NORMAL_ATTACK (A:6 | D:1) [ab1-cooldown:2 | ab2-cooldown:0]
+Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 56HP | Neutrel2 0HP
+---
+Pokemon{name='Psyduck', HP=57, attack=7, specialAttack=null, defense=9, specialDefense=9, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Pikachu', HP=41, attack=null, specialAttack=13, defense=7, specialDefense=7, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+Pikachu SPECIAL_ATTACK (A:13 | D:1) [ab1-cooldown:4 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Pikachu 41HP | Neutrel2 8HP
+---
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Pikachu 41HP | Neutrel2 2HP
+---
+Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_2 | NORMAL_ATTACK
+Pikachu 41HP | Neutrel2 0HP
+---
+Pokemon{name='Pikachu', HP=42, attack=null, specialAttack=14, defense=8, specialDefense=8, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Psyduck', HP=57, attack=7, specialAttack=null, defense=9, specialDefense=9, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Psyduck 57HP | Neutrel2 18HP
+---
+Psyduck NORMAL_ATTACK (A:7 | D:1) [ab1-cooldown:2 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 57HP | Neutrel2 12HP
+---
+Psyduck NORMAL_ATTACK (A:7 | D:1) [ab1-cooldown:1 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 57HP | Neutrel2 6HP
+---
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_2 | NORMAL_ATTACK
+Psyduck 57HP | Neutrel2 4HP
+---
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Psyduck 57HP | Neutrel2 2HP
+---
+Psyduck NORMAL_ATTACK (A:7 | D:1) [ab1-cooldown:2 | ab2-cooldown:2]
+Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 57HP | Neutrel2 0HP
+---
+Pokemon{name='Psyduck', HP=58, attack=8, specialAttack=null, defense=10, specialDefense=10, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Pikachu', HP=42, attack=null, specialAttack=14, defense=8, specialDefense=8, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+Neutrel1 NORMAL_ATTACK (A:3 | D:8) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_2 | NORMAL_ATTACK
+Pikachu 42HP | Neutrel1 6HP
+---
+Pikachu SPECIAL_ATTACK (A:14 | D:1) [ab1-cooldown:4 | ab2-cooldown:3]
+Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
+SPECIAL_ATTACK | NOTHING
+Pikachu 42HP | Neutrel1 0HP
+---
+Pokemon{name='Pikachu', HP=43, attack=null, specialAttack=15, defense=9, specialDefense=9, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Psyduck', HP=58, attack=8, specialAttack=null, defense=10, specialDefense=10, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Psyduck NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:4 | ab2-cooldown:5]
+Neutrel1 NORMAL_ATTACK (A:3 | D:10) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 58HP | Neutrel1 3HP
+---
+Psyduck NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:4 | ab2-cooldown:5]
+Neutrel1 NORMAL_ATTACK (A:3 | D:10) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 58HP | Neutrel1 0HP
+---
+Pokemon{name='Psyduck', HP=59, attack=9, specialAttack=null, defense=11, specialDefense=11, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+---------- Pokemon1 vs Neutrel [START] ----------
+Pokemon{name='Pikachu', HP=43, attack=null, specialAttack=15, defense=9, specialDefense=9, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Pikachu 43HP | Neutrel2 14HP
+---
+Pikachu SPECIAL_ATTACK (A:15 | D:1) [ab1-cooldown:2 | ab2-cooldown:5]
+Neutrel2 NORMAL_ATTACK (A:4 | D:9) [ab1-cooldown:- | ab2-cooldown:-]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Pikachu 43HP | Neutrel2 0HP
+---
+Pokemon{name='Pikachu', HP=44, attack=null, specialAttack=16, defense=10, specialDefense=10, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+---------- Pokemon1 vs Neutrel [DONE] ----------
+---------- Pokemon2 vs Neutrel [START] ----------
+Pokemon{name='Psyduck', HP=59, attack=9, specialAttack=null, defense=11, specialDefense=11, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+Neutrel2 NORMAL_ATTACK (A:4 | D:11) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_2 | NORMAL_ATTACK
+Psyduck 59HP | Neutrel2 18HP
+---
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+Neutrel2 NORMAL_ATTACK (A:4 | D:11) [ab1-cooldown:- | ab2-cooldown:-]
+ABILITY_1 | NORMAL_ATTACK
+Psyduck 59HP | Neutrel2 16HP
+---
+Psyduck NORMAL_ATTACK (A:9 | D:1) [ab1-cooldown:2 | ab2-cooldown:2]
+Neutrel2 NORMAL_ATTACK (A:4 | D:11) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 59HP | Neutrel2 8HP
+---
+Psyduck NORMAL_ATTACK (A:9 | D:1) [ab1-cooldown:1 | ab2-cooldown:1]
+Neutrel2 NORMAL_ATTACK (A:4 | D:11) [ab1-cooldown:- | ab2-cooldown:-]
+NORMAL_ATTACK | NORMAL_ATTACK
+Psyduck 59HP | Neutrel2 0HP
+---
+Pokemon{name='Psyduck', HP=60, attack=10, specialAttack=null, defense=12, specialDefense=12, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon2 vs Neutrel [DONE] ----------
+Pokemon{name='Pikachu', HP=44, attack=null, specialAttack=16, defense=10, specialDefense=10, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+Pokemon{name='Psyduck', HP=60, attack=10, specialAttack=null, defense=12, specialDefense=12, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Pokemon1 vs Pokemon2 [START] ----------
+Pikachu SPECIAL_ATTACK (A:16 | D:12) [ab1-cooldown:4 | ab2-cooldown:5]
+Psyduck NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:4 | ab2-cooldown:5]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Pikachu 44HP | Psyduck 56HP
+---
+Pikachu SPECIAL_ATTACK (A:16 | D:12) [ab1-cooldown:4 | ab2-cooldown:5]
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+SPECIAL_ATTACK | ABILITY_2
+Pikachu 42HP | Psyduck 52HP
+---
+Pikachu NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+NOTHING | ABILITY_1
+Pikachu 40HP | Psyduck 52HP
+---
+Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+Psyduck NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:2 | ab2-cooldown:2]
+ABILITY_2 | NORMAL_ATTACK
+Pikachu 40HP | Psyduck 48HP
+---
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:1]
+ABILITY_1 | NOTHING
+Pikachu 40HP | Psyduck 42HP
+---
+Pikachu SPECIAL_ATTACK (A:16 | D:12) [ab1-cooldown:2 | ab2-cooldown:2]
+Psyduck NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:0 | ab2-cooldown:0]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Pikachu 40HP | Psyduck 38HP
+---
+Pikachu SPECIAL_ATTACK (A:16 | D:12) [ab1-cooldown:1 | ab2-cooldown:1]
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+SPECIAL_ATTACK | ABILITY_1
+Pikachu 38HP | Psyduck 34HP
+---
+Pikachu SPECIAL_ATTACK (A:16 | D:12) [ab1-cooldown:0 | ab2-cooldown:0]
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
+SPECIAL_ATTACK | ABILITY_2
+Pikachu 36HP | Psyduck 30HP
+---
+Pikachu NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
+Psyduck NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:1 | ab2-cooldown:3]
+NOTHING | NORMAL_ATTACK
+Pikachu 36HP | Psyduck 30HP
+---
+Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+Psyduck NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:0 | ab2-cooldown:2]
+ABILITY_2 | NORMAL_ATTACK
+Pikachu 36HP | Psyduck 26HP
+---
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
+ABILITY_1 | NOTHING
+Pikachu 36HP | Psyduck 20HP
+---
+Pikachu SPECIAL_ATTACK (A:16 | D:12) [ab1-cooldown:2 | ab2-cooldown:2]
+Psyduck NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:4 | ab2-cooldown:0]
+SPECIAL_ATTACK | NORMAL_ATTACK
+Pikachu 36HP | Psyduck 16HP
+---
+Pikachu SPECIAL_ATTACK (A:16 | D:12) [ab1-cooldown:1 | ab2-cooldown:1]
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+SPECIAL_ATTACK | ABILITY_2
+Pikachu 34HP | Psyduck 12HP
+---
+Pikachu NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:0]
+Psyduck NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:4 | ab2-cooldown:3]
+NOTHING | NORMAL_ATTACK
+Pikachu 34HP | Psyduck 12HP
+---
+Pikachu ABILITY_1 (A:6 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+ABILITY_1 | ABILITY_1
+Pikachu 32HP | Psyduck 6HP
+---
+Pikachu ABILITY_2 (A:4 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
+Psyduck NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:2 | ab2-cooldown:1]
+ABILITY_2 | NORMAL_ATTACK
+Pikachu 32HP | Psyduck 2HP
+---
+Pikachu SPECIAL_ATTACK (A:16 | D:12) [ab1-cooldown:1 | ab2-cooldown:3]
+Psyduck NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:0]
+SPECIAL_ATTACK | NOTHING
+Pikachu 32HP | Psyduck 0HP
+---
+Pokemon{name='Pikachu', HP=45, attack=null, specialAttack=17, defense=11, specialDefense=11, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}
+Pokemon{name='Psyduck', HP=60, attack=10, specialAttack=null, defense=12, specialDefense=12, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
 ---------- Pokemon1 vs Pokemon2 [DONE] ----------
 ********** POKEMONS INDEX - 2 **********
----------- Pokemon1 vs Neutrel [START] ----------
 Pokemon{name='Snorlax', HP=62, attack=9, specialAttack=null, defense=7, specialDefense=4, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_1 | NOTHING
-Snorlax 62HP | Neutrel1 6HP
----
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
-Neutrel1 NORMAL_ATTACK (A:3 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_2 | NORMAL_ATTACK
-Snorlax 62HP | Neutrel1 6HP
----
-Snorlax NORMAL_ATTACK (A:9 | D:1) [ab1-cooldown:2 | ab2-cooldown:3]
-Neutrel1 NORMAL_ATTACK (A:3 | D:7) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 62HP | Neutrel1 0HP
----
-Pokemon{name='Snorlax', HP=63, attack=10, specialAttack=null, defense=8, specialDefense=5, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
 Pokemon{name='Jigglypuff', HP=44, attack=7, specialAttack=null, defense=4, specialDefense=5, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=4}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
-Jigglypuff ABILITY_2 (A:3 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_2 | NOTHING
-Jigglypuff 44HP | Neutrel1 7HP
----
-Jigglypuff NORMAL_ATTACK (A:7 | D:1) [ab1-cooldown:4 | ab2-cooldown:2]
-Neutrel1 NORMAL_ATTACK (A:3 | D:4) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Jigglypuff 44HP | Neutrel1 1HP
----
-Jigglypuff ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_1 | NOTHING
-Jigglypuff 44HP | Neutrel1 0HP
----
-Pokemon{name='Jigglypuff', HP=45, attack=8, specialAttack=null, defense=5, specialDefense=6, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=4}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Pokemon{name='Snorlax', HP=63, attack=10, specialAttack=null, defense=8, specialDefense=5, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
-Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_2 | NORMAL_ATTACK
-Snorlax 63HP | Neutrel2 20HP
----
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_1 | NOTHING
-Snorlax 63HP | Neutrel2 16HP
----
-Snorlax NORMAL_ATTACK (A:10 | D:1) [ab1-cooldown:3 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 63HP | Neutrel2 7HP
----
-Snorlax NORMAL_ATTACK (A:10 | D:1) [ab1-cooldown:2 | ab2-cooldown:1]
-Neutrel2 NORMAL_ATTACK (A:4 | D:8) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 63HP | Neutrel2 0HP
----
-Pokemon{name='Snorlax', HP=64, attack=11, specialAttack=null, defense=9, specialDefense=6, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Pokemon{name='Jigglypuff', HP=45, attack=8, specialAttack=null, defense=5, specialDefense=6, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=4}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
-Jigglypuff ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_1 | NOTHING
-Jigglypuff 45HP | Neutrel2 16HP
----
-Jigglypuff NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:2 | ab2-cooldown:4]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Jigglypuff 45HP | Neutrel2 9HP
----
-Jigglypuff ABILITY_2 (A:3 | D:0) [ab1-cooldown:1 | ab2-cooldown:3]
-Neutrel2 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_2 | NOTHING
-Jigglypuff 45HP | Neutrel2 6HP
----
-Jigglypuff NORMAL_ATTACK (A:8 | D:1) [ab1-cooldown:0 | ab2-cooldown:2]
-Neutrel2 NORMAL_ATTACK (A:4 | D:5) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Jigglypuff 45HP | Neutrel2 0HP
----
-Pokemon{name='Jigglypuff', HP=46, attack=9, specialAttack=null, defense=6, specialDefense=7, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=4}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
----------- Pokemon2 vs Neutrel [DONE] ----------
----------- Pokemon1 vs Neutrel [START] ----------
-Pokemon{name='Snorlax', HP=64, attack=11, specialAttack=null, defense=9, specialDefense=6, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
-Neutrel1 NORMAL_ATTACK (A:3 | D:9) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_2 | NORMAL_ATTACK
-Snorlax 64HP | Neutrel1 10HP
----
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_1 | NOTHING
-Snorlax 64HP | Neutrel1 6HP
----
-Snorlax NORMAL_ATTACK (A:11 | D:1) [ab1-cooldown:3 | ab2-cooldown:2]
-Neutrel1 NORMAL_ATTACK (A:3 | D:9) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 64HP | Neutrel1 0HP
----
-Pokemon{name='Snorlax', HP=65, attack=12, specialAttack=null, defense=10, specialDefense=7, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
----------- Pokemon1 vs Neutrel [DONE] ----------
----------- Pokemon2 vs Neutrel [START] ----------
-Pokemon{name='Jigglypuff', HP=46, attack=9, specialAttack=null, defense=6, specialDefense=7, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=4}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
-Jigglypuff ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
-Neutrel1 NOTHING (A:0 | D:0) [ab1-cooldown:- | ab2-cooldown:-]
-ABILITY_1 | NOTHING
-Jigglypuff 46HP | Neutrel1 6HP
----
-Jigglypuff NORMAL_ATTACK (A:9 | D:1) [ab1-cooldown:2 | ab2-cooldown:4]
-Neutrel1 NORMAL_ATTACK (A:3 | D:6) [ab1-cooldown:- | ab2-cooldown:-]
-NORMAL_ATTACK | NORMAL_ATTACK
-Jigglypuff 46HP | Neutrel1 0HP
----
-Pokemon{name='Jigglypuff', HP=47, attack=10, specialAttack=null, defense=7, specialDefense=8, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=4}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
----------- Pokemon2 vs Neutrel [DONE] ----------
-Pokemon{name='Snorlax', HP=65, attack=12, specialAttack=null, defense=10, specialDefense=7, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
-Pokemon{name='Jigglypuff', HP=47, attack=10, specialAttack=null, defense=7, specialDefense=8, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=4}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
 ---------- Pokemon1 vs Pokemon2 [START] ----------
-Snorlax NORMAL_ATTACK (A:12 | D:7) [ab1-cooldown:5 | ab2-cooldown:5]
-Jigglypuff NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:4 | ab2-cooldown:4]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 65HP | Jigglypuff 42HP
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
+Jigglypuff ABILITY_2 (A:3 | D:0) [ab1-cooldown:4 | ab2-cooldown:3]
+ABILITY_2 | ABILITY_2
+Snorlax 62HP | Jigglypuff 44HP
 ---
-Snorlax NORMAL_ATTACK (A:12 | D:7) [ab1-cooldown:5 | ab2-cooldown:5]
-Jigglypuff NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:4 | ab2-cooldown:4]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 65HP | Jigglypuff 37HP
----
-Snorlax NORMAL_ATTACK (A:12 | D:7) [ab1-cooldown:5 | ab2-cooldown:5]
-Jigglypuff NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:4 | ab2-cooldown:4]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 65HP | Jigglypuff 32HP
----
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
-Jigglypuff NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
-ABILITY_1 | NOTHING
-Snorlax 65HP | Jigglypuff 28HP
----
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
-Jigglypuff ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
-ABILITY_2 | ABILITY_1
-Snorlax 65HP | Jigglypuff 28HP
----
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
-Jigglypuff NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:2 | ab2-cooldown:4]
-NOTHING | NORMAL_ATTACK
-Snorlax 65HP | Jigglypuff 28HP
----
-Snorlax NORMAL_ATTACK (A:12 | D:7) [ab1-cooldown:1 | ab2-cooldown:2]
-Jigglypuff NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:1 | ab2-cooldown:4]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 65HP | Jigglypuff 23HP
----
-Snorlax NORMAL_ATTACK (A:12 | D:7) [ab1-cooldown:0 | ab2-cooldown:1]
-Jigglypuff ABILITY_2 (A:3 | D:0) [ab1-cooldown:0 | ab2-cooldown:3]
-NORMAL_ATTACK | ABILITY_2
-Snorlax 62HP | Jigglypuff 18HP
----
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:0]
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:3]
 Jigglypuff ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
 NOTHING | ABILITY_1
-Snorlax 58HP | Jigglypuff 18HP
+Snorlax 58HP | Jigglypuff 44HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:2]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:2 | ab2-cooldown:1]
+NOTHING | NORMAL_ATTACK
+Snorlax 58HP | Jigglypuff 44HP
+---
+Snorlax NORMAL_ATTACK (A:9 | D:4) [ab1-cooldown:5 | ab2-cooldown:1]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:1 | ab2-cooldown:0]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 58HP | Jigglypuff 39HP
+---
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:0]
+Jigglypuff ABILITY_2 (A:3 | D:0) [ab1-cooldown:0 | ab2-cooldown:3]
+ABILITY_1 | ABILITY_2
+Snorlax 55HP | Jigglypuff 35HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+Jigglypuff ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+NOTHING | ABILITY_1
+Snorlax 51HP | Jigglypuff 35HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:2 | ab2-cooldown:1]
+NOTHING | NORMAL_ATTACK
+Snorlax 51HP | Jigglypuff 35HP
+---
+Snorlax NORMAL_ATTACK (A:9 | D:4) [ab1-cooldown:1 | ab2-cooldown:5]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:1 | ab2-cooldown:0]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 51HP | Jigglypuff 30HP
+---
+Snorlax NORMAL_ATTACK (A:9 | D:4) [ab1-cooldown:0 | ab2-cooldown:5]
+Jigglypuff ABILITY_2 (A:3 | D:0) [ab1-cooldown:0 | ab2-cooldown:3]
+NORMAL_ATTACK | ABILITY_2
+Snorlax 48HP | Jigglypuff 25HP
 ---
 Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:5]
-Jigglypuff NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:2 | ab2-cooldown:1]
-NOTHING | NORMAL_ATTACK
-Snorlax 58HP | Jigglypuff 18HP
+Jigglypuff ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+NOTHING | ABILITY_1
+Snorlax 44HP | Jigglypuff 25HP
 ---
-Snorlax NORMAL_ATTACK (A:12 | D:7) [ab1-cooldown:5 | ab2-cooldown:5]
-Jigglypuff NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:1 | ab2-cooldown:0]
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:5]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:2 | ab2-cooldown:1]
+NOTHING | NORMAL_ATTACK
+Snorlax 44HP | Jigglypuff 25HP
+---
+Snorlax NORMAL_ATTACK (A:9 | D:4) [ab1-cooldown:5 | ab2-cooldown:5]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:1 | ab2-cooldown:0]
 NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 58HP | Jigglypuff 13HP
+Snorlax 44HP | Jigglypuff 20HP
 ---
 Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
 Jigglypuff ABILITY_2 (A:3 | D:0) [ab1-cooldown:0 | ab2-cooldown:3]
 ABILITY_2 | ABILITY_2
-Snorlax 58HP | Jigglypuff 13HP
+Snorlax 44HP | Jigglypuff 20HP
 ---
 Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:3]
-Jigglypuff NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:4 | ab2-cooldown:2]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:4 | ab2-cooldown:2]
 NOTHING | NORMAL_ATTACK
-Snorlax 58HP | Jigglypuff 13HP
+Snorlax 44HP | Jigglypuff 20HP
 ---
 Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
-Jigglypuff NOTHING (A:0 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
-ABILITY_1 | NOTHING
-Snorlax 58HP | Jigglypuff 9HP
+Jigglypuff ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
+ABILITY_1 | ABILITY_1
+Snorlax 40HP | Jigglypuff 16HP
 ---
-Snorlax NORMAL_ATTACK (A:12 | D:7) [ab1-cooldown:3 | ab2-cooldown:1]
-Jigglypuff ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
-NORMAL_ATTACK | ABILITY_1
-Snorlax 54HP | Jigglypuff 4HP
----
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:0]
-Jigglypuff ABILITY_2 (A:3 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
-NOTHING | ABILITY_2
-Snorlax 51HP | Jigglypuff 4HP
----
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:5]
-Jigglypuff NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:1 | ab2-cooldown:2]
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:2 | ab2-cooldown:0]
 NOTHING | NORMAL_ATTACK
-Snorlax 51HP | Jigglypuff 4HP
+Snorlax 40HP | Jigglypuff 16HP
 ---
-Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
-Jigglypuff NORMAL_ATTACK (A:10 | D:10) [ab1-cooldown:0 | ab2-cooldown:1]
-ABILITY_2 | NORMAL_ATTACK
-Snorlax 51HP | Jigglypuff 4HP
----
-Snorlax NORMAL_ATTACK (A:12 | D:7) [ab1-cooldown:5 | ab2-cooldown:3]
-Jigglypuff ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
-NORMAL_ATTACK | ABILITY_1
-Snorlax 47HP | Jigglypuff 0HP
----
-Pokemon{name='Snorlax', HP=66, attack=13, specialAttack=null, defense=11, specialDefense=8, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
-Pokemon{name='Jigglypuff', HP=47, attack=10, specialAttack=null, defense=7, specialDefense=8, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=4}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
----------- Pokemon1 vs Pokemon2 [DONE] ----------
-82 | 77
-56 | 66
-98 | 72
-*** Best Pokemons - [BEFORE] - Final Battle ***
-Pokemon{name='Snorlax', HP=66, attack=13, specialAttack=null, defense=11, specialDefense=8, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
-Pokemon{name='Vulpix', HP=42, attack=14, specialAttack=null, defense=8, specialDefense=13, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
----------- Best1 vs Best2 [START] ----------
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
-Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:6 | ab2-cooldown:7]
-ABILITY_1 | NOTHING
-Snorlax 66HP | Vulpix 38HP
----
-Snorlax NORMAL_ATTACK (A:13 | D:8) [ab1-cooldown:3 | ab2-cooldown:5]
-Vulpix NORMAL_ATTACK (A:14 | D:11) [ab1-cooldown:6 | ab2-cooldown:7]
+Snorlax NORMAL_ATTACK (A:9 | D:4) [ab1-cooldown:2 | ab2-cooldown:0]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:1 | ab2-cooldown:4]
 NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 63HP | Vulpix 33HP
----
-Snorlax NORMAL_ATTACK (A:13 | D:8) [ab1-cooldown:2 | ab2-cooldown:5]
-Vulpix NORMAL_ATTACK (A:14 | D:11) [ab1-cooldown:6 | ab2-cooldown:7]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 60HP | Vulpix 28HP
+Snorlax 40HP | Jigglypuff 11HP
 ---
 Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
-Vulpix NORMAL_ATTACK (A:14 | D:11) [ab1-cooldown:6 | ab2-cooldown:7]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:0 | ab2-cooldown:4]
 ABILITY_2 | NORMAL_ATTACK
-Snorlax 60HP | Vulpix 28HP
+Snorlax 40HP | Jigglypuff 11HP
 ---
-Snorlax NORMAL_ATTACK (A:13 | D:8) [ab1-cooldown:0 | ab2-cooldown:3]
-Vulpix ABILITY_2 (A:2 | D:0) [ab1-cooldown:6 | ab2-cooldown:6]
-NORMAL_ATTACK | ABILITY_2
-Snorlax 58HP | Vulpix 28HP
----
-Snorlax NORMAL_ATTACK (A:13 | D:8) [ab1-cooldown:5 | ab2-cooldown:2]
-Vulpix NORMAL_ATTACK (A:14 | D:11) [ab1-cooldown:6 | ab2-cooldown:5]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 55HP | Vulpix 23HP
----
-Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:1]
-Vulpix NOTHING (A:0 | D:0) [ab1-cooldown:6 | ab2-cooldown:4]
-ABILITY_1 | NOTHING
-Snorlax 55HP | Vulpix 19HP
----
-Snorlax NORMAL_ATTACK (A:13 | D:8) [ab1-cooldown:3 | ab2-cooldown:0]
-Vulpix ABILITY_1 (A:8 | D:0) [ab1-cooldown:5 | ab2-cooldown:3]
+Snorlax NORMAL_ATTACK (A:9 | D:4) [ab1-cooldown:0 | ab2-cooldown:3]
+Jigglypuff ABILITY_1 (A:4 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
 NORMAL_ATTACK | ABILITY_1
-Snorlax 47HP | Vulpix 14HP
+Snorlax 36HP | Jigglypuff 6HP
 ---
-Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:5]
-Vulpix NORMAL_ATTACK (A:14 | D:11) [ab1-cooldown:4 | ab2-cooldown:2]
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:2]
+Jigglypuff ABILITY_2 (A:3 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+NOTHING | ABILITY_2
+Snorlax 33HP | Jigglypuff 6HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:1]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:1 | ab2-cooldown:2]
 NOTHING | NORMAL_ATTACK
-Snorlax 44HP | Vulpix 14HP
+Snorlax 33HP | Jigglypuff 6HP
 ---
-Snorlax NORMAL_ATTACK (A:13 | D:8) [ab1-cooldown:1 | ab2-cooldown:5]
-Vulpix NORMAL_ATTACK (A:14 | D:11) [ab1-cooldown:3 | ab2-cooldown:1]
+Snorlax NORMAL_ATTACK (A:9 | D:4) [ab1-cooldown:5 | ab2-cooldown:0]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:0 | ab2-cooldown:1]
 NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 41HP | Vulpix 9HP
+Snorlax 33HP | Jigglypuff 1HP
 ---
-Snorlax NORMAL_ATTACK (A:13 | D:8) [ab1-cooldown:0 | ab2-cooldown:5]
-Vulpix NORMAL_ATTACK (A:14 | D:11) [ab1-cooldown:2 | ab2-cooldown:0]
-NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 38HP | Vulpix 4HP
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
+Jigglypuff NORMAL_ATTACK (A:7 | D:7) [ab1-cooldown:4 | ab2-cooldown:0]
+ABILITY_1 | NORMAL_ATTACK
+Snorlax 33HP | Jigglypuff 0HP
 ---
-Snorlax NORMAL_ATTACK (A:13 | D:8) [ab1-cooldown:5 | ab2-cooldown:5]
-Vulpix NORMAL_ATTACK (A:14 | D:11) [ab1-cooldown:1 | ab2-cooldown:7]
+Pokemon{name='Snorlax', HP=63, attack=10, specialAttack=null, defense=8, specialDefense=5, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
+Pokemon{name='Jigglypuff', HP=44, attack=7, specialAttack=null, defense=4, specialDefense=5, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=4}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}
+---------- Pokemon1 vs Pokemon2 [DONE] ----------
+62 | 61
+84 | 94
+86 | 60
+*** Best Pokemons - [BEFORE] - Final Battle ***
+Pokemon{name='Snorlax', HP=63, attack=10, specialAttack=null, defense=8, specialDefense=5, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
+Pokemon{name='Psyduck', HP=60, attack=10, specialAttack=null, defense=12, specialDefense=12, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
+---------- Best1 vs Best2 [START] ----------
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:4]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:4 | ab2-cooldown:5]
+ABILITY_2 | NORMAL_ATTACK
+Snorlax 63HP | Psyduck 60HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:5 | ab2-cooldown:3]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:4 | ab2-cooldown:5]
 NORMAL_ATTACK | NORMAL_ATTACK
-Snorlax 35HP | Vulpix 0HP
+Snorlax 61HP | Psyduck 60HP
+---
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:5]
+ABILITY_1 | ABILITY_1
+Snorlax 59HP | Psyduck 56HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:3 | ab2-cooldown:1]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:2 | ab2-cooldown:5]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 57HP | Psyduck 56HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:2 | ab2-cooldown:0]
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
+NORMAL_ATTACK | ABILITY_2
+Snorlax 55HP | Psyduck 56HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:5]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:0 | ab2-cooldown:3]
+NOTHING | NORMAL_ATTACK
+Snorlax 53HP | Psyduck 56HP
+---
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:4 | ab2-cooldown:2]
+ABILITY_2 | NORMAL_ATTACK
+Snorlax 53HP | Psyduck 56HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:5 | ab2-cooldown:3]
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
+NORMAL_ATTACK | ABILITY_1
+Snorlax 51HP | Psyduck 56HP
+---
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:2]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:2 | ab2-cooldown:0]
+ABILITY_1 | NORMAL_ATTACK
+Snorlax 49HP | Psyduck 52HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:3 | ab2-cooldown:1]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:1 | ab2-cooldown:5]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 47HP | Psyduck 52HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:2 | ab2-cooldown:0]
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
+NORMAL_ATTACK | ABILITY_2
+Snorlax 45HP | Psyduck 52HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:5]
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+NOTHING | ABILITY_1
+Snorlax 43HP | Psyduck 52HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:0 | ab2-cooldown:5]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:2 | ab2-cooldown:2]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 41HP | Psyduck 52HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:5 | ab2-cooldown:5]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:1 | ab2-cooldown:1]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 39HP | Psyduck 52HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:5 | ab2-cooldown:5]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:0 | ab2-cooldown:0]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 37HP | Psyduck 52HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:5 | ab2-cooldown:5]
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+NORMAL_ATTACK | ABILITY_2
+Snorlax 35HP | Psyduck 52HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:5 | ab2-cooldown:5]
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:3]
+NOTHING | ABILITY_1
+Snorlax 33HP | Psyduck 52HP
+---
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:2 | ab2-cooldown:2]
+ABILITY_1 | NORMAL_ATTACK
+Snorlax 31HP | Psyduck 48HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:3 | ab2-cooldown:5]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:1 | ab2-cooldown:1]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 29HP | Psyduck 48HP
+---
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:0 | ab2-cooldown:0]
+ABILITY_2 | NORMAL_ATTACK
+Snorlax 29HP | Psyduck 48HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:1 | ab2-cooldown:3]
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:4 | ab2-cooldown:4]
+NORMAL_ATTACK | ABILITY_2
+Snorlax 27HP | Psyduck 48HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:0 | ab2-cooldown:2]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:4 | ab2-cooldown:3]
+NOTHING | NORMAL_ATTACK
+Snorlax 25HP | Psyduck 48HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:5 | ab2-cooldown:1]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:4 | ab2-cooldown:2]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 23HP | Psyduck 48HP
+---
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:0]
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:1]
+ABILITY_1 | ABILITY_1
+Snorlax 21HP | Psyduck 44HP
+---
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:2 | ab2-cooldown:0]
+ABILITY_2 | NORMAL_ATTACK
+Snorlax 21HP | Psyduck 44HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:2 | ab2-cooldown:3]
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
+NORMAL_ATTACK | ABILITY_2
+Snorlax 19HP | Psyduck 44HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:2]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:0 | ab2-cooldown:3]
+NOTHING | NORMAL_ATTACK
+Snorlax 17HP | Psyduck 44HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:0 | ab2-cooldown:1]
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:2]
+NORMAL_ATTACK | ABILITY_1
+Snorlax 15HP | Psyduck 44HP
+---
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:0]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:2 | ab2-cooldown:1]
+ABILITY_1 | NORMAL_ATTACK
+Snorlax 13HP | Psyduck 40HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:3 | ab2-cooldown:5]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:1 | ab2-cooldown:0]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 11HP | Psyduck 40HP
+---
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:4]
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:0 | ab2-cooldown:4]
+ABILITY_2 | ABILITY_2
+Snorlax 11HP | Psyduck 40HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:1 | ab2-cooldown:3]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:4 | ab2-cooldown:3]
+NOTHING | NORMAL_ATTACK
+Snorlax 9HP | Psyduck 40HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:0 | ab2-cooldown:2]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:4 | ab2-cooldown:2]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 7HP | Psyduck 40HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:5 | ab2-cooldown:1]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:4 | ab2-cooldown:1]
+NORMAL_ATTACK | NORMAL_ATTACK
+Snorlax 5HP | Psyduck 40HP
+---
+Snorlax NORMAL_ATTACK (A:10 | D:12) [ab1-cooldown:5 | ab2-cooldown:0]
+Psyduck ABILITY_1 (A:2 | D:0) [ab1-cooldown:3 | ab2-cooldown:0]
+NORMAL_ATTACK | ABILITY_1
+Snorlax 3HP | Psyduck 40HP
+---
+Snorlax ABILITY_1 (A:4 | D:0) [ab1-cooldown:4 | ab2-cooldown:5]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:2 | ab2-cooldown:5]
+ABILITY_1 | NORMAL_ATTACK
+Snorlax 1HP | Psyduck 36HP
+---
+Snorlax ABILITY_2 (A:0 | D:0) [ab1-cooldown:3 | ab2-cooldown:4]
+Psyduck ABILITY_2 (A:2 | D:0) [ab1-cooldown:1 | ab2-cooldown:4]
+ABILITY_2 | ABILITY_2
+Snorlax 1HP | Psyduck 36HP
+---
+Snorlax NOTHING (A:0 | D:0) [ab1-cooldown:2 | ab2-cooldown:3]
+Psyduck NORMAL_ATTACK (A:10 | D:8) [ab1-cooldown:0 | ab2-cooldown:3]
+NOTHING | NORMAL_ATTACK
+Snorlax 0HP | Psyduck 36HP
 ---
 ---------- Best1 vs Best2 [DONE] ----------
 *** Best Pokemons - [AFTER] - Final Battle ***
-Pokemon{name='Snorlax', HP=67, attack=14, specialAttack=null, defense=12, specialDefense=9, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
-Pokemon{name='Vulpix', HP=42, attack=14, specialAttack=null, defense=8, specialDefense=13, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}
+Pokemon{name='Snorlax', HP=63, attack=10, specialAttack=null, defense=8, specialDefense=5, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}
+Pokemon{name='Psyduck', HP=61, attack=11, specialAttack=null, defense=13, specialDefense=13, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}
 
 ***** WINNER *****
-Trainer{name='Trainer_3_1', age=46, pokemons=[Pokemon{name='Vulpix', HP=45, attack=17, specialAttack=null, defense=9, specialDefense=11, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}, Pokemon{name='Pikachu', HP=38, attack=null, specialAttack=10, defense=4, specialDefense=4, firstAbility=Ability{damage=6, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=4, stun=true, dodge=true, cooldown=5}, items=[Item{name='Vitamins', HP=2, attack=2, specialAttack=2, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}]}, Pokemon{name='Snorlax', HP=67, attack=14, specialAttack=null, defense=12, specialDefense=9, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=5}, secondAbility=Ability{damage=0, stun=false, dodge=true, cooldown=5}, items=[Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Tree', HP=0, attack=3, specialAttack=0, defense=1, specialDefense=0}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}]}], pokemonsOrder=[Vulpix, Pikachu, Snorlax]}
+Trainer{name='Trainer_3_2', age=49, pokemons=[Pokemon{name='Vulpix', HP=38, attack=10, specialAttack=null, defense=4, specialDefense=9, firstAbility=Ability{damage=8, stun=true, dodge=false, cooldown=6}, secondAbility=Ability{damage=2, stun=false, dodge=true, cooldown=7}, items=[Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Cape', HP=0, attack=0, specialAttack=0, defense=0, specialDefense=3}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}]}, Pokemon{name='Psyduck', HP=61, attack=11, specialAttack=null, defense=13, specialDefense=13, firstAbility=Ability{damage=2, stun=false, dodge=false, cooldown=4}, secondAbility=Ability{damage=2, stun=true, dodge=false, cooldown=5}, items=[Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}, Item{name='Wand', HP=0, attack=0, specialAttack=3, defense=0, specialDefense=0}, Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}]}, Pokemon{name='Jigglypuff', HP=44, attack=7, specialAttack=null, defense=4, specialDefense=5, firstAbility=Ability{damage=4, stun=true, dodge=false, cooldown=4}, secondAbility=Ability{damage=3, stun=true, dodge=false, cooldown=4}, items=[Item{name='Shield', HP=0, attack=0, specialAttack=0, defense=2, specialDefense=2}, Item{name='Sword', HP=0, attack=3, specialAttack=0, defense=0, specialDefense=0}, Item{name='Vest', HP=10, attack=0, specialAttack=0, defense=0, specialDefense=0}]}], pokemonsOrder=[Vulpix, Psyduck, Jigglypuff]}

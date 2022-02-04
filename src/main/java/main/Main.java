@@ -23,8 +23,6 @@ public class Main {
 
         // GenerateTestcases.generate(10);
 
-        // TODO: Battle on threads
-
         OutputStream.selectStream();
 
         Test.runTestcases(trainerFactory, pokemonFactory);

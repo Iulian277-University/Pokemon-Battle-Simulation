@@ -52,25 +52,23 @@ public final class Battle {
     private boolean battleDone = false;
 
     // Pokemon1 attacks Pokemon2
-    public void firstMove() {
+    public void firstMove(Constants.Moves move) {
         checkEndGame();
         if (battleDone)
             return;
 
         // Call methods to attack (pok1 -> pok2)
-        Constants.Moves generatedMove = generateRandomMove(pokemon1);
-        attack(pokemon1, pokemon2, generatedMove, false);
+        attack(pokemon1, pokemon2, move, false);
     }
 
     // Pokemon2 attacks Pokemon1
-    public void secondMove() {
+    public void secondMove(Constants.Moves move) {
         checkEndGame();
         if (battleDone)
             return;
 
         // Call methods to attack (pok2 -> pok1)
-        Constants.Moves generatedMove = generateRandomMove(pokemon2);
-        attack(pokemon2, pokemon1, generatedMove, true);
+        attack(pokemon2, pokemon1, move, true);
 
         // Dodge the defender itself at this moment
         if (pokemon2.getCurrentMove() == Constants.Moves.ABILITY_1) {
@@ -154,7 +152,7 @@ public final class Battle {
             battleDone = true;
     }
 
-    private Constants.Moves generateRandomMove(Pokemon pokemon) {
+    public Constants.Moves generateRandomMove(Pokemon pokemon) {
         // Check if countdown of any ability is 0
         countDownAbility(pokemon.getFirstAbility());
         countDownAbility(pokemon.getSecondAbility());
