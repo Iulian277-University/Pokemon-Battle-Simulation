@@ -1,7 +1,6 @@
 package io;
 
 import common.Constants;
-import main.Main;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -62,6 +61,7 @@ public final class Logger {
             System.out.println(output);
         }
 
+        // Clear the buffer
         output.setLength(0);
     }
 }

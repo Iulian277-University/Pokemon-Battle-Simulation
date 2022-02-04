@@ -187,7 +187,6 @@ public final class Arena {
 
         ExecutorService executorService = Executors.newFixedThreadPool(2);
         List<Callable<Constants.Moves>> callablesPokemons = Arrays.asList(firstPokemon, secondPokemon);
-
         // Run the battle
         while (firstPokemon.isAlive() && secondPokemon.isAlive()) {
             try {
@@ -201,9 +200,9 @@ public final class Arena {
 
             } catch (InterruptedException | ExecutionException e) {
                 e.printStackTrace();
+                Thread.currentThread().interrupt();
             }
         }
-
         executorService.shutdown();
 
         // Update winner's stats

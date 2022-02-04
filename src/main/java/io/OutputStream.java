@@ -5,6 +5,9 @@ import java.util.Scanner;
 import common.Constants;
 import common.Constants.Streams;
 
+/**
+ * This class is used for selecting an output stream
+ */
 public final class OutputStream {
     private OutputStream() {}
 
