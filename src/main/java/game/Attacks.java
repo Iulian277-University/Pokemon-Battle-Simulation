@@ -26,8 +26,8 @@ public final class Attacks {
         return attacker.getName() + " " + attackType +
                 " (A:"  + attackHP  +
                 " | D:" + defenseHP + ")" +
-                " [ab1-cooldown:"  + (attacker.getFirstAbility()  != null ? attacker.getFirstAbility().getCooldown()  : "") +
-                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "") +
+                " [ab1-cooldown:"  + (attacker.getFirstAbility()  != null ? attacker.getFirstAbility().getCooldown()  : "-") +
+                " | ab2-cooldown:" + (attacker.getSecondAbility() != null ? attacker.getSecondAbility().getCooldown() : "-") +
                 "]";
     }
 
